@@ -1,0 +1,168 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'News Cycle';
+    background-color: #323232;
+    overflow-x: hidden;
+    font-weight: lighter;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), #262726), url("IMG_Hero_Image.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border-color: white;
+  padding: 10px 10px;
+  font-weight: 100;
+}
+
+@keyframes swipe {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+.hero-text h1 {
+    font-size: 50px;
+    animation: swipe 3s;
+}
+
+.hero-text p {
+    animation: swipe 3s;
+}
+
+.opening {
+    width: 80%;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+    .opening {
+        width: 75%;
+    }   
+    
+}
+
+@media (max-width: 650px) {  
+    .hero-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {  
+    .hero-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {  
+    .hero-text h1 {
+        font-size: 20px;
+    }
+}
+
+.suggestions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.suggestion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #262726;
+    width: 45%;
+}
+
+.suggestion p {
+text-align: center;
+    color: white;
+}
+
+.suggestion h1 {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.suggestion img {
+  margin: 40px auto;
+    width: 80%;
+    display: flex;
+}
+.button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .button a:hover {
+    transform: translateY(10px);
+  }
+  
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .suggestions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .suggestion {
+    width: 100%;
+  }
+    
+    .button {
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
