@@ -63,6 +63,13 @@ h2 {
     animation: swipe 3s;
 }
 
+.socialmedia img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+}
+
 #overview {
     width: 80%;
     font-size: 20px;
