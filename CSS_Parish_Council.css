@@ -15,7 +15,7 @@ body, html {
 
 .hero-image {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), #262726), url("IMG_Hero_Image.jpg");
-    height: 600px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,7 +185,7 @@ h2 {
   background-color: #555;
 }
 
-#minutes a {
+#minutes a, #agenda a, #documents a {
     width: 50%;
     text-align: center;
     display: block;
@@ -201,12 +201,12 @@ h2 {
 }
 
 
-#minutes a:hover {
+#minutes a:hover, #agenda a:hover, #documents a:hover {
     animation: minuteshover 0.3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes hover {
+@keyframes minuteshover {
     0% {
         background-color: #262726;
     }
@@ -228,7 +228,7 @@ h2 {
     }
 }
 
-#committee h1, #minutes h1 {
+#committee h1, #minutes h1, #agenda h1, #documents h1 {
     text-align: center;
     text-shadow: 5px 5px 1px black;
     font-size: 75px;
@@ -237,7 +237,7 @@ h2 {
     margin-top: 20px;
 }
 
-#committee {
+#committee, #minutes, #agenda, #documents {
     background-color: #262726;
 }
 
@@ -263,6 +263,11 @@ h2 {
         font-size: 20px;
     }
 }
+}
+
+
+#minutes {
+background-color: #262726;
 }
 
 
