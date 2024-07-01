@@ -15,7 +15,7 @@ body, html {
 
 .hero-image {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), #262726), url("IMG_Hero_Image.jpg");
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
