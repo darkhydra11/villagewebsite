@@ -91,6 +91,7 @@ body, html {
 
 .breakingnewscontainer {
     display: flex;
+    flex-direction: row;
 }
 
 .breakingnews {
@@ -110,21 +111,6 @@ body, html {
     color: white;
 }
 
-@media only screen and (max-width: 1000px){
-  .breakingnewscontainer{ 
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .breakingnews{ 
-    width: 100%;
-    margin-bottom: 15px;
-  }
-    
-  .breakingnews img {
-    width: 50%;
-    }
-}
 
 
 .footer {
