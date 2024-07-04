@@ -97,11 +97,11 @@ h2 {
     font-size: 14px;
     font-family: Arial;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 100%;
+    width: 50%;
   }
 
   
@@ -125,9 +125,10 @@ h2 {
   @media (max-width: 1100px) {
     .church {
       font-size: 13px;
-      max-width: 90%;
+      max-width: 100%;
       background-color: #262726;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      flex-direction: column;
     }
   }
   
