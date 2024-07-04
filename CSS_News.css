@@ -135,6 +135,7 @@ body, html {
     margin-top: 100px;
     height: auto;
     color: white;
+    clear: both;
 }
 
 .footer p {
