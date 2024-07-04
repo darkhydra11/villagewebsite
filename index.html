@@ -18,22 +18,6 @@
     <body>
         
             <div class="hero-image">
-                <div id="weather">
-                  <h2>Temperature</h2>
-                  <p id="temp"></p>
-                </div>
-
-                <script src="weather.js">
-                    const weather = async () => {
-                    const response = await fetch('https://api.weatherapi.com/v1/current.json?key=editorwroxton@gmail.com&q=Wroxton&aqi=no');
-                    const data = await response.json();
-                    const temp = data.temp;
-                    document.getElementById('temp').textContent = temp;
-                }
-                        
-                    window.addEventListener('DOMContentLoaded', weather);
-                </script>
-
               <div class="hero-text">
                 <h1 style="font-size:50px">Welcome to Wroxton Village</h1>
                 <p>A rural village settled in the Cotsworlds</p>
