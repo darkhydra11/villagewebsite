@@ -126,17 +126,19 @@ body, html {
     }
 }
 
-.footer {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 100px;
-    height: auto;
-    color: white;
-    clear: both;
-  position: fixed:
+footer {
+  position: fixed;
   bottom: 0;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 100px;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.footer p {
-    color: white;
+footer p {
+  color: black;
 }
+
