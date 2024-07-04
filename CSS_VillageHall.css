@@ -82,7 +82,7 @@ h2 {
 }
 
 
-.committee-about {
+#committee-about, #pricing {
     background-color: #262726;
     display: flex;
     justify-content: center;
@@ -175,13 +175,13 @@ h3 {
 
 @media screen and (max-width: 1350px) {
 
-    .committee-about {
+    #committee-about, #pricing {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    h2, #pricing h2 {
+    #committee-about h2, #pricing h2 {
         writing-mode: horizontal-tb;
         float: none;
         font-size: 50px;
