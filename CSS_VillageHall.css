@@ -99,7 +99,7 @@ h2 {
     writing-mode: vertical-rl;
     color: white;
     text-shadow: 10px 10px 10px black;
-    float: left;
+    vertical-align: middle;
 }
 
 #pricing h2 {
@@ -109,6 +109,7 @@ h2 {
     writing-mode: vertical-rl;
     color: white;
     text-shadow: 10px 10px 10px black;
+    vertical-align: middle;
 }
 
 h3 {
