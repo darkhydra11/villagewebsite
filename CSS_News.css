@@ -133,6 +133,8 @@ body, html {
     height: auto;
     color: white;
     clear: both;
+  position: fixed:
+  bottom: 0;
 }
 
 .footer p {
