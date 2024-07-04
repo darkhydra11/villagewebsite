@@ -24,6 +24,14 @@
                 </div>
 
                 <script src="weather.js">
+                    const weather = async () => {
+                    const response = await fetch('https://api.weatherapi.com/v1/current.json?key=editorwroxton@gmail.com&q=Wroxton&aqi=no');
+                    const data = await response.json();
+                    const temp = data.temp;
+                    document.getElementById('temp').textContent = temp;
+                }
+                        
+                    window.addEventListener('DOMContentLoaded', weather);
                 </script>
 
               <div class="hero-text">
