@@ -106,10 +106,15 @@ body, html {
   margin: 40px auto;
 }
 
-.breakingnews p, h2, a {
+.breakingnews p, h2,  {
   text-align: center;
   color: white;
 }
+
+.breakingnews a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
 
 @media only screen and (max-width: 1024px){
   .breakingnews {
