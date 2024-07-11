@@ -123,3 +123,9 @@ body, html {
 .footer p {
     color: white;
 }
+
+@media (max width: 1200px) {
+
+.breakingnews {
+  width: 100%;
+}
