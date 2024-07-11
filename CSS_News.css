@@ -114,10 +114,8 @@ body, html {
 @media only screen and (min-width: 1024px){
   .breakingnews {
     width: 100%;
-    flex-direction: column;
   }
 }
-
 
 .footer {
     text-align: center;
