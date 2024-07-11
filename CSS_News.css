@@ -124,7 +124,7 @@ body, html {
 
   .breakingnewscontainer {
     flex-direction: column;
-    display:: block;
+    display: block;
 }
 
 .footer {
