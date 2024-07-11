@@ -90,25 +90,31 @@ body, html {
 
 
 .breakingnewscontainer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .breakingnews {
-    display: block;
-    width: 50%;
-    background-color: #262726;
-    margin-bottom: 15px;
+  display: block;
+  width: 50%;
+  background-color: #262726;
+  margin-bottom: 15px;
 }
 
 .breakingnews img {
-    width: 90%;
-    margin: 40px auto;
+  width: 90%;
+  margin: 40px auto;
 }
 
 .breakingnews p, h2 {
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (min-width:1024px){
+  .breakingnews {
+    width: 100%;
+  }
 }
 
 
@@ -122,12 +128,4 @@ body, html {
 
 .footer p {
     color: white;
-}
-
-@media (max width: 1200px) {
-
-.breakingnews {
-  width: 100%;
-  flex-direction: column;
-}
 }
