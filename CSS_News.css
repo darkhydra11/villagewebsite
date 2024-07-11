@@ -115,6 +115,10 @@ body, html {
   .breakingnews {
     width: 100%;
   }
+
+  .breakingnewscontainer {
+    flex-direction: column;
+    display:: block;
 }
 
 .footer {
