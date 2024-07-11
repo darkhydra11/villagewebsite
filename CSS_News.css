@@ -106,7 +106,7 @@ body, html {
   margin: 40px auto;
 }
 
-.breakingnews p, h2 {
+.breakingnews p, h2, a {
   text-align: center;
   color: white;
 }
