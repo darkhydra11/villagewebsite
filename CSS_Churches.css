@@ -107,8 +107,9 @@ h2 {
   
   .church img {
     display: block;
-    width: 70%;
+    width: 100%;
     max-height: 300px;
+    object-fit: cover;
   }
   
   .church h1,
