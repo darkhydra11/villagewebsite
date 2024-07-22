@@ -101,13 +101,14 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 70%;
+    width: 100%;
   }
 
   
   .church img {
     display: block;
     width: 70%;
+    max-height: 300px;
   }
   
   .church h1,
