@@ -159,6 +159,14 @@ text-align: center;
   .button a:hover {
     transform: translateY(10px);
   }
+
+  .footer p {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 25px;
+    height: auto;
+    color: white;
+  }
   
 
 
