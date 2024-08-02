@@ -142,6 +142,65 @@ h2 {
     margin: 20px 20px;
   }
 
+  .churchschedule {
+    display: flex;    
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #262726 ;
+    padding: 20px ;
+  }
+  
+  .churchdate {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px ;
+  }
+  
+  .churchdate h1 {
+    color: white ;
+  }
+  
+  .churchdate th {
+    width: 35%;
+    font-family: Arial, sans-serif ;
+    font-size: 14px ;
+    text-align: center ;
+    background-color: #f6f6f6 ;
+    border: 1px solid #dee2e6 ;
+    border-radius: 3px ;
+    padding: 10px ;
+  }
+  
+  .churchdate tr {
+    width: 100%;
+    margin-bottom: 5px ;
+  }
+  
+  .churchdate td {
+    width: 100%;
+    text-align: center ;
+    color: white ;
+    padding: 10px ;
+  }
+  
+  .churchdate1 th, .churchdate2 th, .churchdate3 th {
+    border-radius: 3px 0 0 3px ;
+    padding: 10px ;
+    color: white ;
+    font-family: Arial, sans-serif ;
+    font-size: 14px ;
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .churchdate th {
+      width: 25% ;
+    }
+  }
+  
+
   .footer {
     text-align: center;
     font-size: 20px;
