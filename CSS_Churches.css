@@ -199,6 +199,7 @@ h2 {
     .churchschedule {
       margin-right: auto;
       margin-left: auto;
+      flex-direction: row;
       text-align: center;
     }
   }
