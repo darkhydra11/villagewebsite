@@ -189,41 +189,25 @@ h2 {
   }
   
   @media (max-width: 600px) {
-    .churchdate #datetitle {
+    .churchdate
+    #datetitle {
       font-size: 20px;
     }
   }
   
   @media (max-width: 800px) {
     .churchschedule {
-      max-width: 1000px;
       margin-right: auto;
       margin-left: auto;
       text-align: center;
     }
   }
   
-  @media (min-width: 601px) {
+  @media (max-width: 601px) {
     .churchschedule {
       flex-wrap: wrap;
     }
   }
-  
-  @media (min-width: 801px) {
-    .churchschedule table {
-      width: 50%;
-    }
-    .churchschedule table tr:nth-child(odd) {
-      background-color: #f8f8f8;
-    }
-    .churchschedule table tr:nth-child(even) {
-      background-color: #f6f6f6;
-    }
-  }
-  
-  @media (min-width: 1000px) {
-    .church
-  
   
 
   .footer {
@@ -238,7 +222,7 @@ h2 {
     color: white;
 }
 
-  }
+
 
 
 
