@@ -194,7 +194,7 @@ h2 {
     font-size: 14px ;
   }
   
-  @media only screen and (min-width: 800px) {
+  @media only screen and (max-width: 800px) {
     .churchdate th {
       width: 25% ;
     }
