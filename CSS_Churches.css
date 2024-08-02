@@ -156,6 +156,9 @@ h2 {
     align-items: center;
   }
   
+  .churchservice {
+    width: 100%;
+  }
   .churchdate h3 {
     color: #262726;
   }
