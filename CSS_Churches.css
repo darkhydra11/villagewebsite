@@ -142,85 +142,70 @@ h2 {
     margin: 20px 20px;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+  
   .churchschedule {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #262726;
-    padding: 20px;
-    text-align: center;
   }
   
-  #datetitle {
-    color: white;
-    text-decoration: underline;
-    font-weight: lighter;
-    text-align: center;
+  .churchschedule h3 {
+    color: #fff;
     font-size: 30px;
-  }
-  .churchdate {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+    text-align: left;
   }
   
-  .churchdate h1 {
-    color: white;
+  .churchschedule table {
+    font-size: 12px;
+    border-collapse: collapse;
   }
   
-  .churchdate th {
-    width: 35%;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    background-color: #f6f6f6;
-    border: 1px solid #dee2e6;
-    border-radius: 3px;
-    padding: 10px;
+  .churchschedule table th,
+  .churchschedule table td {
+    padding: 5px;
   }
   
-  .churchdate tr {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  
-  .churchdate td {
-    width: 100%;
-    text-align: center;
-    color: white;
-    padding: 10px;
-  }
-  
-  .churchdate1 th,
-  .churchdate2 th,
-  .churchdate3 th {
-    border-radius: 3px 0 0 3px;
-    padding: 10px;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-  }
-  
-  @media only screen and (min-width: 800px) {
-    .churchdate th {
-      width: 25%;
+  @media (min-width: 600px) {
+    .churchschedule h3 {
+      font-size: 24px;
     }
   }
   
-  .churchdate1 {
-    flex-basis: 100%;
+  @media (min-width: 800px) {
+    .churchschedule h3 {
+      font-size: 30px;
+    }
+    .churchschedule table {
+      width: 60%;
+    }
+    .churchschedule table tr:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+    .churchschedule table tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
   }
   
-  .churchdate2 {
-    flex-basis: 100%;
+  @media (min-width: 1000px) {
+    .churchschedule h3 {
+      font-size: 36px;
+    }
+    .churchschedule table {
+      width: 50%;
+    }
+    .churchschedule table tr:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+    .churchschedule table tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+    .churchschedule table th {
+      width: 25%;
+    }
   }
-  
-  .churchdate3 {
-    flex-basis: 100%;
-  }
-  
   
 
   .footer {
