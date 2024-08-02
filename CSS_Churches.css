@@ -154,7 +154,7 @@ h2 {
 
   .churchschedule h3{
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: lighter;
     text-align: center;
     font-size: 30px;
