@@ -146,29 +146,84 @@ h2 {
     box-sizing: border-box;
   }
   
+  * {
+    box-sizing: border-box;
+  }
+  
   .churchschedule {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
   }
   
-  .churchschedule h3 {
-    color: #fff;
-    font-size: 30px;
-    text-align: left;
+  .churchdate h3 {
+    color: #262726;
   }
   
-  .churchschedule table {
-    font-size: 12px;
+  .churchdate {
     border-collapse: collapse;
   }
   
-  .churchschedule table th,
-  .churchschedule table td {
-    padding: 5px;
+  .churchdate tr {
+    border-bottom: 1px solid #ddd;
   }
   
-
+  .churchdate th {
+    text-align: left;
+    padding: 4px;
+  }
+  
+  .churchdate td {
+    padding: 4px;
+  }
+  
+  .churchdate table {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .churchdate #datetitle {
+    font-family: 'Arimo', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .churchdate #datetitle {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .churchschedule {
+      max-width: 1000px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 601px) {
+    .churchschedule {
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (min-width: 801px) {
+    .churchschedule table {
+      width: 50%;
+    }
+    .churchschedule table tr:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+    .churchschedule table tr:nth-child(even) {
+      background-color: #f6f6f6;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .church
+  
   
 
   .footer {
@@ -183,7 +238,7 @@ h2 {
     color: white;
 }
 
-
+  }
 
 
 
