@@ -168,44 +168,7 @@ h2 {
     padding: 5px;
   }
   
-  @media (min-width: 600px) {
-    .churchschedule h3 {
-      font-size: 24px;
-    }
-  }
-  
-  @media (min-width: 800px) {
-    .churchschedule h3 {
-      font-size: 30px;
-    }
-    .churchschedule table {
-      width: 60%;
-    }
-    .churchschedule table tr:nth-child(odd) {
-      background-color: #f8f8f8;
-    }
-    .churchschedule table tr:nth-child(even) {
-      background-color: #f6f6f6;
-    }
-  }
-  
-  @media (min-width: 1000px) {
-    .churchschedule h3 {
-      font-size: 36px;
-    }
-    .churchschedule table {
-      width: 50%;
-    }
-    .churchschedule table tr:nth-child(odd) {
-      background-color: #f8f8f8;
-    }
-    .churchschedule table tr:nth-child(even) {
-      background-color: #f6f6f6;
-    }
-    .churchschedule table th {
-      width: 25%;
-    }
-  }
+
   
 
   .footer {
