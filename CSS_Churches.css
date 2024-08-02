@@ -150,6 +150,13 @@ h2 {
     background-color: #262726;
     padding: 20px;
   }
+
+  .churchschedule h3{
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    text-align: center;
+  }
   
   .churchdate {
     padding-left: 20px;
