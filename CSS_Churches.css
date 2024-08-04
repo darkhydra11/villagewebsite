@@ -142,53 +142,48 @@ h2 {
     margin: 20px 20px;
   }
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    height: 100%;
-  }
-  
   .churchschedule {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-color: #262726;
   }
   
-  .churchschedule .date {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 5px;
-  }
-  
-  .churchschedule .date h3 {
-    font-size: 30px;
+  .date {
+    margin-bottom: 20px;
     text-align: center;
+  }
+  
+  .datetitle {
     margin-bottom: 10px;
   }
   
-  .churchschedule .date .service {
-    list-style: none;
+  .service {
+    margin-bottom: 10px;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .churchschedule .date .service p {
+  .location, .time, .typeofservice, .contact {
+    margin-bottom: 5px;
+  }
+  
+  .location {
     font-weight: bold;
   }
   
-  .churchschedule .date .service p:first-of-type {
-    margin-top: 0;
+  .time {
+    color: #666;
   }
   
-
+  .typeofservice {
+    color: #0099cc;
+  }
+  
+  .contact {
+    color: #33cc33;
+  }
   .footer {
     text-align: center;
     font-size: 20px;
