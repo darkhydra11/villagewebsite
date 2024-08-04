@@ -157,7 +157,10 @@ h2 {
   
   .datetitle {
     margin-bottom: 10px;
-    font-size: 24px;
+    font-size: 36px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 20px;
   }
   
   .service {
