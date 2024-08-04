@@ -146,7 +146,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
     width: 100%;
   }
   
@@ -165,10 +164,10 @@ h2 {
   
   .service {
     margin-bottom: 10px;
-    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #262726;
+    width: 100%;
   }
   
   .location, .time, .typeofservice, .contact {
@@ -199,9 +198,7 @@ h2 {
   /* Mobile responsiveness */
   
   @media only screen and (max-width: 768px) {
-    .churchschedule {
-      padding: 10px;
-    }
+
     .datetitle {
       font-size: 20px;
     }
@@ -214,9 +211,7 @@ h2 {
   }
   
   @media only screen and (max-width: 480px) {
-    .churchschedule {
-      padding: 5px;
-    }
+
     .datetitle {
       font-size: 18px;
     }
@@ -229,9 +224,7 @@ h2 {
   }
   
   @media only screen and (max-width: 320px) {
-    .churchschedule {
-      padding: 0;
-    }
+
     .datetitle {
       font-size: 16px;
     }
