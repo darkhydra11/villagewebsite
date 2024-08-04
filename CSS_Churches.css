@@ -146,12 +146,15 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw; /* changed from 100% to 100vw */
+    margin: 0; /* added to remove any default margins */
+    padding: 0; /* added to remove any default paddings */
   }
   
   .date {
     margin-bottom: 20px;
     text-align: center;
+    width: 100%; /* added to make the date span across the entire width */
   }
   
   .datetitle {
@@ -160,6 +163,7 @@ h2 {
     font-weight: lighter;
     color: white;
     margin-bottom: 20px;
+    width: 100%; /* added to make the date title span across the entire width */
   }
   
   .service {
@@ -167,11 +171,14 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #262726;
-    width: 100%;
+    width: 100%; /* changed from 100% to 100vw */
+    padding: 20px; /* added to add some padding to the service container */
+    box-sizing: border-box; /* added to make the padding included in the width */
   }
   
-  .location, .time, .typeofservice, .contact {
+  .location,.time,.typeofservice,.contact {
     margin-bottom: 5px;
+    width: 100%; /* added to make the location, time, type of service, and contact span across the entire width */
   }
   
   .location {
@@ -198,40 +205,37 @@ h2 {
   /* Mobile responsiveness */
   
   @media only screen and (max-width: 768px) {
-
-    .datetitle {
+   .datetitle {
       font-size: 20px;
     }
-    .location {
+   .location {
       font-size: 16px;
     }
-    .time, .typeofservice, .contact {
+   .time,.typeofservice,.contact {
       font-size: 14px;
     }
   }
   
   @media only screen and (max-width: 480px) {
-
-    .datetitle {
+   .datetitle {
       font-size: 18px;
     }
-    .location {
+   .location {
       font-size: 14px;
     }
-    .time, .typeofservice, .contact {
+   .time,.typeofservice,.contact {
       font-size: 12px;
     }
   }
   
   @media only screen and (max-width: 320px) {
-
-    .datetitle {
+   .datetitle {
       font-size: 16px;
     }
-    .location {
+   .location {
       font-size: 12px;
     }
-    .time, .typeofservice, .contact {
+   .time,.typeofservice,.contact {
       font-size: 10px;
     }
   }
