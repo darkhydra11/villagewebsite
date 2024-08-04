@@ -174,22 +174,23 @@ h2 {
   
   .location {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 24px;
+    color: white;
   }
   
   .time {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .typeofservice {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   .contact {
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
   }
   
   /* Mobile responsiveness */
