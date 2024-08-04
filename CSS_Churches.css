@@ -146,6 +146,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
   
   .date {
@@ -155,6 +156,7 @@ h2 {
   
   .datetitle {
     margin-bottom: 10px;
+    font-size: 24px;
   }
   
   .service {
@@ -171,18 +173,69 @@ h2 {
   
   .location {
     font-weight: bold;
+    font-size: 18px;
   }
   
   .time {
     color: #666;
+    font-size: 16px;
   }
   
   .typeofservice {
     color: #0099cc;
+    font-size: 16px;
   }
   
   .contact {
     color: #33cc33;
+    font-size: 16px;
+  }
+  
+  /* Mobile responsiveness */
+  
+  @media only screen and (max-width: 768px) {
+    .churchschedule {
+      padding: 10px;
+    }
+    .datetitle {
+      font-size: 20px;
+    }
+    .location {
+      font-size: 16px;
+    }
+    .time, .typeofservice, .contact {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .churchschedule {
+      padding: 5px;
+    }
+    .datetitle {
+      font-size: 18px;
+    }
+    .location {
+      font-size: 14px;
+    }
+    .time, .typeofservice, .contact {
+      font-size: 12px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .churchschedule {
+      padding: 0;
+    }
+    .datetitle {
+      font-size: 16px;
+    }
+    .location {
+      font-size: 12px;
+    }
+    .time, .typeofservice, .contact {
+      font-size: 10px;
+    }
   }
   .footer {
     text-align: center;
