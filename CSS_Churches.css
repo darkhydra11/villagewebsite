@@ -92,7 +92,6 @@ h2 {
   
   .church {
     background-color: #262726;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     color: white;
     font-size: 14px;
     font-family: Arial;
@@ -102,7 +101,7 @@ h2 {
     vertical-align: top;
     float: left;
     height: 550px;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   
   .church img {
@@ -110,7 +109,8 @@ h2 {
     width:95%;
     max-height: 300px;
     margin: 0 auto;
-    border-top-left-radius, border-top-right-radius: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     object-fit: cover;
   }
   
@@ -129,9 +129,14 @@ h2 {
   @media (max-width: 1100px) {
     .church {
       font-size: 13px;
-      width: 90%;
+      width: 100%;
       margin: 20px auto;
       display: block;
+      border-radius: 0px;
+    }
+
+    .church img {
+      border-radius: 0px;
     }
   }
   
@@ -169,13 +174,15 @@ h2 {
   }
   
   .service {
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #262726;
     width: 100%; /* changed from 100% to 100vw */
     padding: 20px; /* added to add some padding to the service container */
     box-sizing: border-box; /* added to make the padding included in the width */
+    
   }
   
   .location,.time,.typeofservice,.contact {
