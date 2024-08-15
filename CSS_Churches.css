@@ -160,6 +160,7 @@ h2 {
   .datetitle {
     margin-bottom: 10px;
     font-size: 36px;
+    text-decoration: underline;
     font-weight: lighter;
     color: white;
     margin-bottom: 20px;
