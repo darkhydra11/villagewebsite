@@ -22,7 +22,7 @@
     font-family: 'News Cycle';
     margin: 0;
     border-style: none;
-    animation: swipe 2s;
+    animation: swipe 0.5s;
     font-weight: 10;
 }
 

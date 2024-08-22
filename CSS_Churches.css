@@ -100,15 +100,16 @@ h2 {
     margin: 20px 2.5%;
     vertical-align: top;
     float: left;
-    height: 550px;
+    height: 730px;
     border-radius: 30px;
+    box-shadow: -12px 12px black;
   }
   
   .church img {
     display: block;
-    width:95%;
-    max-height: 300px;
-    margin: 0 auto;
+    width:100%;
+    max-height: 500px;
+    margin: auto;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     object-fit: cover;
@@ -124,6 +125,7 @@ h2 {
   .church p {
     text-align: center;
     margin: 20px;
+    border: 1px solid black
   }
   
   @media (max-width: 1100px) {
@@ -135,9 +137,6 @@ h2 {
       border-radius: 0px;
     }
 
-    .church img {
-      border-radius: 0px;
-    }
   }
   
   .church a {
@@ -174,16 +173,19 @@ h2 {
   }
   
   .service {
-    margin-bottom: 20px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #262726;
-    width: 100%; /* changed from 100% to 100vw */
-    padding: 20px; /* added to add some padding to the service container */
-    box-sizing: border-box; /* added to make the padding included in the width */
-    
-  }
+      /* existing styles */
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #262726;
+      width: 18%; /* changed from 100% to 20% */
+      padding: 20px; /* added to add some padding to the service container */
+      box-sizing: border-box; /* added to make the padding included in the width */
+      display: inline-block; /* added to make the service divs side by side */
+      vertical-align: top; /* added to align the service divs to the top */
+      height: 300px;
+    }
+  
   
   .location,.time,.typeofservice,.contact {
     margin-bottom: 5px;
@@ -212,6 +214,12 @@ h2 {
   }
   
   /* Mobile responsiveness */
+  
+  @media only screen and (max-width: 1700px) {
+    .service {
+      width: 100%;
+    }
+   }
   
   @media only screen and (max-width: 768px) {
    .datetitle {

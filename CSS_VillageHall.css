@@ -56,11 +56,11 @@ h2 {
 }
 .hero-text h1 {
     font-size: 50px;
-    animation: swipe 3s;
+    animation: swipe 0.6s;
 }
 
 .hero-text p {
-    animation: swipe 3s;
+    animation: swipe 0.6s;
 }
 
 .socialmedia img {
