@@ -125,18 +125,22 @@ h2 {
   .church p {
     text-align: center;
     margin: 20px;
-    border: 1px solid black
   }
   
   @media (max-width: 1100px) {
     .church {
       font-size: 13px;
-      width: 100%;
-      margin: 20px auto;
+      width: 100%; /* added */
       display: block;
-      border-radius: 0px;
+      border-radius: 30px;
+      text-align: center; 
+      height: auto;
+      margin: 10px auto; /* added */
     }
-
+  
+    .church img {
+      height: 400px;
+    }
   }
   
   .church a {
@@ -183,7 +187,8 @@ h2 {
       box-sizing: border-box; /* added to make the padding included in the width */
       display: inline-block; /* added to make the service divs side by side */
       vertical-align: top; /* added to align the service divs to the top */
-      height: 300px;
+      height: 200px;
+      line-height: 20px;
     }
   
   
@@ -218,6 +223,8 @@ h2 {
   @media only screen and (max-width: 1700px) {
     .service {
       width: 100%;
+      line-height: 20px;
+      height: auto;
     }
    }
   
