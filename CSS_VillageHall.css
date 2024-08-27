@@ -165,21 +165,19 @@ h3 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 1350px) {
-
-    #committee-about, #pricing {
+#committee-about, #pricing {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+}
 
-    #committee-about h2, #pricing h2 {
+#committee-about h2, #pricing h2 {
         writing-mode: horizontal-tb;
         float: none;
         font-size: 50px;
-    }
+}
     
-    .team-members {
+.team-members {
         display: flex;
         flex-wrap: Wrap;
         justify-content: center;

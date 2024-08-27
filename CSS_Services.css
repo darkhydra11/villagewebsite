@@ -96,6 +96,7 @@ body, html {
   padding: 1rem;
   height: auto;
     text-align: center;
+    font-size: 18px;
 }
 
 .localbusinesses {
@@ -109,9 +110,9 @@ body, html {
     padding: 5px 20px;
     border-radius: 25px;
     display: block;
-    margin: 50px auto;
+    margin: 20px auto;
     width: 50%;
-    padding: 10px 10px;
+    padding: 5px 10px;
     border-radius: 25px;
     background-color: white;
     text-align: center;
@@ -120,19 +121,20 @@ body, html {
     text-decoration: none;
 }
 
-.contact a:hover {
-    animation: hover 0.3s;
+.contact:hover {
+    animation: contacthover;
+    animation-duration: 0.3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes hover {
+@keyframes contacthover {
     0% {
         background-color: white;
     }
     
     100% {
         background-color: lightgray;
-        transform: translateY(-30px);
+        transform: translateY(-10px);
     }
 }
 
