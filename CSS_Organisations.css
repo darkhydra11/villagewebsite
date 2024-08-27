@@ -168,7 +168,7 @@ body, html {
   
   @media (max-width: 1200px) {
     .club1, .club2 {
-      width: 100%;
+      width: 90%;
       margin-top: 30px;
     }
 
