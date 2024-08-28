@@ -82,51 +82,56 @@ h2 {
 }
 
 
-#committee-about, #pricing {
+#committee-about {
     background-color: #262726;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     height: auto;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
 }
 
 h2 {
     font-size: 80px;
     font-weight: bold;
     text-align: center;
-    writing-mode: vertical-rl;
     color: white;
-    vertical-align: middle;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-decoration: underline;
+    width: 100%;
 }
 
 
 h3 {
     text-align: center;
     color: white;
+    font-size: 15px;
 }
 
 .team-members {
     display: flex;
-    flex-wrap: Wrap;
+    flex-wrap: wrap; /* Add this to allow team members to wrap to the next line */
     justify-content: center;
-    align-items: center;
+    width: 100%;
 }
 
 .team-member {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: space-evenly;
     color: white;
-    margin-bottom: 30px;
+    flex-basis: 20%; /* Set the initial width of each team member */
 }
 
 .team-member a {
-    width: 50%;
+    width: 100%;
     height: auto;
+    margin: 0 auto;
     padding: 10px 10px;
     border-radius: 25px;
     background-color: white;
@@ -142,6 +147,14 @@ h3 {
     animation-fill-mode: forwards;
 }
 
+@media (max-width: 1500px) {
+    .team-member {
+        justify-content: center;
+        width: 100%;
+        flex-basis: 100%;
+    }
+}
+
 @keyframes hover {
     0% {
         background-color: white;
@@ -154,35 +167,93 @@ h3 {
 }
 
 .team-member-name {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .team-member-role {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
-#committee-about, #pricing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.pricing {
+    display: flex;
+    flex-direction: column; /* Add this to stack elements vertically */
+    justify-content: space-evenly;
+    background-color: #262726;
+    border-radius: 25px;
+    width: 95%;
+    margin: 0 auto;
 }
 
-#committee-about h2, #pricing h2 {
-        writing-mode: horizontal-tb;
-        float: none;
-        font-size: 50px;
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-basis: 40%; /* Set the initial width of each option */
+    margin: 20px 0px;
+    color: white;
 }
-    
-.team-members {
-        display: flex;
-        flex-wrap: Wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%
+
+.option a {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 10px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.option a:hover {
+    animation: hover 0.3s;
+    animation-fill-mode: forwards;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1500px) {
+    .option {
+        flex-basis: 90%; /* Make each option take up full width on smaller screens */
     }
+}
+
+@keyframes hover {
+    0% {
+        background-color: white;
+    }
+    
+    100% {
+        background-color: lightgray;
+        transform: translateY(-5px);
+    }
+}
+
+.optionname {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.optionprice {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+/* Add this to style the h2 element */
+.pricing h2 {
+    margin-bottom: 20px; /* Add some margin to separate from options */
+}
+
+
 
 
 
