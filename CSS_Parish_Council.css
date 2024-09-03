@@ -11,6 +11,9 @@ body, html {
     -ms-transition: fadeIn 2s;
     transition: fadeIn 2s;
     scroll-behavior: smooth;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
 }
 
 .hero-image {
