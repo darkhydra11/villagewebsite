@@ -229,7 +229,7 @@ h2 {
     }
 }
 
-#committee h1, #minutes h1, #agenda h1, #documents h1 {
+#councillors h1, #minutes h1, #agenda h1, #documents h1 {
     text-align: center;
     text-shadow: 5px 5px 1px black;
     font-size: 75px;
@@ -238,7 +238,7 @@ h2 {
     margin-top: 20px;
 }
 
-#committee, #minutes, #agenda, #documents {
+#councillors, #minutes, #agenda, #documents {
     background-color: #262726;
     width: 98%;
     border-radius: 25px;
