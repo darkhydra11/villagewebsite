@@ -86,29 +86,18 @@ h2 {
     color: white;
 }
 
-.maintitle {
-    font-size: 56px;
-}
+
 
 
 @media (max-width: 1000px) {
     .description {
         width: 75%;
     }   
-
-    .maintitle {
-        font-size: 28px;
-    }
-    
 }
 
 @media (max-width: 650px) {  
     .hero-text h1 {
         font-size: 20px;
-    }
-
-    .maintitle {
-        font-size: 24px;
     }
 }
 
@@ -116,19 +105,11 @@ h2 {
     .hero-text h1 {
         font-size: 16px;
     }
-
-    .maintitle {
-        font-size: 18px;
-    }
 }
 
 @media (max-width: 400px) {  
     .hero-text h1 {
-        font-size: 10px;
-    }
-
-    .maintitle {
-        font-size: 12px;
+        font-size: 16px;
     }
 }
 
@@ -172,8 +153,7 @@ h2 {
     margin-top: 60px;
     display: block;
       height: auto;
-      border-bottom-style:  solid;
-      border-bottom-color: black
+
   }
 }
 
@@ -269,27 +249,23 @@ h2 {
 
 @media (max-width: 950px) {
     #committee h1 {
-        font-size: 60px;
+        font-size: 48px;
     }
 }
 
 @media (max-width: 750px) {
     #committee h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 475px) {
     #committee h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
     
-    @media (max-width: 300px) {
-    #committee h1 {
-        font-size: 20px;
-    }
 }
-}
+
 
 
 #minutes {
