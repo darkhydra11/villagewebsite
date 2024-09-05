@@ -158,14 +158,14 @@ h3 {
 }
 
 .team-member-name {
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .team-member-role {
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 0px;
     margin-bottom: 30px;
 }
@@ -184,6 +184,24 @@ h3 {
   }
 }
 
+@media (max-width: 950px) {
+    #committee-about h2, #pricing h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 750px) {
+    #committee-about h2, #pricing h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 475px) {
+    #committee-about h2, #pricing h1 {
+        font-size: 32px;
+    }
+    
+}
 .pricing {
     display: flex;
     flex-direction: column; /* Add this to stack elements vertically */
@@ -216,6 +234,7 @@ h3 {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .option a:hover {
@@ -242,14 +261,14 @@ h3 {
 }
 
 .optionname {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .optionprice {
     text-align: center;
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 0px;
     margin-bottom: 30px;
 }

@@ -234,11 +234,12 @@ h2 {
 
 #councillors h1, #minutes h1, #agenda h1, #documents h1 {
     text-align: center;
-    text-shadow: 5px 5px 1px black;
     font-size: 75px;
     color: white;
     letter-spacing: 3px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 #councillors, #minutes, #agenda, #documents {
@@ -251,19 +252,19 @@ h2 {
 }
 
 @media (max-width: 950px) {
-    #committee h1 {
+    #councillors h1, #minutes h1, #agenda h1, #documents h1 {
         font-size: 48px;
     }
 }
 
 @media (max-width: 750px) {
-    #committee h1 {
+    #councillors h1, #minutes h1, #agenda h1, #documents h1 {
         font-size: 40px;
     }
 }
 
 @media (max-width: 475px) {
-    #committee h1 {
+    #councillors h1, #minutes h1, #agenda h1, #documents h1 {
         font-size: 32px;
     }
     
