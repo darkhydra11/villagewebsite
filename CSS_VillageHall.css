@@ -170,14 +170,14 @@ h3 {
     margin-bottom: 30px;
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1400px) {
   .team-member {
     flex-basis: 20%;
     max-width: 20%;
   }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1400px) {
   .team-member {
     flex-basis: 100%;
     max-width: 100%;

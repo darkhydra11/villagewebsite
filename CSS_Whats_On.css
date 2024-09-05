@@ -116,16 +116,28 @@ p {
   text-align: center;
 }
 
+
 .event {
   background-color: #262726;
   border-radius: 8px;
-  padding: 30px 10px;
-  width: 100%;
+  width: 33%;
   height: auto;
   margin-bottom: 20px;
   margin-top: 20px;
-  
+  display: inline-block;
+  text-align: center;
 }
+
+.event p {
+  margin-bottom: 10px;
+}
+
+.poster {
+  width: 100%;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+
 
 h2 {
   text-align: center;
@@ -141,6 +153,30 @@ p {
   color: white;
   margin: 0;
   font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .event {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .event {
+    width: 90%; /* make the events full-width on smaller screens */
+    margin: 20px auto; /* add some margin to create a gap between events */
+    display: block; /* change the display to block to stack them on top of each other */
+  }
+
+  .poster {
+    width: 100%;
+  }
 }
 
 .footer {
@@ -154,4 +190,5 @@ p {
 .footer p {
   color: white;
 }
+
 
