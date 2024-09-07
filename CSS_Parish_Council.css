@@ -89,8 +89,39 @@ h2 {
     color: white;
 }
 
-
-
+.nextmeeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #262726;
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px; /* add some padding to create space around the elements */
+  }
+  
+  .meetingicon {
+    width: 75px; /* adjust the width to your liking */
+    height: 75px; /* adjust the height to your liking */
+    margin-bottom: 10px; /* add some space between the icon and the text */   
+    padding: 5px; /* add some padding to create space around the icon */
+  }
+  
+  .meetingheader {
+    font-size: 18px; /* font size for the "NEXT MEETING" text */
+    font-weight: bold; /* make the "NEXT MEETING" text bold */
+    color: white;
+    margin-bottom: 10px; /* add some space between the header and the details */
+  }
+  
+  .meetingdetails {
+    font-size: 16px; /* font size for the date and location */
+    color: white;
+  }
+  
+  .date, .location {
+    margin-bottom: 10px; /* add some space between the date and location */
+  }
+  
 
 @media (max-width: 1000px) {
     .description {
@@ -205,6 +236,7 @@ h2 {
 }
 
 
+
 #minutes a:hover, #agenda a:hover, #documents a:hover {
     animation: minuteshover 0.3s;
     animation-fill-mode: forwards;
@@ -234,13 +266,21 @@ h2 {
 
 #councillors h1, #minutes h1, #agenda h1, #documents h1 {
     text-align: center;
-    font-size: 75px;
+    font-size: 60px;
+    font-weight: 100;
     color: white;
     letter-spacing: 3px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    text-decoration: underline;
+    margin: 0 auto;
 }
+
+.icon {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 #councillors, #minutes, #agenda, #documents {
     background-color: #262726;
