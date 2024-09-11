@@ -148,6 +148,9 @@ h2 {
 }
 
 
+
+
+
 .container {
     width: 95%;
     border-radius: 25px;;
@@ -184,6 +187,8 @@ h2 {
 .member p {
     font-size: 16px;
     margin: 5px 0;
+    color: white;
+    text-decoration: none;
 }
 .contact-button {
     display: inline-block;
@@ -264,6 +269,12 @@ h2 {
 
 
 
+
+
+
+
+
+
 .minutes-container {
     text-align: center;
     width: 95%;
@@ -305,6 +316,11 @@ h2 {
 
 
 
+
+
+
+
+
 .agenda-container {
     text-align: center;
     width: 95%;
@@ -342,6 +358,12 @@ h2 {
     background-color: #ffffff;
     color: #1c1c1c;
 }
+
+
+
+
+
+
 
 
 
