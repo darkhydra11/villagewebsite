@@ -96,7 +96,7 @@ h2 {
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 36px;
     text-align: center;
     color: white;
     margin-bottom: 20px;
@@ -185,22 +185,31 @@ h3 {
 
 @media (max-width: 950px) {
     #committee-about h2, #pricing h1 {
-        font-size: 48px;
+        font-size: 36px;
     }
 }
 
 @media (max-width: 750px) {
     #committee-about h2, #pricing h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media (max-width: 475px) {
     #committee-about h2, #pricing h1 {
-        font-size: 32px;
+        font-size: 24px;
     }
     
 }
+
+
+
+
+
+
+
+
+
 .pricing {
     display: flex;
     flex-direction: column; /* Add this to stack elements vertically */
@@ -281,6 +290,7 @@ h3 {
 .pricing h2 {
     margin-bottom: 20px; /* Add some margin to separate from options */
 }
+
 
 
 

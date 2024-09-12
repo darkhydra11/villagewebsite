@@ -97,7 +97,7 @@ h2 {
     width: 100%;
     margin: 30px auto;
     text-align: center;
-    padding: 20px; /* add some padding to create space around the elements */
+    padding: 20px 5px; /* add some padding to create space around the elements */
   }
   
   .meetingicon {
