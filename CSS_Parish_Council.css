@@ -215,6 +215,7 @@ h2 {
 @media only screen and (max-width: 1200px) {
     .container {
       width: 90%; /* Reduce container width for smaller screens */
+      border-radius: 0px;
     }
     .header i {
       font-size: 40px; /* Reduce icon size for smaller screens */
