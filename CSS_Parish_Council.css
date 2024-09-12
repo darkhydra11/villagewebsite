@@ -96,6 +96,7 @@ h2 {
     background-color: #262726;
     width: 100%;
     margin: 30px auto;
+    text-align: center;
     padding: 20px; /* add some padding to create space around the elements */
   }
   
@@ -104,21 +105,26 @@ h2 {
     height: 75px; /* adjust the height to your liking */
     margin-bottom: 10px; /* add some space between the icon and the text */   
     padding: 5px; /* add some padding to create space around the icon */
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .meetingheader {
     font-size: 18px; /* font size for the "NEXT MEETING" text */
     font-weight: bold; /* make the "NEXT MEETING" text bold */
     color: white;
+    text-align: center;
     margin-bottom: 10px; /* add some space between the header and the details */
   }
   
   .meetingdetails {
     font-size: 16px; /* font size for the date and location */
     color: white;
+    text-align: center;
   }
   
   .date, .location {
+    text-align: center;
     margin-bottom: 10px; /* add some space between the date and location */
   }
   
@@ -153,7 +159,7 @@ h2 {
 
 .container {
     width: 95%;
-    border-radius: 25px;;
+    border-radius: 25px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
