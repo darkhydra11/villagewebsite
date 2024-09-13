@@ -89,95 +89,135 @@ body, html {
 }
 
 
-css
-body {
-  font-family: Arial, sans-serif;
-  background-color: #262726;
-  color: #FFFFFF;
+
+
+.events {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-h1 {
+.title {
+  width: 100%;
   text-align: center;
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: white;
+  margin-bottom: 20px;
 }
-
-p {
-  font-size: 24px;
-  font-weight: 300;
-  text-align: center;
-}
-
 
 .event {
   background-color: #262726;
-  border-radius: 8px;
-  width: 33%;
-  height: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  border-radius: 25px;
+  width: 45%; /* adjust the width to make them three a side */
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.event img.poster {
+  width: 95%;
+  margin: 10px auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.event .details {
+  padding: 20px;
+  flex: 1; /* make the details take up the remaining space */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.events h1 {
+  color: white;
+}
+
+.events p {
+  color: white;
+}
+
+.event .details h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.event .details p {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact-button {
   display: inline-block;
-  text-align: center;
-}
-
-.event p {
-  margin-bottom: 10px;
-}
-
-.poster {
-  width: 90%;
-  border-radius: 5px;
-  padding: 5px 5px;
-}
-
-
-h2 {
-  text-align: center;
-  color: white;
-  margin: 0;
-  padding: 10px 0;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-p {
-  text-align: center;
-  color: white;
-  margin: 0;
+  margin: 10px 0;
+  padding: 10px 50px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
   font-size: 16px;
-  margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .events {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .event {
-    width: 48%;
-  }
+.contact-button:hover {
+  background-color: #fff;
+  color: #333;
 }
 
-@media only screen and (max-width: 768px) {
+
+/* media query to make them stack on top of each other on small screens */
+@media only screen and (max-width: 767px) {
   .event {
-    width: 90%; /* make the events full-width on smaller screens */
+    width: 80%; /* make the events full-width on small screens */
     margin: 20px auto; /* add some margin to create a gap between events */
     display: block; /* change the display to block to stack them on top of each other */
   }
+  .event .details {
+    height: auto; /* reset the height to auto on small screens */
+  }
 
-  .poster {
+  .event img.poster {
     width: 100%;
+   margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .events h1 {
+    font-size: 42px;
+  }
+  .events p {
+    font-size: 20px;
+  }
+}
+
+/* media query for small screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .events h1 {
+    font-size: 36px;
+  }
+  .events p {
+    font-size: 18px;
+  }
+}
+
+/* media query for extra small screens */
+@media only screen and (max-width: 767px) {
+  .events h1 {
+    font-size: 28px;
+  }
+  .events p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .footer {
   text-align: center;
