@@ -112,6 +112,7 @@ h2 {
     height: 300px;
     margin: auto;
     object-fit: cover;
+    border-radius: 25px;
   }
   
   .church h1,
@@ -150,6 +151,7 @@ h2 {
     }
     .church img {
       max-height: 600px;
+      border-radius: 0px;
     }
     .church h1, .church h2, .church h3 {
       font-size: 18px;
