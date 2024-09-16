@@ -301,7 +301,8 @@ h2 {
     padding: 0;
 }
 .minutes-list li {
-    margin: 10px 0;
+  margin: 10px auto;
+  width: 70%;
 }
 .minutes-list a {
     display: block;
@@ -346,7 +347,8 @@ h2 {
     padding: 0;
 }
 .agenda-list li {
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 70%;
 }
 .agenda-list a {
     display: block;
