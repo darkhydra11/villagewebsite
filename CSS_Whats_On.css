@@ -132,10 +132,11 @@ body, html {
 
 .events p {
   color: white;
+  margin-top: 0px;
 }
 
 .event .details h2 {
-  margin-top: 0;
+  margin-top: 0px;
   color: white;
 }
 
@@ -164,7 +165,7 @@ body, html {
 /* media query to make them stack on top of each other on small screens */
 @media only screen and (max-width: 767px) {
   .event {
-    width: 80%; /* make the events full-width on small screens */
+    width: 60%; /* make the events full-width on small screens */
     margin: 20px auto; /* add some margin to create a gap between events */
     display: block; /* change the display to block to stack them on top of each other */
   }
