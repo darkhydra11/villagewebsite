@@ -82,18 +82,26 @@ body, html {
     .opening {
         width: 75%;
     }   
+
+    .hero-image {
+      height: 400px;
+    }
+
+    .hero-text h1 {
+      font-size: 30px;
+    }
     
 }
 
-@media (max-width: 650px) {  
+@media (max-width: 900px) {  
     .hero-text h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
 @media (max-width: 500px) {  
     .hero-text h1 {
-        font-size: 30px;
+        font-size: 24px;
     }
 }
 
@@ -164,9 +172,7 @@ text-align: center;
   margin: auto;
 }
 
-.button a:hover {
-  transform: translateY(10px);
-}
+
 
 
   .footer p {
