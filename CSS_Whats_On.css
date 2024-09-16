@@ -106,17 +106,19 @@ body, html {
 .event {
   background-color: #262726;
   border-radius: 25px;
-  width: 45%; /* adjust the width to make them three a side */
+  width: 25%; /* adjust the width to make them three a side */
   margin: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .event img.poster {
-  width: 95%;
-  margin: 10px auto;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  display: block;
+  width: 50%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .event .details {
@@ -128,11 +130,13 @@ body, html {
 
 .events h1 {
   color: white;
+  margin-top: 0px;
 }
 
 .events p {
   color: white;
   margin-top: 0px;
+  line-break: auto;
 }
 
 .event .details h2 {
@@ -174,10 +178,10 @@ body, html {
   }
 
   .event img.poster {
-    width: 100%;
+    width: 50%;
    margin: 0 auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
 
