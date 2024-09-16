@@ -83,7 +83,9 @@ body, html {
         width: 75%;
     }   
 
-    
+    .hero-image {
+      height: 600px;
+    }
 
     .hero-text h1 {
       font-size: 30px;
