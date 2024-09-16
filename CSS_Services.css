@@ -144,6 +144,119 @@ body, html {
 }
 
 
+
+
+
+
+
+
+.gap {
+  height: 100px;
+}
+
+.underline {
+  border-bottom: 0.1px dashed white;
+  width: 20%;
+  display: block;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: thin;
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+}
+
+.usefulicons {
+  display: block;
+  margin: 0 auto;
+}
+
+.wastecollection {
+  width: 100%;
+  background-color: #262726;
+  margin: 30px auto;
+  box-sizing: border-box;
+}
+
+.waste {
+  text-align: center;
+}
+
+.underline {
+  border-bottom: 0.1px dashed white;
+  width: 20%;
+  display: block;
+  margin: 20px auto;
+  font-size: 15px;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: thin;
+  text-align: center;
+  margin-top: 0px;
+  color: white;
+}
+
+.date {
+  display: inline-block;
+  width: 20%;
+  color: white;
+  text-align: center;
+}
+
+.binicons {
+  height: 50px;
+  margin: 10px;
+}
+
+.dateofcollection {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.collection {
+  font-size: 18px;
+}
+
+/* Media queries to adjust the layout based on screen size */
+@media (max-width: 1550px) {
+  .date {
+    width: 45%;
+    margin-bottom: 100px;
+  }
+
+  .binicons {
+    height: 40px;
+  }
+}
+
+@media (max-width: 950px) {
+  .date {
+    width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .collection {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
 .footer {
     text-align: center;
     font-size: 20px;
