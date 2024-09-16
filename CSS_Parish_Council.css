@@ -157,9 +157,8 @@ h2 {
 
 
 
-.container {
-    width: 95%;
-    border-radius: 25px;
+.councillors {
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -214,8 +213,7 @@ h2 {
 /* For screens with a maximum width of 768px (tablets and smaller) */
 @media only screen and (max-width: 1200px) {
     .container {
-      width: 90%; /* Reduce container width for smaller screens */
-      border-radius: 0px;
+      width: 100%; /* Reduce container width for smaller screens */
     }
     .header i {
       font-size: 40px; /* Reduce icon size for smaller screens */
@@ -284,11 +282,10 @@ h2 {
 
 .minutes-container {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: 30px auto;
     background-color: #262726;
     padding: 20px;
-    border-radius: 15px;
 }
 .minutes-container h1 {
     font-size: 36px;
@@ -330,11 +327,10 @@ h2 {
 
 .agenda-container {
     text-align: center;
-    width: 95%;
+    width: 100%;
     margin: 30px auto;
     background-color: #262726;
     padding: 20px;
-    border-radius: 15px;
 }
 .agenda-container h1 {
     font-size: 36px;
