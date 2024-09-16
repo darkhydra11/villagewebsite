@@ -183,6 +183,21 @@ body, html {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
+
+  .events p {
+    color: white;
+    margin-top: 0px;
+    line-break: auto;
+  }
+  
+  .event .details h2 {
+    margin-top: 0px;
+    color: white;
+  }
+  
+  .event .details p {
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
