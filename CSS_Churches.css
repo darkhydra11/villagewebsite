@@ -237,131 +237,88 @@ h2 {
     font-size: 20px;
   }
   
-  /* Make services display side by side on large screens */
-  @media (min-width: 1100px) {
-    .service {
-      display: inline-block;
-      width: 30%; /* adjust the width of each service */
-      margin: 20px 5px;
-      vertical-align: top;
-    }
-    .datetitle {
-      font-size: 36px;
-    }
-    .location {
-      font-size: 24px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 20px;
-    }
+/* Large screens (min-width: 1700px) */
+@media (min-width: 1700px) {
+  .service {
+    display: inline-block;
+    width: 45%; /* adjust the width to fit 2 services per row */
+    margin: 20px 5px;
+    vertical-align: top;
   }
-  
-  /* Make services display on top of each other on medium screens */
-  @media (max-width: 1100px) and (min-width: 768px) {
-    .service {
-      display: block;
-      width: 50%;
-      margin-bottom: 20px;
-    }
-    .datetitle {
-      font-size: 28px;
-    }
-    .location {
-      font-size: 20px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 16px;
-    }
+}
+
+/* Medium screens (min-width: 1100px and max-width: 1699px) */
+@media (min-width: 1100px) and (max-width: 1699px) {
+  .service {
+    display: inline-block;
+    width: 30%; /* adjust the width of each service */
+    margin: 20px 5px;
+    vertical-align: top;
   }
-  
-  /* Make services display on top of each other on small screens */
-  @media (max-width: 767px) and (min-width: 480px) {
-    .service {
-      display: block;
-      width: 70%;
-      margin-bottom: 20px;
-    }
-    .datetitle {
-      font-size: 24px;
-    }
-    .location {
-      font-size: 18px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 14px;
-    }
+  .datetitle {
+    font-size: 36px;
   }
-  
-  /* Make services display on top of each other on very small screens */
-  @media (max-width: 479px) {
-    .service {
-      display: block;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    .datetitle {
-      font-size: 20px;
-    }
-    .location {
-      font-size: 16px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 12px;
-    }
+  .location {
+    font-size: 24px;
   }
-  
-  /* Mobile responsiveness */
-  
-  @media only screen and (max-width: 1700px) {
-    .service {
-      width: 100%;
-      line-height: 20px;
-      height: auto;
-      margin: 80px auto;
-    }
-    .datetitle {
-      font-size: 32px;
-    }
-    .location {
-      font-size: 22px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 18px;
-    }
+  .time, .typeofservice, .contact {
+    font-size: 20px;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .datetitle {
-      font-size: 20px;
-    }
-    .location {
-      font-size: 16px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 14px;
-    }
+}
+
+/* Small screens (max-width: 1100px) */
+@media (max-width: 1100px) {
+  .service {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  
-  @media only screen and (max-width: 480px) {
-    .location {
-      font-size: 20px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 16px;
-    }
+  .datetitle {
+    font-size: 32px;
   }
-  
-  @media only screen and (max-width: 320px) {
-    .datetitle {
-      font-size: 20px;
-    }
-    .location {
-      font-size: 16px;
-    }
-    .time, .typeofservice, .contact {
-      font-size: 12px;
-    }
+  .location {
+    font-size: 22px;
   }
+  .time, .typeofservice, .contact {
+    font-size: 18px;
+  }
+}
+
+/* Tablet screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .datetitle {
+    font-size: 20px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .time, .typeofservice, .contact {
+    font-size: 14px;
+  }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .location {
+    font-size: 20px;
+  }
+  .time, .typeofservice, .contact {
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens (max-width: 320px) */
+@media (max-width: 320px) {
+  .datetitle {
+    font-size: 20px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .time, .typeofservice, .contact {
+    font-size: 12px;
+  }
+}
   
   
   

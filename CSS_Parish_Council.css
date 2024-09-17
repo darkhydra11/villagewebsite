@@ -259,9 +259,13 @@ h2 {
     }
     .member h2 {
       font-size: 18px; /* Reduce member header font size for mobile phones */
+      margin: 0 auto;
     }
     .member p {
-      font-size: 12px; /* Reduce member paragraph font size for mobile phones */
+      font-size: 10px; /* Reduce member paragraph font size for mobile phones */
+      margin: 0 auto;
+      overflow-wrap: normal;
+      word-wrap: break-word;
     }
     .contact-button {
       padding: 6px 12px; /* Reduce button padding for mobile phones */
