@@ -168,7 +168,7 @@ body, html {
 /* media query to make them stack on top of each other on small screens */
 @media only screen and (max-width: 767px) {
   .event {
-    width: 60%; /* make the events full-width on small screens */
+    width: 100%; /* make the events full-width on small screens */
     margin: 20px auto; /* add some margin to create a gap between events */
     display: block; /* change the display to block to stack them on top of each other */
   }
@@ -177,10 +177,10 @@ body, html {
   }
 
   .event img.poster {
-    width: 50%;
+    width: 100%;
     margin: 30px auto 30px auto; /* set top and bottom margins to 30px, and horizontal margins to auto */
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
 
   .events h1 {
