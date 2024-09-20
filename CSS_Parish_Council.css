@@ -262,10 +262,11 @@ h2 {
       margin: 0 auto;
     }
     .member p {
-      font-size: 10px; /* Reduce member paragraph font size for mobile phones */
+      font-size: 10px;
       margin: 0 auto;
-      overflow-wrap: normal;
+      overflow-wrap: break-word; /* Change this from 'normal' to 'break-word' */
       word-wrap: break-word;
+      text-align: center; /* Add this to center the text */
     }
     .contact-button {
       padding: 6px 12px; /* Reduce button padding for mobile phones */
