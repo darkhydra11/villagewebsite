@@ -158,121 +158,137 @@ h2 {
 
 
 .councillors {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    background-color: #262726;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #262726;
+  box-sizing: border-box; /* add this to include padding in width calculation */
 }
+
 .header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
+
 .header i {
-    font-size: 50px;
+  font-size: 50px;
+  margin: 0 auto; /* add this to center the icon */
 }
+
 .header h1 {
-    font-size: 36px;
-    margin: 10px 0;
-    color: white;
+  font-size: 36px;
+  margin: 10px auto;
+  color: white;
 }
+
 .members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 .member {
-    width: 33%;
-    margin-bottom: 100px;
-    color: white;
+  width: 33%;
+  margin-bottom: 100px;
+  color: white;
+  text-align: center; /* add this to center the text */
 }
+
 .member h2 {
-    font-size: 24px;
-    margin: 10px 0;
+  font-size: 24px;
+  margin: 10px auto;
 }
+
 .member p {
-    font-size: 16px;
-    margin: 5px 0;
-    color: white;
-    text-decoration: none;
+  font-size: 16px;
+  margin: 5px auto;
+  color: white;
+  text-decoration: none;
+  text-align: center; /* add this to center the text */
 }
+
 .contact-button {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
+
 .contact-button:hover {
-    background-color: #fff;
-    color: #333;
+  background-color: #fff;
+  color: #333;
 }
+
+/* Media queries for mobile devices */
 
 /* For screens with a maximum width of 768px (tablets and smaller) */
 @media only screen and (max-width: 1200px) {
-    .container {
-      width: 100%; /* Reduce container width for smaller screens */
-    }
-    .header i {
-      font-size: 40px; /* Reduce icon size for smaller screens */
-    }
-    .header h1 {
-      font-size: 28px; /* Reduce header font size for smaller screens */
-    }
-    .members {
-      flex-direction: column; /* Stack members vertically on smaller screens */
-    }
-    .member {
-      width: 100%; /* Increase member width for smaller screens */
-    }
-
-    .member h2 {
-      font-size: 20px; /* Reduce member header font size for smaller screens */
-    }
-    .member p {
-      font-size: 14px; /* Reduce member paragraph font size for smaller screens */
-    }
-    .contact-button {
-      padding: 8px 16px; /* Reduce button padding for smaller screens */
-      font-size: 14px; /* Reduce button font size for smaller screens */
-    }
+  .councillors {
+      padding: 15px; /* reduce padding for smaller screens */
   }
-  
-  /* For screens with a maximum width of 480px (mobile phones) */
-  @media only screen and (max-width: 480px) {
-    .container {
-      width: 90%; /* Reduce container width for mobile phones */
-    }
-    .header i {
-      font-size: 30px; /* Reduce icon size for mobile phones */
-    }
-    .header h1 {
-      font-size: 22px; /* Reduce header font size for mobile phones */
-    }
-    .members {
-      flex-direction: column; /* Stack members vertically on mobile phones */
-    }
-    .member {
-      width: 100%; /* Increase member width for mobile phones */
-    }
-    .member h2 {
-      font-size: 18px; /* Reduce member header font size for mobile phones */
+  .header i {
+      font-size: 40px; /* reduce icon size for smaller screens */
+  }
+  .header h1 {
+      font-size: 28px; /* reduce header font size for smaller screens */
+  }
+  .members {
+      flex-direction: column; /* stack members vertically on smaller screens */
+  }
+  .member {
+      width: 100%; /* increase member width for smaller screens */
+      margin-bottom: 50px; /* reduce margin bottom for smaller screens */
+  }
+  .member h2 {
+      font-size: 20px; /* reduce member header font size for smaller screens */
+  }
+  .member p {
+      font-size: 14px; /* reduce member paragraph font size for smaller screens */
+  }
+  .contact-button {
+      padding: 8px 16px; /* reduce button padding for smaller screens */
+      font-size: 14px; /* reduce button font size for smaller screens */
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+  .councillors {
+      padding: 10px; /* reduce padding for mobile phones */
+  }
+  .header i {
+      font-size: 50px; /* reduce icon size for mobile phones */
+  }
+  .header h1 {
+      font-size: 22px; /* reduce header font size for mobile phones */
+  }
+  .members {
+      flex-direction: column; /* stack members vertically on mobile phones */
+  }
+  .member {
+      width: 100%; /* increase member width for mobile phones */
+      margin-bottom: 30px; /* reduce margin bottom for mobile phones */
+  }
+  .member h2 {
+      font-size: 18px; /* reduce member header font size for mobile phones */
       margin: 0 auto;
-    }
-    .member p {
-      font-size: 10px;
+  }
+  .member p {
+      font-size: 12px; /* reduce member paragraph font size for mobile phones */
       margin: 0 auto;
-      overflow-wrap: break-word; /* Change this from 'normal' to 'break-word' */
+      overflow-wrap: break-word; /* change this from 'normal' to 'break-word' */
       word-wrap: break-word;
-      text-align: center; /* Add this to center the text */
-    }
-    .contact-button {
-      padding: 6px 12px; /* Reduce button padding for mobile phones */
-      font-size: 12px; /* Reduce button font size for mobile phones */
-    }
+      text-align: center; /* add this to center the text */
   }
+  .contact-button {
+      padding: 6px 12px; /* reduce button padding for mobile phones */
+      font-size: 12px; /* reduce button font size for mobile phones */
+  }
+}
 
 
 
@@ -285,30 +301,39 @@ h2 {
 
 
 
-.minutes-container {
+  .minutes-container {
     text-align: center;
     width: 100%;
     margin: 30px auto;
     background-color: #262726;
     padding: 20px;
+    box-sizing: border-box; /* add this to include padding in width calculation */
 }
+
 .minutes-container h1 {
     font-size: 36px;
     color: white;
-    margin: 20px 0;
+    margin: 20px auto;
 }
+
 .minutes-container i {
     font-size: 3em;
     margin-bottom: 10px;
 }
+
 .minutes-list {
     list-style: none;
     padding: 0;
+    margin: 0; /* reset margin */
+    text-align: center; /* center the list */
 }
+
 .minutes-list li {
   margin: 10px auto;
   width: 70%;
+  list-style: none;
 }
+
 .minutes-list a {
     display: block;
     padding: 10px 20px;
@@ -318,9 +343,50 @@ h2 {
     color: #ffffff;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .minutes-list a:hover {
     background-color: #ffffff;
     color: #1c1c1c;
+}
+
+/* Media queries for mobile devices */
+
+/* For screens with a maximum width of 768px (e.g., iPads) */
+@media only screen and (max-width: 768px) {
+  .minutes-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+  .minutes-container h1 {
+    font-size: 28px;
+  }
+  .minutes-list li {
+    margin: 5px auto;
+    width: 80%; /* adjust width to reduce offset */
+  }
+  .minutes-list a {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* For screens with a maximum width of 480px (e.g., smartphones) */
+@media only screen and (max-width: 480px) {
+  .minutes-container {
+    margin: 15px auto;
+    padding: 10px;
+  }
+  .minutes-container h1 {
+    font-size: 22px;
+  }
+  .minutes-list li {
+    margin: 3px auto;
+    width: 90%; /* adjust width to reduce offset */
+  }
+  .minutes-list a {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
 }
 
 
@@ -332,41 +398,91 @@ h2 {
 
 
 .agenda-container {
-    text-align: center;
-    width: 100%;
-    margin: 30px auto;
-    background-color: #262726;
-    padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 30px auto;
+  background-color: #262726;
+  padding: 20px;
+  box-sizing: border-box; /* add this to include padding in width calculation */
+}
+
+.agenda-container h1 {
+  font-size: 36px;
+  color: white;
+  margin: 20px auto;
+}
+
+.agenda-container i {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.agenda-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* reset margin */
+  text-align: center; /* center the list */
+}
+
+.agenda-list li {
+margin: 10px auto;
+width: 70%;
+list-style: none;
+}
+
+.agenda-list a {
+  display: block;
+  padding: 10px 20px;
+  border: 0.5px solid grey;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.agenda-list a:hover {
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+/* Media queries for mobile devices */
+
+/* For screens with a maximum width of 768px (e.g., iPads) */
+@media only screen and (max-width: 768px) {
+.agenda-container {
+  margin: 20px auto;
+  padding: 15px;
 }
 .agenda-container h1 {
-    font-size: 36px;
-    color: white;
-    margin: 20px 0;
-}
-.agenda-container i {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-.agenda-list {
-    list-style: none;
-    padding: 0;
+  font-size: 28px;
 }
 .agenda-list li {
-    margin: 10px auto;
-    width: 70%;
+  margin: 5px auto;
+  width: 80%; /* adjust width to reduce offset */
 }
 .agenda-list a {
-    display: block;
-    padding: 10px 20px;
-    border: 0.5px solid grey;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
+  padding: 8px 15px;
+  font-size: 14px;
 }
-.agenda-list a:hover {
-    background-color: #ffffff;
-    color: #1c1c1c;
+}
+
+/* For screens with a maximum width of 480px (e.g., smartphones) */
+@media only screen and (max-width: 480px) {
+.agenda-container {
+  margin: 15px auto;
+  padding: 10px;
+}
+.agenda-container h1 {
+  font-size: 22px;
+}
+.agenda-list li {
+  margin: 3px auto;
+  width: 90%; /* adjust width to reduce offset */
+}
+.agenda-list a {
+  padding: 6px 10px;
+  font-size: 12px;
+}
 }
 
 
@@ -380,41 +496,93 @@ h2 {
 
 
 .documents-container {
-    text-align: center;
-    width: 95%;
-    margin: 30px auto;
-    background-color: #262726;
-    padding: 20px;
-    border-radius: 15px;
+  text-align: center;
+  width: 95%;
+  margin: 30px auto;
+  background-color: #262726;
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box; /* add this to include padding in width calculation */
 }
+
 .documents-container h1 {
-    font-size: 36px;
-    color: white;
-    margin: 20px 0;
+  font-size: 36px;
+  color: white;
+  margin: 20px auto;
 }
+
 .documents-container i {
-    font-size: 3em;
-    margin-bottom: 10px;
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin: 0 auto; /* add this to center the icon */
 }
+
 .documents-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0; /* reset margin */
+  text-align: center; /* center the list */
 }
+
 .documents-list li {
-    margin: 10px 0;
+  margin: 10px auto;
+  width: 70%; /* adjust width to reduce offset */
+  list-style: none;
 }
+
 .documents-list a {
-    display: block;
-    padding: 10px 20px;
-    border: 0.5px solid grey;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
+  display: block;
+  padding: 10px 20px;
+  border: 0.5px solid grey;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .documents-list a:hover {
-    background-color: #ffffff;
-    color: #1c1c1c;
+  background-color: #ffffff;
+  color: #1c1c1c;
+}
+
+/* Media queries for mobile devices */
+
+/* For screens with a maximum width of 768px (tablets and smaller) */
+@media only screen and (max-width: 768px) {
+  .documents-container {
+      margin: 20px auto;
+      padding: 15px;
+  }
+  .documents-container h1 {
+      font-size: 28px;
+  }
+  .documents-list li {
+      margin: 5px auto;
+      width: 80%; /* adjust width to reduce offset */
+  }
+  .documents-list a {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+}
+
+/* For screens with a maximum width of 480px (mobile phones) */
+@media only screen and (max-width: 480px) {
+  .documents-container {
+      margin: 15px auto;
+      padding: 10px;
+  }
+  .documents-container h1 {
+      font-size: 22px;
+  }
+  .documents-list li {
+      margin: 3px auto;
+      width: 90%; /* adjust width to reduce offset */
+  }
+  .documents-list a {
+      padding: 6px 10px;
+      font-size: 12px;
+  }
 }
 
 
