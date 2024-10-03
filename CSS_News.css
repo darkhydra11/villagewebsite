@@ -97,6 +97,7 @@ body, html {
 .breakingnewscontainer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .breakingnews {
@@ -104,32 +105,18 @@ body, html {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  width: 45%;
+  margin: 20px;
+  width: calc(50% - 40px);
 }
-
-/* Make the breakingnews divs go side by side */
-.breakingnewscontainer {
-  flex-direction: row;
-}
-
-/* Make the breakingnews divs go on top of one another */
-/*.breakingnewscontainer {
-  flex-direction: column;
-}*/
 
 .breakingnews h2 {
   margin-top: 0;
-  font-size: 24px;
-  color: white;
-  text-align: center;
+  font-size: 18px;
 }
 
 .breakingnews p {
   margin-bottom: 20px;
   font-size: 16px;
-  color: white;
-  text-align: center;
 }
 
 /* Mobile responsive design */
@@ -137,7 +124,7 @@ body, html {
   .breakingnews {
     padding: 15px;
     margin: 15px;
-    width: 90%;
+    width: calc(100% - 30px);
   }
   .breakingnews h2 {
     font-size: 16px;
@@ -151,7 +138,7 @@ body, html {
   .breakingnews {
     padding: 10px;
     margin: 10px;
-    width: 100%;
+    width: 100%; /* changed to 100% to prevent overflow */
   }
   .breakingnews h2 {
     font-size: 14px;
