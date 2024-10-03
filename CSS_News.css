@@ -95,8 +95,8 @@ body, html {
 }
 
 .breakingnews {
-  max-width: 100%; /* add this line */
-  width: 45%;
+  flex: 0 0 45%; /* instead of width: 45% */
+  max-width: 100%; /* to prevent overflow on mobile */
   background-color: #262726;
   margin-bottom: 15px;
   padding: 25px 50px;
@@ -107,28 +107,23 @@ body, html {
   margin: 40px auto;
 }
 
-.breakingnews p, h2  {
+.breakingnews p, h2, a {
   text-align: center;
   color: white;
 }
 
 .breakingnews a {
-  text-align: center;
-  color: white;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1024px){
-  .breakingnews {
-    width: 100%;
-  }
-
+@media only screen and (max-width: 1024px) {
   .breakingnewscontainer {
     flex-direction: column;
-    display: block;
+  }
+  .breakingnews {
+    flex: 0 0 100%; /* change to 100% width on mobile */
+  }
 }
-}
-
 
 
 
