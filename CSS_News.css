@@ -111,11 +111,16 @@ body, html {
 
 .breakingnews h2 {
   margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
   font-size: 18px;
+  color: white;
 }
 
 .breakingnews p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
   font-size: 16px;
 }
 
@@ -137,11 +142,11 @@ body, html {
 @media only screen and (max-width: 480px) {
   .breakingnews {
     padding: 10px 0px;
-    margin: 10px;
     width: 100%; /* changed to 100% to prevent overflow */
   }
   .breakingnews h2 {
     font-size: 14px;
+    margin: 20px auto;
   }
   .breakingnews p {
     font-size: 12px;
