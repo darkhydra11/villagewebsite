@@ -39,10 +39,43 @@
              
         
         <div class = "breakingnewsmarquee">
-            <a href = "News.html"><marquee><b>All Saints Church, Wroxton will be closed from Monday 7th October, 2024 until further notice while organ restoration is carried out.</b></marquee></a>
+            <a href = "News.html"><marquee scrollamount = "15"><b>All Saints Church, Wroxton will be closed from Monday 7th October, 2024 until further notice while organ restoration is carried out.</b></marquee></a>
         </div>
         
         <br>
+
+        <div class="carousel-container">
+            <!-- The carousel track -->
+            <div class="carousel-track">
+              <!-- The carousel items -->
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights1.jpg" alt="Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights2.jpg" alt="Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights3.jpg" alt="Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights4.jpg" alt="Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights5.jpg" alt="Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="IMG_NorthernLights6.jpg" alt="Image 3">
+              </div>
+              <!-- Add more carousel items here -->
+            </div>
+
+            <div class = "northernlights">
+                <h2>Northern Lights in Wroxton</h2>
+                <p>The Northern Lights have been lighting up Wroxton's skies for the past few days.</p>
+                <br>
+                <p>Photos from Jim Wade</p>
+            </div>
+          </div>
         
             <div class = "breakingnewscontainer">
                 <div class = "breakingnews">
@@ -62,5 +95,52 @@
             <p>EDITOR: Ben Mitchell (EST 2024)</p>
             <p><a style = "text-decoration: none; font-family: 'News Cycle'; color: white; text-align: center;" href="mailto:editorwroxton@gmail.com">editorwroxton@gmail.com</a></p>
         </div>
+
+
+
+
+<script>
+// The carousel container
+const carouselContainer = document.querySelector('.carousel-container');
+
+// The carousel track
+const carouselTrack = document.querySelector('.carousel-track');
+
+// The carousel items
+const carouselItems = document.querySelectorAll('.carousel-item');
+
+// Clone the carousel items to create a loop
+const clonedItems = [];
+carouselItems.forEach((item) => {
+  const clone = item.cloneNode(true);
+  carouselTrack.appendChild(clone);
+  clonedItems.push(clone);
+});
+
+// The current item index
+let currentItemIndex = 0;
+
+// The automatic scrolling function
+function autoScroll() {
+  // Calculate the scroll position
+  const scrollPosition = currentItemIndex * carouselItems[0].offsetWidth;
+
+  // Scroll the carousel track
+  carouselTrack.style.transform = `translateX(-${scrollPosition}px)`;
+
+  // Increment the current item index
+  currentItemIndex++;
+
+  // Reset the current item index if it reaches the end
+  if (currentItemIndex >= carouselItems.length * 2) {
+    currentItemIndex = 0;
+  }
+}
+
+// Set the automatic scrolling interval
+setInterval(autoScroll, 2000); // Adjust the interval to fit your needs
+</script>
+    
+    
     </body>
 </html>

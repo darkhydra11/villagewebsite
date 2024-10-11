@@ -93,6 +93,95 @@ body, html {
 
 
 
+/* The carousel container */
+.carousel-container {
+  background-color: #262726;
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: auto; /* Adjust the height to fit your needs */
+}
+
+/* The carousel track */
+.carousel-track {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* The carousel items */
+.carousel-item {
+  flex: 0 0 25%; /* Adjust the width to fit your needs */
+  margin: 20px 5px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.northernlights {
+  background-color: #262726;
+  padding: 20px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  width: calc(100% - 40px);
+}
+
+.northernlights h2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+.northernlights p {
+  margin: 10px 5px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) {
+  .carousel-item {
+    flex-basis: 20%;
+  }
+}
+
+/* Media query for medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .carousel-item {
+    flex-basis: 25%;
+  }
+}
+
+/* Media query for small screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-item {
+    flex-basis: 33.33%;
+  }
+}
+
+/* Media query for extra small screens */
+@media (max-width: 767px) {
+  .carousel-item {
+    flex-basis: 50%;
+  }
+}
+
+
+
+
+
+
+
 
 .breakingnewscontainer {
   display: flex;
