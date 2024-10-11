@@ -1,15 +1,19 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: 'Arial';
-      background-color: #323232;
-      overflow-x: hidden;
-      font-weight: lighter;
-      -webkit-transition: opacity 2s ease-in;
-      -moz-transition: opacity 2s ease-in;
-      -o-transition: opacity 2s ease-in;
-      -ms-transition: opacity 2s ease-in;
-      transition: opacity 2s ease-in;
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial';
+    background-color: #323232;
+    overflow-x: hidden;
+    font-weight: lighter;
+    -webkit-transition: fadeIn 2s;
+    -moz-transition: fadeIn 2s;
+    -o-transition: fadeIn 2s;
+    -ms-transition: fadeIn 2s;
+    transition: fadeIn 2s;
+    scroll-behavior: smooth;
+    -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
   }
   
   .hero-image {
