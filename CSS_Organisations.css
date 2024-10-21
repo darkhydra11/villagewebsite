@@ -185,8 +185,12 @@ body, html {
       margin-bottom: 100px;
     }
 
-    .club1 img, .club2 img {
+    .committee img {
       height: 500px;
+    }
+
+    .tennisimg {
+      height: 100%;
     }
 
     .club1 p, .club2 p {
