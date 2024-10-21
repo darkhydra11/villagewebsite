@@ -102,6 +102,7 @@ body, html {
     background-color: #262726;
     border-radius: 25px;
     width: 45%;
+    margin-bottom: 100px;
   }
 
   .club2 {
@@ -131,10 +132,17 @@ body, html {
     text-decoration: underline;
   }
   
-  .club1 img {
+  .committee img {
     width: 100%;
-    height: 500px;
+    height: 470px;
     object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .tennisimg {
+    width: 100%;
+    height: 100%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
@@ -174,6 +182,7 @@ body, html {
     .club1, .club2 {
       width: 90%;
       margin-top: 30px;
+      margin-bottom: 100px;
     }
 
     .club1 img, .club2 img {
@@ -185,7 +194,6 @@ body, html {
     }
   }
   
-
   
 
   
