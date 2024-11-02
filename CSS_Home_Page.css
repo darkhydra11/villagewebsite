@@ -287,7 +287,47 @@ text-align: center;
 }
 
 
+/* Mobile Media Queries */
+@media (max-width: 600px) {
+  .urgentaccouncemenet {
+    padding: 15px; /* Reduce padding on mobile */
+    max-height: 200px; /* Set a lower max height for the collapsed state */
+  }
 
+  .urgentaccouncemenet.expanded {
+    max-height: 600px; /* Set a lower max height for the expanded state on mobile */
+  }
+
+  .urgentaccouncemenet .title {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .urgentaccouncemenet .text {
+    font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .urgentaccouncemenet img.usefulicons {
+    height: 80px; /* Adjust image size for mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  .urgentaccouncemenet {
+    padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  .urgentaccouncemenet .title {
+    font-size: 18px; /* Even smaller font size for very small screens */
+  }
+
+  .urgentaccouncemenet .text {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .urgentaccouncemenet img.usefulicons {
+    height: 70px; /* Further adjust image size for very small screens */
+  }
+}
 
 
 
