@@ -234,7 +234,7 @@ text-align: center;
 
 
 
-.urgentaccouncemenet {
+.urgent-announcement {
   background-color: #262726; /* Dark background */
   padding: 20px; /* Add some padding */
   border: 1px solid #ccc; /* Light border */
@@ -245,43 +245,43 @@ text-align: center;
   transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth transition for max-height and padding */
 }
 
-.urgentaccouncemenet.expanded {
+.urgent-announcement.expanded {
   max-height: 800px; /* Set a high value to allow full expansion */
   padding: 20px; /* Maintain padding when expanded */
 }
 
-.urgentaccouncemenet:hover {
+.urgentannouncement:hover {
   max-height: 800px; /* Set a high value to allow full expansion */
   padding: 20px; /* Maintain padding when expanded */
 }
 
-.urgentaccouncemenet .underline {
+.urgent-announcement .underline {
   height: 2px; /* Thickness of the underline */
   background-color: #FFFFFF; /* White color for the underline */
   margin: 10px 0; /* Spacing above and below the underline */
 }
 
-.urgentaccouncemenet .title {
+.urgent-announcement .title {
   font-size: 24px; /* Larger font size for the title */
   font-weight: bold; /* Bold font */
   color: #ffffff; /* White color for text */
   text-align: center; /* Center the title */
 }
 
-.urgentaccouncemenet .text {
+.urgent-announcement .text {
   font-size: 16px; /* Standard font size for text */
   color: #ffffff; /* White color for text */
   margin-top: 10px; /* Spacing above the text */
   text-align: center;
 }
 
-.urgentaccouncemenet a {
+.urgent-announcement a {
   display: block; /* Make the link block level */
   text-align: center; /* Center the link */
   margin: 10px 0; /* Spacing above and below the link */
 }
 
-.urgentaccouncemenet img.usefulicons {
+.urgent-announcement img.usefulicons {
   display: block; /* Center the image */
   margin: 0 auto; /* Auto margin for centering */
 }
