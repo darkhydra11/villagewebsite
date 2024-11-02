@@ -341,7 +341,6 @@ text-align: center;
   display: none; /* Initially hidden */
   width: 90%; /* Use percentage for responsive width */
   max-width: 400px; /* Maximum width for larger screens */
-  box-sizing: border-box; /* Include padding in width */
 }
 
 .notification-image {
