@@ -125,6 +125,14 @@
                 <a href = "organisations.html">Clubs and Organisations</a>
             </div>   
 
+
+            <div class="notification" id="notification">
+                <img src="IMG_Warning_Sign.png" alt="Warning Image" class="notification-image">
+                <p><strong>Warning:</strong> There have been reports of a spate of break-ins throughout the village recently. Please ensure all garages are securely locked and no valuables are visible.</p>
+                <button id="close-btn">Close</button>
+            </div>
+
+
             <div class = "breakingnewsmarquee">
                     <a href = "organisations.html"><marquee scrollamount = "5"><b>Click here for further information on the Village Hall Table Tennis Club<b></marquee></a>
             </div>
@@ -192,6 +200,21 @@
 
 
         <br>
+
+        
+<script>
+window.onload = function() {
+    const notification = document.getElementById('notification');
+    notification.style.display = 'block'; // Show the notification
+    notification.classList.add('flashing'); // Add flashing effect
+
+    const closeButton = document.getElementById('close-btn');
+    closeButton.onclick = function() {
+        notification.style.display = 'none'; // Hide the notification when close button is clicked
+    };
+};
+
+</script>
 
         <div class = "footer">
             <p>EDITOR: Ben Mitchell (EST 2024)</p>

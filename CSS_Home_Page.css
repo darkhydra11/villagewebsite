@@ -316,3 +316,57 @@ text-align: center;
       font-size: 12px; /* Smaller font size for very small screens */
   }
 }
+
+
+
+
+
+
+
+
+
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #262726; /* Background color */
+  color: white;
+  padding: 40px; /* Increased padding for a larger size */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  height: auto;
+  display: none; /* Initially hidden */
+  width: 40%; /* Fixed width */
+}
+
+.notification button {
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.notification button:hover {
+  width: 50%;
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.notification-image {
+  width: 80px; /* Adjust the size as needed */
+  height: 80px; /* Adjust the size as needed */
+}
+
+@keyframes flash {
+  0% { background-color: #262726; }
+  50% { background-color: red; }
+  100% { background-color: #262726; }
+}
+
+.flashing {
+  animation: flash 1s infinite;
+}
