@@ -291,7 +291,7 @@ text-align: center;
   }
 
   .urgent-announcement.expanded {
-      max-height: 600px; /* Set a lower max height for the expanded state on mobile */
+      max-height: 100%; /* Set a lower max height for the expanded state on mobile */
   }
 
   .urgent-announcement .title {
