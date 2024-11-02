@@ -302,6 +302,20 @@ text-align: center;
   }
 
   .urgent-announcement .text {
-      font-size: 14px; 
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  .urgent-announcement {
+      padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  .urgent-announcement .title {
+      font-size: 18px; /* Even smaller font size for very small screens */
+  }
+
+  .urgent-announcement .text {
+      font-size: 12px; /* Smaller font size for very small screens */
   }
 }
