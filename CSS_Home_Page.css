@@ -245,10 +245,6 @@ text-align: center;
   transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth transition for max-height and padding */
 }
 
-.urgent-announcement.expanded {
-  max-height: 800px; /* Set a high value to allow full expansion */
-  padding: 20px; /* Maintain padding when expanded */
-}
 
 .urgent-announcement:hover {
   max-height: 800px; /* Set a high value to allow full expansion */

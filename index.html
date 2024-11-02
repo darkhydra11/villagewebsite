@@ -13,6 +13,90 @@
         <link rel = "stylesheet" href = "CSS_Top_Navigation.css">
         <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display" rel="stylesheet">
     
+        <style>
+.urgent-announcement {
+  background-color: #262726; /* Dark background */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 20px 0; /* Margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+  max-height: 240px; /* Set a max height for the collapsed state */
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth transition for max-height and padding */
+}
+
+
+.urgent-announcement:hover {
+  max-height: 800px; /* Set a high value to allow full expansion */
+  padding: 20px; /* Maintain padding when expanded */
+}
+
+.urgent-announcement .underline {
+  height: 2px; /* Thickness of the underline */
+  background-color: #FFFFFF; /* White color for the underline */
+  margin: 10px 0; /* Spacing above and below the underline */
+}
+
+.urgent-announcement .title {
+  font-size: 24px; /* Larger font size for the title */
+  font-weight: bold; /* Bold font */
+  color: #ffffff; /* White color for text */
+  text-align: center; /* Center the title */
+}
+
+.urgent-announcement .text {
+  font-size: 16px; /* Standard font size for text */
+  color: #ffffff; /* White color for text */
+  margin-top: 10px; /* Spacing above the text */
+  text-align: left; /* Align text to the left */
+}
+
+.urgent-announcement a {
+  display: block; /* Make the link block level */
+  text-align: center; /* Center the link */
+  margin: 10px 0; /* Spacing above and below the link */
+}
+
+.urgent-announcement img.usefulicons {
+  display: block; /* Center the image */
+  margin: 0 auto; /* Auto margin for centering */
+}
+
+/* Mobile Media Queries */
+@media (max-width: 600px) {
+  .urgent-announcement {
+      padding: 15px; /* Reduce padding on mobile */
+      max-height: 200px; /* Set a lower max height for the collapsed state */
+  }
+
+  .urgent-announcement.expanded {
+      max-height: 600px; /* Set a lower max height for the expanded state on mobile */
+  }
+
+  .urgent-announcement .title {
+      font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .urgent-announcement .text {
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 400px) {
+  .urgent-announcement {
+      padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  .urgent-announcement .title {
+      font-size: 18px; /* Even smaller font size for very small screens */
+  }
+
+  .urgent-announcement .text {
+      font-size: 12px; /* Smaller font size for very small screens */
+  }
+}
+
+        </style>
     
     </head>
     
