@@ -122,6 +122,7 @@ body, html {
     background-color: #262726;
     width: 30%;
     border-radius: 20px;
+    border: 1px solid white;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -224,6 +225,66 @@ text-align: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+.urgentaccouncemenet {
+  background-color: #262726; /* Dark background */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 20px 0; /* Margin for spacing */
+  overflow: hidden; /* Hide overflow content */
+  max-height: 240px; /* Set a max height for the collapsed state */
+  transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth transition for max-height and padding */
+}
+
+.urgentaccouncemenet.expanded {
+  max-height: 800px; /* Set a high value to allow full expansion */
+  padding: 20px; /* Maintain padding when expanded */
+}
+
+.urgentaccouncemenet:hover {
+  max-height: 800px; /* Set a high value to allow full expansion */
+  padding: 20px; /* Maintain padding when expanded */
+}
+
+.urgentaccouncemenet .underline {
+  height: 2px; /* Thickness of the underline */
+  background-color: #FFFFFF; /* White color for the underline */
+  margin: 10px 0; /* Spacing above and below the underline */
+}
+
+.urgentaccouncemenet .title {
+  font-size: 24px; /* Larger font size for the title */
+  font-weight: bold; /* Bold font */
+  color: #ffffff; /* White color for text */
+  text-align: center; /* Center the title */
+}
+
+.urgentaccouncemenet .text {
+  font-size: 16px; /* Standard font size for text */
+  color: #ffffff; /* White color for text */
+  margin-top: 10px; /* Spacing above the text */
+  text-align: center;
+}
+
+.urgentaccouncemenet a {
+  display: block; /* Make the link block level */
+  text-align: center; /* Center the link */
+  margin: 10px 0; /* Spacing above and below the link */
+}
+
+.urgentaccouncemenet img.usefulicons {
+  display: block; /* Center the image */
+  margin: 0 auto; /* Auto margin for centering */
+}
 
 
 
