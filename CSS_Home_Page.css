@@ -333,32 +333,20 @@ text-align: center;
   transform: translate(-50%, -50%);
   background-color: #262726; /* Background color */
   color: white;
-  padding: 40px; /* Increased padding for a larger size */
+  padding: 20px; /* Adjusted padding for better mobile experience */
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  height: auto;
   display: none; /* Initially hidden */
-  width: 40%; /* Fixed width */
-}
-
-.notification button {
-  width: 50%;
-  border-radius: 10px;
-  padding: 10px 10px;
-}
-
-.notification button:hover {
-  width: 50%;
-  background-color: red;
-  border-radius: 10px;
-  padding: 10px 10px;
+  width: 90%; /* Use percentage for responsive width */
+  max-width: 400px; /* Maximum width for larger screens */
+  box-sizing: border-box; /* Include padding in width */
 }
 
 .notification-image {
-  width: 80px; /* Adjust the size as needed */
-  height: 80px; /* Adjust the size as needed */
+  width: 60px; /* Adjusted size for mobile */
+  height: 60px; /* Adjusted size for mobile */
 }
 
 @keyframes flash {
@@ -369,4 +357,19 @@ text-align: center;
 
 .flashing {
   animation: flash 1s infinite;
+}
+
+button {
+  margin-top: 15px; /* Space between text and button */
+  padding: 10px 15px; /* Button padding */
+  background-color: white; /* Button background */
+  color: #262726; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Light gray on hover */
 }
