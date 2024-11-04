@@ -140,7 +140,7 @@ body, html {
 }
 
 .event .details h2 {
-  margin-top: 0px;
+  margin-top: 10px;
   color: white;
 }
 
@@ -170,6 +170,7 @@ body, html {
   .event {
     width: 100%; /* make the events full-width on small screens */
     margin: 20px auto; /* add some margin to create a gap between events */
+    border-radius: 0px;
     display: block; /* change the display to block to stack them on top of each other */
   }
   .event .details {
@@ -178,9 +179,7 @@ body, html {
 
   .event img.poster {
     width: 100%;
-    margin: 30px auto 30px auto; /* set top and bottom margins to 30px, and horizontal margins to auto */
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    margin: 0px auto; /* set top and bottom margins to 30px, and horizontal margins to auto */
   }
 
   .events h1 {

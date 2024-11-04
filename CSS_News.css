@@ -93,91 +93,6 @@ body, html {
 
 
 
-/* The carousel container */
-.carousel-container {
-  background-color: #262726;
-  position: relative;
-  overflow: hidden;
-  width: 95%;
-  border-radius: 10px;
-  margin: 0 auto;
-  height: auto; /* Adjust the height to fit your needs */
-}
-
-/* The carousel track */
-.carousel-track {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* The carousel items */
-.carousel-item {
-  flex: 0 0 25%; /* Adjust the width to fit your needs */
-  margin: 20px 5px;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.northernlights {
-  background-color: #262726;
-  padding: 20px 0px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  width: calc(100% - 40px);
-}
-
-.northernlights h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 18px;
-  color: white;
-}
-
-.northernlights p {
-  margin: 10px 5px;
-  text-align: center;
-  color: white;
-  font-size: 16px;
-}
-
-/* Media query for large screens */
-@media (min-width: 1200px) {
-  .carousel-item {
-    flex-basis: 20%;
-  }
-}
-
-/* Media query for medium screens */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .carousel-item {
-    flex-basis: 25%;
-  }
-}
-
-/* Media query for small screens */
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-item {
-    flex-basis: 33.33%;
-  }
-}
-
-/* Media query for extra small screens */
-@media (max-width: 767px) {
-  .carousel-item {
-    flex-basis: 50%;
-  }
-}
-
-
-
 
 
 
@@ -186,64 +101,46 @@ body, html {
 .breakingnewscontainer {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  max-width: 100%; /* Limit the width for a more structured layout */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  gap: 20px; /* Space between news items */
 }
 
 .breakingnews {
-  background-color: #262726;
-  padding: 20px 0px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-  width: calc(50% - 40px);
+  background-color: #262726; /* White background for news items */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  flex: 1 1 calc(33.333% - 20px); /* Three columns layout */
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin-bottom: 20px; /* Space below each news item */
 }
 
 .breakingnews h2 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 18px;
-  color: white;
+  font-size: 1.5em; /* Larger font for headlines */
+  margin-top: 0; /* Remove top margin */
+  color: #fff; /* Darker color for headings */
 }
 
 .breakingnews p {
-  margin: 10px 5px;
-  text-align: center;
-  color: white;
-  font-size: 16px;
+  font-size: 1em; /* Standard font size for paragraphs */
+  line-height: 1.6; /* Improved readability with line height */
+  color: #fff; /* Gray color for text */
 }
 
-/* Mobile responsive design */
-@media only screen and (max-width: 768px) {
+.breakingnews img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for images */
+  margin-top: 10px; /* Space above the image */
+}
+
+@media (max-width: 768px) {
   .breakingnews {
-    padding: 15px 0px;
-    margin: 15px;
-    width: calc(100% - 30px);
-  }
-  .breakingnews h2 {
-    font-size: 16px;
-  }
-  .breakingnews p {
-    font-size: 14px;
-    margin: 10px 5px;
+      flex: 1 1 100%; /* Stack items on smaller screens */
   }
 }
-
-@media only screen and (max-width: 480px) {
-  .breakingnews {
-    padding: 10px 0px;
-    width: 100%; /* changed to 100% to prevent overflow */
-  }
-  .breakingnews h2 {
-    font-size: 14px;
-  }
-  .breakingnews p {
-    font-size: 12px;
-    margin: 10px 5px;
-
-  }
-}
-
 
 
 
