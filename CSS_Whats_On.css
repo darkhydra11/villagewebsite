@@ -93,8 +93,8 @@ body, html {
 
 .events {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow wrapping for multiple rows */
+  justify-content: center; /* Center events horizontally */
 }
 
 .title {
@@ -106,23 +106,21 @@ body, html {
 .event {
   background-color: #262726;
   border-radius: 25px;
-  width: 25%; /* adjust the width to make them three a side */
-  margin: 10px;
+  width: calc(50% - 20px); /* Two events side by side with some margin */
+  margin: 10px; /* Vertical and horizontal margin for spacing */
   display: flex;
   flex-direction: column;
 }
 
 .event img.poster {
   display: block;
-  width: 50%;
-  margin-top: 30px;
+  width: 100%; /* Image takes up 100% width */
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  border-radius: 25px;
 }
 
 .event .details {
-  flex: 1; /* make the details take up the remaining space */
+  flex: 1; /* Make the details take up the remaining space */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -165,49 +163,49 @@ body, html {
   color: #333;
 }
 
-/* media query to make them stack on top of each other on small screens */
+/* Media query for small screens */
 @media only screen and (max-width: 767px) {
   .event {
-    width: 100%; /* make the events full-width on small screens */
-    margin: 20px auto; /* add some margin to create a gap between events */
-    border-radius: 0px;
-    display: block; /* change the display to block to stack them on top of each other */
-  }
-  .event .details {
-    height: auto; /* reset the height to auto on small screens */
+      width: 100%; /* Make the events full-width on small screens */
+      margin: 10px auto; /* Center and space events */
+      border-radius: 0px; /* Remove border radius on small screens */
   }
 
   .event img.poster {
-    width: 100%;
-    margin: 0px auto; /* set top and bottom margins to 30px, and horizontal margins to auto */
+      width: 100%; /* Ensure image takes up 100% width */
+      margin: 0px; /* Remove margins for smaller screens */
   }
 
   .events h1 {
-    font-size: 28px;
+      font-size: 28px;
   }
+
   .events p {
-    font-size: 14px;
+      font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .events h1 {
-    font-size: 42px;
-  }
-  .events p {
-    font-size: 20px;
-  }
-}
-
+/* Media query for medium screens */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .events h1 {
-    font-size: 36px;
+      font-size: 36px;
   }
+
   .events p {
-    font-size: 18px;
+      font-size: 18px;
   }
 }
 
+/* Media query for large screens */
+@media only screen and (min-width: 992px) {
+  .events h1 {
+      font-size: 42px;
+  }
+
+  .events p {
+      font-size: 20px;
+  }
+}
 
 
 

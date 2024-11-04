@@ -48,21 +48,24 @@
 
            
 
-        <div class="breakingnewscontainer">
-            <div class="breakingnews">
-                <h2>Cherwell Business Grant Opens, Aiming to Support Small and Micro Businesses</h2>
-                <p>The Cherwell ‘Rural England Prosperity Fund Business Grant Scheme’ is now open and your help in broadcasting this opportunity would be greatly appreciated. This capital grant scheme is aimed at supporting the growth of small and micro businesses based in rural areas of Cherwell. Please note that whilst businesses based within the towns of Banbury and Bicester are excluded, Kidlington is included, along with all other rural parishes. The window for ‘Expressions of Interest’ from eligible businesses is open but will soon close.</p>
-                <img src="IMG_BusinessGrantScheme.jpg" alt="Business Grant Scheme" />
-            </div>
-    
-            <div class="breakingnews">
-                <h2>All Saints Church to be Closed</h2>
-                <p>All Saints Church, Wroxton will be closed from Monday 7th October, 2024 until further notice while organ restoration is carried out.</p>
-            </div>
-    
-            <div class="breakingnews">
-                <h2>Wroxton Remembrance Service Cancelled</h2>
-                <p>It is with regret that, due to the ongoing organ restoration work and the upheaval the associated necessity of scaffolding erected in the church has created, this year's Remembrance Service cannot be held in our village church, and has therefore had to be canceled. Nevertheless, similar services are being held in Hornton, Horley, and Drayton churches at 10:50 am. Also, Balscote at 3pm. And at Alkerton Cenotaph on Monday 11th at 10:50 am, which you are welcome to attend.</p>
+        <div class="container">
+            <h1 class="title">Latest News</h1>
+            <div class="news-container">
+                <div class="news-item large">
+                    <h2>Cherwell Business Grant Opens, Aiming to Support Small and Micro Businesses</h2>
+                    <p>The Cherwell ‘Rural England Prosperity Fund Business Grant Scheme’ is now open and your help in broadcasting this opportunity would be greatly appreciated.</p>
+                    <img src="IMG_BusinessGrantScheme.jpg" alt="Business Grant Scheme" class="poster" />
+                </div>
+                <div class="news-column">
+                    <div class="news-item">
+                        <h2>All Saints Church to be Closed</h2>
+                        <p>All Saints Church, Wroxton will be closed from Monday 7th October, 2024 until further notice while organ restoration is carried out.</p>
+                    </div>
+                    <div class="news-item">
+                        <h2>Wroxton Remembrance Service Cancelled</h2>
+                        <p>It is with regret that this year's Remembrance Service cannot be held in our village church, and has therefore had to be canceled.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -76,48 +79,9 @@
 
 
 
+        <script src="JS_News.js"></script>
 
-<script>
-// The carousel container
-const carouselContainer = document.querySelector('.carousel-container');
 
-// The carousel track
-const carouselTrack = document.querySelector('.carousel-track');
-
-// The carousel items
-const carouselItems = document.querySelectorAll('.carousel-item');
-
-// Clone the carousel items to create a loop
-const clonedItems = [];
-carouselItems.forEach((item) => {
-  const clone = item.cloneNode(true);
-  carouselTrack.appendChild(clone);
-  clonedItems.push(clone);
-});
-
-// The current item index
-let currentItemIndex = 0;
-
-// The automatic scrolling function
-function autoScroll() {
-  // Calculate the scroll position
-  const scrollPosition = currentItemIndex * carouselItems[0].offsetWidth;
-
-  // Scroll the carousel track
-  carouselTrack.style.transform = `translateX(-${scrollPosition}px)`;
-
-  // Increment the current item index
-  currentItemIndex++;
-
-  // Reset the current item index if it reaches the end
-  if (currentItemIndex >= carouselItems.length * 2) {
-    currentItemIndex = 0;
-  }
-}
-
-// Set the automatic scrolling interval
-setInterval(autoScroll, 2000); // Adjust the interval to fit your needs
-</script>
     
     
     </body>
