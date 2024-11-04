@@ -147,6 +147,13 @@ body, html {
     border-top-right-radius: 25px;
   }
 
+  .club1 img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  
   .club2 img {
     width: 100%;
     height: 300px;
