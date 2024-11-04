@@ -136,7 +136,7 @@ body, html {
   margin-top: 10px; /* Space above the image */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .breakingnews {
       flex: 1 1 100%; /* Stack items on smaller screens */
   }
