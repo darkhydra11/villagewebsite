@@ -112,9 +112,10 @@ body, html {
   padding: 20px;
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  flex: 1 1 calc(33.333% - 20px); /* Three columns layout */
+  width: 32%;
   box-sizing: border-box; /* Include padding in width calculation */
   margin-bottom: 20px; /* Space below each news item */
+  margin: 0 auto;
 }
 
 .breakingnews h2 {
@@ -138,7 +139,7 @@ body, html {
 
 @media (max-width: 1300px) {
   .breakingnews {
-      flex: 1 1 100%; /* Stack items on smaller screens */
+      width: 100%; /* Stack items on smaller screens */
   }
 }
 
