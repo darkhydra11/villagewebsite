@@ -115,10 +115,6 @@ body, html {
 
 
 
-.quickaccess {
-  background-color: #262726;
-  
-}
 
 
 
@@ -135,12 +131,11 @@ body, html {
     background-color: #262726;
     width: 30%;
     border-radius: 20px;
-    border: 1px solid white;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
 .suggestion p {
-text-align: center;
+    text-align: center;
     color: white;
 }
 
