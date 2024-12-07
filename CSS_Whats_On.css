@@ -166,9 +166,9 @@ body, html {
 /* Media query for small screens */
 @media only screen and (max-width: 767px) {
   .event {
-      width: 100%; /* Make the events full-width on small screens */
+      width: 95%; /* Make the events full-width on small screens */
       margin: 10px auto; /* Center and space events */
-      border-radius: 0px; /* Remove border radius on small screens */
+      border-radius: 25px; /* Remove border radius on small screens */
   }
 
   .event img.poster {

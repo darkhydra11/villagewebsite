@@ -111,6 +111,19 @@ body, html {
     }
 }
 
+
+
+
+
+.quickaccess {
+  background-color: #262726;
+  
+}
+
+
+
+
+
 .suggestions {
   display: flex;
   justify-content: space-around;
