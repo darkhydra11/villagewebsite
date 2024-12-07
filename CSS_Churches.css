@@ -109,7 +109,7 @@ h2 {
   margin: 0 auto; /* Centers the image horizontally */
 }
 
-.organrestoration:hover {
+.organrestoration:hover, .organrestoration:active {
   height: auto; /* Expand to fit content on hover */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
