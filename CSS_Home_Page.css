@@ -114,6 +114,119 @@ body, html {
 
 
 
+.quick-news {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #262726;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #fff;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.news-item, .event {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #323232;
+}
+
+.news-item h2, .event h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #fff; /* White color for headings */
+}
+
+.news-item p, .event p {
+  margin: 5px 0;
+  color: #fff; /* White for text */
+}
+
+.event .details {
+  font-style: italic; /* Italicize event details */
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.title h1 {
+  font-size: 2em;
+  color: #333;
+}
+
+.title p {
+  color: #777; /* Lighter gray for subtitle */
+}
+
+.container-link {
+  display: block; /* Make the anchor tag a block element */
+  width: 100%; /* Full width of the parent */
+  height: 100%; /* Full height of the parent */
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit text color from parent */
+  padding: 10px; /* Optional padding */
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .quick-news {
+    padding: 15px; /* Reduce padding on smaller screens */
+  }
+
+  h2 {
+    font-size: 1.5em; /* Smaller heading size */
+  }
+
+  .news-item h2, .event h2 {
+    font-size: 1.2em; /* Smaller heading size for news and events */
+  }
+
+  .news-item p, .event p {
+    font-size: 0.9em; /* Smaller text size */
+  }
+
+  .title h1 {
+    font-size: 1.5em; /* Smaller title size */
+  }
+
+  .title p {
+    font-size: 0.9em; /* Smaller subtitle size */
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-news {
+    padding: 10px; /* Further reduce padding on very small screens */
+  }
+
+  h2 {
+    font-size: 1.2em; /* Even smaller heading size */
+  }
+
+  .news-item h2, .event h2 {
+    font-size: 1em; /* Even smaller heading size for news and events */
+  }
+
+  .news-item p, .event p {
+    font-size: 0.8em; /* Even smaller text size */
+  }
+
+  .title h1 {
+    font-size: 1.2em; /* Smaller title size */
+  }
+
+  .title p {
+    font-size: 0.8em; /* Smaller subtitle size */
+  }
+}
+
+
 
 
 
