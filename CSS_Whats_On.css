@@ -91,119 +91,113 @@ body, html {
 
 
 
-.events {
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping for multiple rows */
-  justify-content: center; /* Center events horizontally */
+.container {
+  max-width: 100%;
+  margin: auto;
+  background: #262726;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-  width: 100%;
+header {
   text-align: center;
   margin-bottom: 20px;
 }
 
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: white;
+}
+
+p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+}
+
 .event {
-  background-color: #262726;
-  border-radius: 25px;
-  width: calc(50% - 20px); /* Two events side by side with some margin */
-  margin: 10px; /* Vertical and horizontal margin for spacing */
-  display: flex;
-  flex-direction: column;
+  background: #323232;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
-.event img.poster {
-  display: block;
-  width: 100%; /* Image takes up 100% width */
-  margin-bottom: 30px;
-  border-radius: 25px;
+
+
+.event img {
+  width: 100%;
+  height: auto;
 }
 
-.event .details {
-  flex: 1; /* Make the details take up the remaining space */
-  display: flex;
-  flex-direction: column;
+.event-info {
+  padding: 15px;
+}
+
+.event-info h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+.date, .time, .location, .welcome {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #fff;
   text-align: center;
 }
 
-.events h1 {
-  color: white;
-  margin-top: 0px;
-}
 
-.events p {
-  color: white;
-  margin-top: 0px;
-  line-break: auto;
-}
 
-.event .details h2 {
-  margin-top: 10px;
-  color: white;
-}
 
-.event .details p {
-  color: #fff;
-}
-
-.contact-button {
-  display: inline-block;
-  margin: 10px auto;
-  padding: 10px 50px;
-  border: 2px solid #fff;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 16px;
-  width: 50%;
-}
-
-.contact-button:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-/* Media query for small screens */
-@media only screen and (max-width: 767px) {
-  .event {
-      width: 95%; /* Make the events full-width on small screens */
-      margin: 10px auto; /* Center and space events */
-      border-radius: 25px; /* Remove border radius on small screens */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
   }
 
-  .event img.poster {
-      width: 100%; /* Ensure image takes up 100% width */
-      margin: 0px; /* Remove margins for smaller screens */
+  p {
+      font-size: 1em;
   }
 
-  .events h1 {
-      font-size: 28px;
+  .event-info h2 {
+      font-size: 1.3em;
   }
 
-  .events p {
-      font-size: 14px;
+  .date, .time, .location, .welcome {
+      font-size: 0.9em;
+  }
+
+  .events {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
   }
 }
 
-/* Media query for medium screens */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .events h1 {
-      font-size: 36px;
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.8em;
   }
 
-  .events p {
-      font-size: 18px;
-  }
-}
-
-/* Media query for large screens */
-@media only screen and (min-width: 992px) {
-  .events h1 {
-      font-size: 42px;
+  p {
+      font-size: 0.9em;
   }
 
-  .events p {
-      font-size: 20px;
+  .events {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+  .event-info h2 {
+      font-size: 1.2em;
+  }
+
+  .date, .time, .location, .welcome {
+      font-size: 0.8em;
   }
 }
 
