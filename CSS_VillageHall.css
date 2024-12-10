@@ -23,7 +23,7 @@ h2 {
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), #262726), url("IMG_VillageHall.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #262726), url("IMG_VillageHall.jpeg");
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
