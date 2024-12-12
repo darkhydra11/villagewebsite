@@ -150,11 +150,12 @@ body, html {
 
 
 
+
 .button-container {
-  margin: 30px 0px;
-  width: 100%; /* Full width of the parent */
+  width: 100%;
   display: flex;
-  justify-content: center; /* Center the button within the div */
+  justify-content: center;
+  margin: 20px 0; /* Add some margin for spacing */
 }
 
 .button {
@@ -162,17 +163,17 @@ body, html {
   width: 80%;
   padding: 15px;
   background-color: #262726;
-  border-radius: 35px;
   color: white;
   text-align: center;
-  text-decoration: none; /* Remove underline from link */
-  border-radius: 5px; /* Optional: rounded corners */
-  font-size: 16px; /* Optional: font size */
-  transition: background-color 0.3s; /* Optional: smooth transition */
+  border: none; /* Remove border */
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #1f1f1f; /* Optional: darker shade on hover */
+  background-color: #1f1f1f; /* Darker shade on hover */
 }
 
 
