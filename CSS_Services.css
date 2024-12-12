@@ -150,27 +150,28 @@ body, html {
 
 
 
-.services a{
-  width: 80%;
-  margin: 30px auto;
-  padding: 10px 15px;
-  text-align: center;
-  background-color: #262726;
-  border-radius: 45px;
-  font-size: 18px;
-  color: white;
-  text-decoration: none;
+.button-container {
+  width: 100%; /* Full width of the parent */
+  display: flex;
+  justify-content: center; /* Center the button within the div */
 }
 
+.button {
+  display: inline-block;
+  width: 80%;
+  padding: 15px;
+  background-color: #262726;
+  color: white;
+  text-align: center;
+  text-decoration: none; /* Remove underline from link */
+  border-radius: 5px; /* Optional: rounded corners */
+  font-size: 16px; /* Optional: font size */
+  transition: background-color 0.3s; /* Optional: smooth transition */
+}
 
-
-
-
-
-
-
-
-
+.button:hover {
+  background-color: #1f1f1f; /* Optional: darker shade on hover */
+}
 
 
 
