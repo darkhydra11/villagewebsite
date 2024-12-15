@@ -15,22 +15,17 @@
         <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display" rel="stylesheet">
         <script src="JS_PopUp.js"></script>
         <style>
+
 .urgent-announcement {
+            width: 100%;
             background-color: #262726; /* Dark background */
-            padding: 20px; /* Add some padding */
-            border: 1px solid #ccc; /* Light border */
-            border-radius: 5px; /* Rounded corners */
-            margin: 20px 0; /* Margin for spacing */
+            margin: 0px auto; /* Margin for spacing */
             overflow: hidden; /* Hide overflow content */
-            max-height: 240px; /* Set a max height for the collapsed state */
-            transition: max-height 0.5s ease, padding 0.5s ease; /* Smooth transition for max-height and padding */
+            height: auto; /* Set a max height for the collapsed state */
             cursor: pointer; /* Change cursor to pointer for better UX */
         }
 
-        .urgent-announcement.expanded {
-            max-height: 800px; /* Set a high value to allow full expansion */
-            padding: 20px; /* Maintain padding when expanded */
-        }
+    
 
         .urgent-announcement .underline {
             height: 2px; /* Thickness of the underline */
@@ -48,6 +43,8 @@
         .urgent-announcement .text {
             font-size: 16px; /* Standard font size for text */
             color: #ffffff; /* White color for text */
+            margin-bottom: 20px;
+            text-align: center;
             margin-top: 10px; /* Spacing above the text */
             text-align: left; /* Align text to the left */
         }
@@ -60,6 +57,7 @@
 
         .urgent-announcement img.usefulicons {
             display: block; /* Center the image */
+            width: 100px;
             margin: 0 auto; /* Auto margin for centering */
         }
 
@@ -104,6 +102,16 @@
     
     <body>
         
+        <div class="urgent-announcement" id="notification">
+            <img src="IMG_Warning_Sign.png" alt="Useful Icon" class="usefulicons">
+            <div class="title">More Break-Ins reported in Wroxton</div>
+            <div class="underline"></div>
+            <div class="text">
+                <p>There have been a number of reported break-ins throughout Wroxton again. Please ensure that all sheds, gardens and outbuildings are securely locked. </p>
+                <p>Thames Valley Police have been contacted, who have said to dial 999 if there is any suspicious activity.</p>
+            </div>
+        </div>
+
             <div class="hero-image">
               <div class="hero-text">
                 <h1 style="font-size:50px">Welcome to Wroxton</h1>
