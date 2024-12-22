@@ -87,12 +87,11 @@ h2 {
 
 
 
-
 #schedule-container {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 20px auto; /* Center the container */
   padding: 10px;
-  width: 100%;
+  max-width: 1600px; /* Set a max width for larger screens */
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #262726;
@@ -115,9 +114,9 @@ h2 {
 .service {
   margin: 10px 0;
   padding: 10px;
-  width: 100%;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
 }
 
 /* Styles for service details */
@@ -164,7 +163,6 @@ h2 {
       padding: 5px;
   }
 }
-
 
 
 
