@@ -92,6 +92,7 @@ h2 {
   font-family: Arial, sans-serif;
   margin: 20px;
   padding: 10px;
+  width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #262726;
@@ -114,6 +115,7 @@ h2 {
 .service {
   margin: 10px 0;
   padding: 10px;
+  width: 100%;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
