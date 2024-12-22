@@ -8,23 +8,31 @@ const scheduleData = [
         ]
     },
     {
-        date: "2024-12-23",
+        date: "2024-12-22",
         services: [
-            { location: "St. Mary Magdeline, Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "St. John's, Wroxton", time: "11:30am", typeofservice: "Morning Prayer", contact: "Guy" }
+            { location: "Shenington", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
+            { location: "Horley", time: "5pm", typeofservice: "Nativity and Carols", contact: "Guy" },
+            { location: "Hornton Methodist", time: "6pm", typeofservice: "Carol Service", contact: "" },
+            { location: "Wroxton", time: "6:30pm", typeofservice: "Carol Service", contact: "Alicia" },
+        
         ]
     },
     {
         date: "2024-12-24",
         services: [
-            { location: "St. Peters, Hanwell", time: "11pm", typeofservice: "Midnight Mass", contact: "Guy" }
+            { location: "Shenington", time: "4pm", typeofservice: "Crib Service", contact: "Alicia" },
+            { location: "Hornton", time: "5:30pm", typeofservice: "Crib Service", contact: "Cate Fokes" },
+            { location: "Hanwell", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
+            { location: "Wroxton", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
         ]
     },
     {
         date: "2024-12-25",
         services: [
-            { location: "St. Etheldreda, Horley", time: "10am", typeofservice: "Christmas Day Service", contact: "Alicia" },
-            { location: "All Saints, Wroxton", time: "11am", typeofservice: "Christmas Celebration", contact: "Alicia" }
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Horley", time: "10:30am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
         ]
     },
 
