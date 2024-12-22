@@ -88,36 +88,81 @@ h2 {
 
 
 
-.schedule {
-  width: 90%;
-  margin: 20px auto; /* Add margin to separate from other sections */
-  padding: 20px;
+#schedule-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   background-color: #262726;
-  border-radius: 25px;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
 }
 
-.title {
-  text-align: center;
-  font-size: 28px; /* Increased font size for the title */
-  color: #ffffff; /* White color for the title */
-}
-
+/* Styles for each date section */
 .date {
   margin-bottom: 20px;
-  border-bottom: 1px solid #ffffff; /* White border for separation */
-  padding-bottom: 10px;
-  color: white;
-  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid white;
 }
 
+/* Styles for the date text */
+.date strong {
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Styles for each service entry */
 .service {
-  margin-top: 10px;
-  padding: 10px; /* Padding for better spacing */
-  background-color: #323232;
-  color: white;
-
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
+
+/* Styles for service details */
+.service .location,
+.service .time,
+.service .typeofservice,
+.service .contact {
+  margin: 5px 0;
+  color: white;
+}
+
+/* Styles for the service location */
+.service .location {
+  font-weight: bold;
+}
+
+/* Styles for the service time */
+.service .time {
+  color: #fff;
+}
+
+/* Styles for the type of service */
+.service .typeofservice {
+  font-style: italic;
+}
+
+/* Styles for the contact information */
+.service .contact {
+  color: lightgray;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #schedule-container {
+      margin: 10px;
+      padding: 5px;
+  }
+
+  .date strong {
+      font-size: 1.2em;
+  }
+
+  .service {
+      padding: 5px;
+  }
+}
+
 
 
 
