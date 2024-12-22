@@ -2,24 +2,14 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: 'Arial';
-    background-color: #323232;
-    overflow-x: hidden;
-    font-weight: lighter;
-    -webkit-transition: fadeIn 2s;
-    -moz-transition: fadeIn 2s;
-    -o-transition: fadeIn 2s;
-    -ms-transition: fadeIn 2s;
-    transition: fadeIn 2s;
-    scroll-behavior: smooth;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  background-color: #323232;
+  overflow-x: hidden;
+  font-weight: lighter;
+  scroll-behavior: smooth;
 }
 
 h2 {
-    font-weight: 200;
+  font-weight: 200;
 }
 
 .hero-image {
@@ -31,8 +21,6 @@ h2 {
   position: relative;
 }
 
-
-
 .hero-text {
   text-align: center;
   position: absolute;
@@ -40,55 +28,13 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  border-color: white;
   padding: 10px 10px;
   font-weight: 100;
 }
 
-@keyframes swipe {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    100% {
-        opacity: 1;
-    }
-    
-}
 .hero-text h1 {
-    font-size: 50px;
-    animation: swipe 3s;
+  font-size: 50px;
 }
-
-.hero-text p {
-    animation: swipe 3s;
-}
-
-
-@media (max-width: 650px) {  
-    .hero-text h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 500px) {  
-    .hero-text h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 400px) {  
-    .hero-text h1 {
-        font-size: 20px;
-    }
-}
-
-
-
-
-
-
 
 .organrestoration {
   background-color: #262726; /* Dark background */
@@ -96,11 +42,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 150px; /* Initial height */
-  overflow: hidden; /* Prevent overflow of content */
-  transition: height 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-  max-width: 100%;
-  margin: 20px auto;
+  margin: 20px auto; /* Add margin to separate from other sections */
   text-align: center; /* Center text and image */
 }
 
@@ -109,310 +51,124 @@ h2 {
   margin: 0 auto; /* Centers the image horizontally */
 }
 
-.organrestoration:hover, .organrestoration:active {
-  height: auto; /* Expand to fit content on hover */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-h2 {
-  margin-top: 10px; /* Add some space above the heading */
-}
-
-p {
-  line-height: 1.6;
-}
-
-.more-info {
-  margin-top: 20px; /* Space above the text */
-  font-size: 24px;
-  font-weight: bold; /* Make it bold */
-  color: #ffffff; /* Gold color for emphasis */
-  cursor: pointer; /* Change cursor to pointer */
-}
-
-.organrestoration:hover .more-info {
-  display: none; /* Hide the text when expanded */
-}
-
-
-
-
-
-
 .overview {
-    text-align: center;
-    width: 100%;
-  }
-  
+  text-align: center;
+  width: 100%;
+}
+
+.churches {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out the church sections */
+  margin: 20px 0; /* Add margin to separate from other sections */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.church {
+  background-color: #262726;
+  color: white;
+  font-size: 14px;
+  width: 45%; /* Adjust width for two columns */
+  margin: 20px 2.5%; /* Add margin between church sections */
+  border-radius: 25px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.church img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+
+
+
+
+
+.schedule {
+  width: 90%;
+  margin: 20px auto; /* Add margin to separate from other sections */
+  padding: 20px;
+  background-color: #262726;
+  border-radius: 25px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 28px; /* Increased font size for the title */
+  color: #ffffff; /* White color for the title */
+}
+
+.date {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffffff; /* White border for separation */
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.service {
+  margin-top: 10px;
+  padding: 10px; /* Padding for better spacing */
+  background-color: #323232;
+  color: white;
+
+}
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 100px; /* Add space above footer */
+  color: white;
+}
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 1000px) {
   .church {
-    background-color: #262726;
-    color: white;
-    font-size: 14px;
-    font-family: Arial;
-    display: block;
-    width: 45%;
-    margin: 20px 2.5%;
-    margin-bottom: 50px;
-    float: left;
-    height: 450px;
-    border-radius: 25px;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-  
-  }
-  
-  .church img {
-    display: block;
-    width:100%;
-    height: 300px;
-    margin: auto;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-  
-  .church h1,
-  .church h2,
-  .church h3 {
-    text-align: center;
-    font-size: 20px;
-  }
-
-  .gap {
-    height: 10px;
-    background-color: #262726;
-  }
-  .title {
-    font-size: 56px;
-    color: white;
-    text-decoration: underline;
-    background-color: #262726;
-    width: 100%;
-    text-align: center;
-    padding: 50px 0px;
-  }
-  
-  .church p {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    .church {
-      width: 100%;
-      border-radius: 0px;
-      margin: 20px auto;
-      float: none;
-      height: auto;
-    }
-    .church img {
-      max-height: 600px;
-      border-radius: 0px;
-    }
-    .church h1, .church h2, .church h3 {
-      font-size: 18px;
-    }
-    .church p {
-      margin: 15px;
-    }
-  }
-  
-
-  .church a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #262726;
-    font-size: 11px;
-    margin: 20px 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-  .churchschedule {
-    display: flex;
-    flex-direction: column;
-    background-color: #262726;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .date {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .datetitle {
-    margin-bottom: 10px;
-    font-size: 36px;
-    text-decoration: underline;
-    font-weight: lighter;
-    color: white;
-  }
-  
-  .service {
-    background-color: #262726;
-    width: 100%;
-    line-height: 20px;
-    margin: 50px auto;
-  }
-  
-  .location, .time, .typeofservice, .contact {
-    margin-bottom: 2px;
-  }
-  
-  .contact {
-    margin-bottom: 40px;
-  }
-  
-  .location {
-    font-weight: bold;
-    font-size: 24px;
-    color: white;
-  }
-  
-  .time {
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .typeofservice {
-    color: #fff;
-    font-size: 20px;
-  }
-  
-  .contact {
-    color: #fff;
-    font-size: 20px;
-  }
-  
-/* Large screens (min-width: 1700px) */
-@media (min-width: 1700px) {
-  .service {
-    display: inline-block;
-    width: 45%; /* adjust the width to fit 2 services per row */
-    margin: 20px 5px;
-    vertical-align: top;
-  }
-}
-
-/* Medium screens (min-width: 1100px and max-width: 1699px) */
-@media (min-width: 1100px) and (max-width: 1699px) {
-  .service {
-    display: inline-block;
-    width: 30%; /* adjust the width of each service */
-    margin: 20px 5px;
-    vertical-align: top;
-  }
-  .datetitle {
-    font-size: 36px;
-  }
-  .location {
-    font-size: 24px;
-  }
-  .time, .typeofservice, .contact {
-    font-size: 20px;
-  }
-}
-
-/* Small screens (max-width: 1100px) */
-@media (max-width: 1100px) {
-  .service {
-    display: block;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .datetitle {
-    font-size: 32px;
-  }
-  .location {
-    font-size: 22px;
-  }
-  .time, .typeofservice, .contact {
-    font-size: 18px;
-  }
-}
-
-/* Tablet screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .datetitle {
-    font-size: 20px;
-  }
-  .location {
-    font-size: 16px;
-  }
-  .time, .typeofservice, .contact {
-    font-size: 14px;
-  }
-}
-
-/* Mobile screens (max-width: 480px) */
-@media (max-width: 480px) {
-  .location {
-    font-size: 20px;
-  }
-  .time, .typeofservice, .contact {
-    font-size: 16px;
-  }
-}
-
-/* Extra small screens (max-width: 320px) */
-@media (max-width: 320px) {
-  .datetitle {
-    font-size: 20px;
-  }
-  .location {
-    font-size: 16px;
-  }
-  .time, .typeofservice, .contact {
-    font-size: 12px;
-  }
-}
-  
-  
-  
- 
-
-
-
-  .footer {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 100px;
-    height: auto;
-    color: white;
-}
-
-.footer p {
-    color: white;
-}
-
-@media only screen and (max-width: 1700px) {
-  .footer {
-    font-size: 18px;
+      width: 100%; /* Full width on smaller screens */
+      margin: 20px auto; /* Center the church section */
+      border-radius: 0px; /* Remove border radius */
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .footer {
-    font-size: 16px;
+  .hero-text h1 {
+      font-size: 40px; /* /* Adjust font size for smaller screens */
+  }
+  .title {
+      font-size: 24px; /* Slightly smaller title on smaller screens */
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .footer {
-    font-size: 14px;
+  .schedule {
+      width: 100%;
+      padding: 15px; /* Reduce padding for very small screens */
+  }
+  .title {
+      font-size: 20px; /* Further reduce title size */
   }
 }
 
-@media only screen and (max-width: 320px) {
+/* Ensure the footer adjusts on smaller screens */
+@media only screen and (max-width: 768px) {
   .footer {
-    font-size: 12px;
+      font-size: 16px; /* Adjust footer font size */
   }
 }
 
