@@ -257,6 +257,19 @@ h2 {
 
 
 
+.quick-view {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #262726
+}
+
+.next-service {
+  margin-top: 10px;
+}
+
+
+
 
 
 

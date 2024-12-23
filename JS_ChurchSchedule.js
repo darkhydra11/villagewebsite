@@ -2,14 +2,6 @@ const scheduleData = [
     {
         date: "2024-12-22",
         services: [
-            { location: "Holy Trinity, Shenington", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
-            { location: "St. Etheldreda, Horley", time: "5pm", typeofservice: "Nativity and Carols", contact: "Guy" },
-            { location: "Hornton Methodist Church, Hornton", time: "6pm", typeofservice: "Evening Service", contact: "Alicia" }
-        ]
-    },
-    {
-        date: "2024-12-22",
-        services: [
             { location: "Shenington", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
             { location: "Horley", time: "5pm", typeofservice: "Nativity and Carols", contact: "Guy" },
             { location: "Hornton Methodist", time: "6pm", typeofservice: "Carol Service", contact: "" },
@@ -42,6 +34,12 @@ const scheduleData = [
     }
 ];
 
+// Function to format the date as (day date month, year)
+function formatDate(date) {
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    return date.toLocaleDateString('en-US', options);
+}
+
 function displaySchedule() {
     const currentDate = new Date();
     const currentWeekEnd = new Date(currentDate);
@@ -55,7 +53,7 @@ function displaySchedule() {
         if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
             const dateDiv = document.createElement('div');
             dateDiv.className = 'date';
-            dateDiv.innerHTML = `<strong>${eventDate.toLocaleDateString()}</strong>`;
+            dateDiv.innerHTML = `<strong>${formatDate(eventDate)}</strong>`; // Use the formatDate function
             scheduleContainer.appendChild(dateDiv);
 
             day.services.forEach(service => {

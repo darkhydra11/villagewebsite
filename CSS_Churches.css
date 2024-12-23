@@ -69,6 +69,7 @@ h2 {
   font-size: 14px;
   width: 45%; /* Adjust width for two columns */
   margin: 20px 2.5%; /* Add margin between church sections */
+  border-radius: 25px;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -79,6 +80,7 @@ h2 {
   height: 300px;
   margin: auto;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 
@@ -88,8 +90,8 @@ h2 {
 #schedule-container {
   font-family: Arial, sans-serif;
   margin: 20px auto; /* Center the container */
-  padding: 10px;
-  max-width: 1600px; /* Set a max width for larger screens */
+  width: 95%;
+  border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #262726;
 }
@@ -98,6 +100,7 @@ h2 {
 .date {
   margin-bottom: 20px;
   padding: 10px;
+  text-align: center;
   border-bottom: 2px solid white;
 }
 
@@ -148,8 +151,10 @@ h2 {
 /* Responsive design */
 @media (max-width: 600px) {
   #schedule-container {
-      margin: 10px auto;
+      margin: 10px 0px;
+      padding: 5px;
       width: 100%;
+      border-radius: 0px;
   }
 
   .date strong {
