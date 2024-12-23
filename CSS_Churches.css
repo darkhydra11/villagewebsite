@@ -111,7 +111,7 @@ h2 {
   margin: 10px 0;
   padding: 10px;
   background-color: #262726;
-  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Styles for service details */
