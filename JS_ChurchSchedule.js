@@ -14,7 +14,6 @@ const scheduleData = [
             { location: "Horley", time: "5pm", typeofservice: "Nativity and Carols", contact: "Guy" },
             { location: "Hornton Methodist", time: "6pm", typeofservice: "Carol Service", contact: "" },
             { location: "Wroxton", time: "6:30pm", typeofservice: "Carol Service", contact: "Alicia" },
-        
         ]
     },
     {
@@ -35,45 +34,47 @@ const scheduleData = [
             { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
         ]
     },
-
     {
         date: "2024-12-29",
         services: [
             { location: "Hornton Methodist Church, Honrton", time: "10am", typeofservice: "Breakfast Church", contact: "Alicia" },
-            
         ]
     }
 ];
 
-// Get the current date
-const currentDate = new Date(); // Use the current date
-const currentDay = currentDate.getDay();
-const currentWeekStart = new Date(currentDate);
-currentWeekStart.setDate(currentDate.getDate() - currentDay); // Set to the start of the week (Sunday)
+function displaySchedule() {
+    const currentDate = new Date();
+    const currentWeekEnd = new Date(currentDate);
+    currentWeekEnd.setDate(currentDate.getDate() + 6); // Set to the end of the next 7 days
 
-const currentWeekEnd = new Date(currentDate );
-currentWeekEnd.setDate(currentWeekStart.getDate() + 6); // Set to the end of the week (Saturday)
+    const scheduleContainer = document.getElementById('schedule-container');
+    scheduleContainer.innerHTML = ''; // Clear previous schedule
 
-const scheduleContainer = document.getElementById('schedule-container');
+    scheduleData.forEach(day => {
+        const eventDate = new Date(day.date);
+        if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
+            const dateDiv = document.createElement('div');
+            dateDiv.className = 'date';
+            dateDiv.innerHTML = `<strong>${eventDate.toLocaleDateString()}</strong>`;
+            scheduleContainer.appendChild(dateDiv);
 
-scheduleData.forEach(day => {
-    const eventDate = new Date(day.date);
-    if (eventDate >= currentWeekStart && eventDate <= currentWeekEnd) {
-        const dateDiv = document.createElement('div');
-        dateDiv.className = 'date';
-        dateDiv.innerHTML = `<strong>${eventDate.toLocaleDateString()}</strong>`;
-        scheduleContainer.appendChild(dateDiv);
+            day.services.forEach(service => {
+                const serviceDiv = document.createElement('div');
+                serviceDiv.className = 'service';
+                serviceDiv.innerHTML = `
+                    <div class="location">Location: ${service.location}</div>
+                    <div class="time">Time: ${service.time}</div>
+                    <div class="typeofservice">Type of Service: ${service.typeofservice}</div>
+                    <div class="contact">Contact: ${service.contact}</div>
+                `;
+                dateDiv.appendChild(serviceDiv);
+            });
+        }
+    });
+}
 
-        day.services.forEach(service => {
-            const serviceDiv = document.createElement('div');
-            serviceDiv.className = 'service';
-            serviceDiv.innerHTML = `
-                <div class="location">Location: ${service.location}</div>
-                <div class="time">Time: ${service.time}</div>
-                <div class="typeofservice">Type of Service: ${service.typeofservice}</div>
-                <div class="contact">Contact: ${service.contact}</div>
-            `;
-            dateDiv.appendChild(serviceDiv);
-        });
-    }
-});
+// Call the function to display the schedule initially
+displaySchedule();
+
+// Set an interval to refresh the schedule every hour (3600000 milliseconds)
+setInterval(displaySchedule, 3600000);
