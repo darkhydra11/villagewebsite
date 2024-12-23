@@ -70,6 +70,10 @@ h2 {
   margin: 0 auto;
 }
 
+
+
+
+
 #overview {
     width: 80%;
     font-size: 20px;
@@ -81,15 +85,6 @@ h2 {
     color: white;
 }
 
-
-
-
-
-
-
-
-
-
 #committee-about {
     background-color: #262726;
     display: flex;
@@ -97,10 +92,10 @@ h2 {
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
+    padding: 10px; /* Add padding for better spacing */
 }
 
 h2 {
@@ -110,13 +105,12 @@ h2 {
     margin-bottom: 20px;
     margin-top: 5px;
     text-decoration: underline;
-    width: 100%;
 }
 
 h3 {
     text-align: center;
     color: white;
-    font-size: 15px;
+    font-size: 18px; /* Slightly larger font size for better readability */
 }
 
 .team-members {
@@ -129,124 +123,72 @@ h3 {
 .team-member {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center; /* Center align items */
     color: white;
     flex-basis: 20%;
-}
-
-.team-member a {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px 10px;
-    border-radius: 25px;
-    background-color: white;
-    text-align: center;
-    vertical-align: middle;
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.team-member a:hover {
-    animation: hover 0.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hover {
-    0% {
-        background-color: white;
-    }
-    
-    100% {
-        background-color: lightgray;
-        transform: translateY(-5px);
-    }
 }
 
 .team-member-name {
     font-size: 20px;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: bold; /* Make the name bold */
 }
 
 .team-member-role {
     text-align: center;
     font-size: 14px;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Adjust margin for better spacing */
 }
 
-@media (min-width: 1400px) {
-  .team-member {
-    flex-basis: 20%;
-    max-width: 20%;
-  }
+.icon {
+    margin: 0 auto 10px; /* Center the icon and add bottom margin */
 }
-
-@media (max-width: 1400px) {
-  .team-member {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 950px) {
-    #committee-about h2, #pricing h1 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 750px) {
-    #committee-about h2, #pricing h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 475px) {
-    #committee-about h2, #pricing h1 {
-        font-size: 24px;
-    }
-    
-}
-
-
-
-
-
-
-
-
 
 .pricing {
     display: flex;
-    flex-direction: column; /* Add this to stack elements vertically */
+    flex-direction: column; /* Stack elements vertically */
     justify-content: space-evenly;
     background-color: #262726;
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 25px;
-    width: 95%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 20px auto; /* Add margin for spacing */
+}
+
+.pricing h2 {
+    margin-bottom: 20px; /* Add margin to separate from options */
+    color: white; /* Ensure the heading is white */
+    padding: 20px;
 }
 
 .option {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center; /* Center align items */
     flex-basis: 40%; /* Set the initial width of each option */
-    margin: 20px 0px;
     color: white;
 }
 
-.icon {
-    margin-left: auto;
-    margin-right: auto;
+.optionname {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center align the option name */
+}
+
+.optionprice {
+    text-align: center;
+    font-size: 16px; /* Slightly larger font size for better readability */
+    margin-top: 5px; /* Adjust margin for better spacing */
+    margin-bottom: 20px; /* Adjust margin for better spacing */
 }
 
 .option a {
     width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin: 10px auto; /* Center the link and add margin */
     padding: 10px 10px;
     border-radius: 25px;
     background-color: white;
@@ -256,52 +198,52 @@ h3 {
     font-weight: bold;
     text-decoration: none;
     font-size: 20px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .option a:hover {
-    animation: hover 0.3s;
-    animation-fill-mode: forwards;
+    background-color: lightgray; /* Change background on hover */
+    transform: translateY(-5px); /* Slightly lift on hover */
 }
 
-/* Media query for smaller screens */
+/* Media Queries for Responsiveness */
+@media (min-width: 1400px) {
+    .team-member {
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+}
+
+@media (max-width: 1400px) {
+ .team-member {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    #committee-about h2, .pricing h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 750px) {
+    #committee-about h2, .pricing h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 475px) {
+    #committee-about h2, .pricing h2 {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 1500px) {
     .option {
         flex-basis: 90%; /* Make each option take up full width on smaller screens */
     }
 }
-
-@keyframes hover {
-    0% {
-        background-color: white;
-    }
-    
-    100% {
-        background-color: lightgray;
-        transform: translateY(-5px);
-    }
-}
-
-.optionname {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.optionprice {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-
-/* Add this to style the h2 element */
-.pricing h2 {
-    margin-bottom: 20px; /* Add some margin to separate from options */
-}
-
-
-
-
 
 
 
