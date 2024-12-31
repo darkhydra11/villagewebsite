@@ -148,7 +148,7 @@ h2 {
   transition: transform 0.2s; /* Add transition for hover effect */
 }
 
-.news-item h2, .event-info h2 {
+.news-item h2, .new-item h1, .event-info h2 {
   margin: 0;
   font-size: 1.5em;
   color: #fff; /* White color for headings */
@@ -172,9 +172,9 @@ h2 {
   margin-bottom: 15px;
 }
 
-.title h1 {
+.title h1, .title h2 {
   font-size: 2em;
-  color: #333;
+  color: #fff;
 }
 
 .title p {
@@ -244,7 +244,7 @@ h2 {
     font-size: 0.9em; /* Smaller text size */
   }
 
-  .title h1 {
+  .title h2 {
     font-size: 1.5em; /* Smaller title size */
   }
 

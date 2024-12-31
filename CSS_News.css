@@ -100,92 +100,44 @@ body, html {
 
 
 
-.news-ticker {
-  background-color: #333;
-  color: white;
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-item {
+  box-sizing: border-box;
   padding: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 18px; /* Increased font size for better readability */
-}
-
-.ticker-content {
-  display: inline-block;
-  animation: ticker 10s linear infinite;
-}
-
-@keyframes ticker {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-.other-news {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row; /* Default to row for larger screens */
-  flex-wrap: wrap; /* Allow wrapping */
-}
-
-.other-news h2 {
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 24px; /* Increased font size for the heading */
-  color: #333; /* Darker color for better contrast */
-}
-
-.other-news .news-column {
-  flex: 1;
-  min-width: 300px; /* Minimum width for each column */
   margin: 10px;
+  border-radius: 3px;
+  width: calc(33.33% - 20px); /* 3 items in a row */
+  text-align: center; /* Center text */
+  background-color: #262726; /* Optional: background color for better contrast */
 }
 
-.other-news ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.other-news li {
-  background: #fff;
-  margin: 10px 0;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.other-news li:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
-}
-
-.other-news img {
-  max-width: 150px; /* Set a max width for images */
+.news-item img {
+  max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 15px; /* Space between image and text */
-  border-radius: 5px; /* Rounded corners for images */
 }
 
-.other-news a {
-  text-decoration: none; /* Remove underline from links */
-  color: #007BFF; /* Bootstrap primary color */
-  font-weight: bold; /* Bold text for links */
-}
-
-.other-news a:hover {
-  text-decoration: underline; /* Underline on hover */
+/* Text color styling */
+.news-item h3,
+.news-item p {
+  color: white; /* Set text color to white */
 }
 
 @media (max-width: 768px) {
-  .other-news {
-      flex-direction: column; /* Stack columns on mobile */
-  }
-
-  .other-news .news-column {
-      width: 100%; /* Full width for each column on mobile */
+  .news-item {
+      width: calc(50% - 20px); /* 2 items in a row */
   }
 }
 
+@media (max-width: 480px) {
+  .news-item {
+      width: 100%; /* Stacked on top of one another */
+  }
+}
 
 
 
