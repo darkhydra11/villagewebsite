@@ -63,36 +63,19 @@
                 </div>
         </div>
 
-        <div class="button-container">
-            <button class="button" onclick="window.location.href='https://www.cherwell.gov.uk/homepage/129/bin-collection-search'">Waste Collection</button>
-        </div>
-        <style>
-
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0; /* Add some margin for spacing */
-}
-
-.button {
-  display: inline-block;
-  width: 80%;
-  padding: 15px;
-  background-color: #262726;
-  color: white;
-  text-align: center;
-  border: none; /* Remove border */
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer; /* Change cursor to pointer */
-  transition: background-color 0.3s;
-}
-
-.button:hover {
-  background-color: #1f1f1f; /* Darker shade on hover */
-}
-        </style>
+        <div class="container">
+          <h1>Waste Collection</h1>
+          <div id="collection-info" class="collection-info">
+              <div id="recycling-icons" style="display: none;">
+                  <img id="recycling-icon1" src="IMG_Recycling.png" alt="Recycling Icon 1" />
+                  <img id="recycling-icon2" src="IMG_GardenWaste.png" alt="Recycling Icon 2" />
+              </div>
+              <img id="rubbish-icon" src="IMG_Rubbish.png" alt="Rubbish Icon" style="display: none;" />
+              <div id="bin-text"></div>
+          </div>
+      </div>
+      <script src="JS_WasteCollection.js"></script>
+        
 
 
 

@@ -18,22 +18,23 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching news:', error);
         });
 
-    // Fetch events from whatson.html
-    fetch('whatson.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
+   // Fetch events from whatson.html
+fetch('whatson.html')
+.then(response => response.text())
+.then(data => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(data, 'text/html');
 
-            // Fetch events
-            const events = doc.querySelectorAll('.event');
-            const eventsContainer = document.getElementById('events-container');
+    // Fetch events
+    const events = doc.querySelectorAll('.event'); // Select all event elements
+    const eventsContainer = document.getElementById('events-container'); // Ensure this ID matches your HTML
 
-            events.forEach(event => {
-                eventsContainer.appendChild(event.cloneNode(true));
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching events:', error);
-        });
-});
+    events.forEach(event => {
+        // Clone the event and append it to the events container
+        const clonedEvent = event.cloneNode(true);
+        eventsContainer.appendChild(clonedEvent);
+    });
+})
+.catch(error => {
+    console.error('Error fetching events:', error);
+})});

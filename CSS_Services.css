@@ -154,32 +154,56 @@ body, html {
 
 
 
-
-.button-container {
+.container {
+  background: #262726; /* Dark background for the container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px 0; /* Add some margin for spacing */
+  margin: auto;
 }
 
-.button {
-  display: inline-block;
-  width: 80%;
-  padding: 15px;
-  background-color: #262726;
-  color: white;
+h1 {
+  padding: 20px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: white; /* White text for the title */
   text-align: center;
-  border: none; /* Remove border */
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer; /* Change cursor to pointer */
-  transition: background-color 0.3s;
+  text-decoration: underline;
 }
 
-.button:hover {
-  background-color: #1f1f1f; /* Darker shade on hover */
+.collection-info {
+  font-size: 1.5em;
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  color: white; /* White text for the collection info */
+  display: flex; /* Use Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
+#recycling-icons {
+  display: flex; /* Use Flexbox for recycling icons */
+  justify-content: center; /* Center icons horizontally */
+  margin-bottom: 20px; /* Space below the icons */
+}
+
+#recycling-icons img {
+  width: 50px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 10px; /* Space between icons */
+}
+
+#rubbish-icon {
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px; /* Space around the rubbish icon */
+}
+
+#bin-text {
+  margin-top: 20px; /* Space for the text */
+  color: white; /* White text for the bin text */
+}
 
 
 
