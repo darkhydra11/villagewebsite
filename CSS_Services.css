@@ -159,11 +159,13 @@ body, html {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 100%;
   margin: auto;
+  padding: 20px; /* Add padding for better spacing */
+  border-radius: 8px; /* Rounded corners for a softer look */
 }
 
 h1 {
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 2em; /* Increased font size for better visibility */
   margin-bottom: 20px;
   color: white; /* White text for the title */
   text-align: center;
@@ -188,6 +190,12 @@ h1 {
   margin-bottom: 20px; /* Space below the icons */
 }
 
+#bin-text h3 {
+  margin: 0 0 10px; /* Bottom margin of 10px */
+  color: white; /* White text for the title */
+  text-decoration: underline; /* Underline the title */
+}
+
 #recycling-icons img {
   width: 50px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
@@ -203,8 +211,29 @@ h1 {
 #bin-text {
   margin-top: 20px; /* Space for the text */
   color: white; /* White text for the bin text */
+  font-size: 1.2em; /* Slightly smaller font size for the bin text */
+  text-align: center; /* Center the text */
 }
 
+/* Additional styles for better spacing and readability */
+.collection-info p {
+  margin: 10px 0; /* Space between paragraphs */
+  line-height: 1.5; /* Improve line spacing for readability */
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5em; /* Adjust heading size for smaller screens */
+  }
+
+  .collection-info {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  #bin-text {
+    font-size: 1em; /* Adjust bin text size for smaller screens */
+  }
+}
 
 
 

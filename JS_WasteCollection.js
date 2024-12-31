@@ -21,12 +21,22 @@ function updateCollectionInfo() {
     if (binType === "Recycling/Garden Waste") {
         recyclingIcons.style.display = "block"; // Show recycling icons
         rubbishIcon.style.display = "none"; // Hide rubbish icon
-        binText.innerHTML = `Next Collection: ${nextCollectionDate.toDateString()} - ${binType}`;
     } else {
         recyclingIcons.style.display = "none"; // Hide recycling icons
         rubbishIcon.style.display = "block"; // Show rubbish icon
-        binText.innerHTML = `Next Collection: ${nextCollectionDate.toDateString()} - ${binType}`;
     }
+
+    // Format the date to a more readable format
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = nextCollectionDate.toLocaleDateString('en-UK', options);
+
+    // Set the inner HTML for binText with improved layout
+    binText.innerHTML = `
+        <h3>Next Collection</h3>
+        <br>
+        <p>${formattedDate}</p>
+        <p>${binType}</p>
+    `;
 }
 
 // Initialize the collection info on page load
