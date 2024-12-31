@@ -1,80 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Wroxton Village | News</title>
-        <meta name = "author" content = "Ben Mitchell">
-        <meta name = "keywords" content =  "wroxton, village, oxfordshire">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-        <meta name = "description" content = "Wroxton is a small village and civil parish about 3 miles from the market town of Banbury">
-        <link rel = "icon" href="IMG_Web_Icon.png">
-        <link rel = "stylesheet" href = "CSS_News.css">
-        <meta name="HandheldFriendly" content="true"/> 
-        <link rel = "stylesheet" href = "CSS_Top_Navigation.css">
-        <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display" rel="stylesheet">
-    </head>
-    
-    <body>
-        
-            <div class="hero-image">
-              <div class="hero-text">
-                <h1 style="font-size:50px">Wroxton News</h1>
-                <p>Your local source for news and information</p>
-              </div>
-                <a class="weatherwidget-io" href="https://forecast7.com/en/52d07n1d40/wroxton/" data-label_1="WROXTON" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="rgba(26, 26, 26, 0.28)" data-textcolor="#fff" >WROXTON WEATHER</a>
-                <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                </script>
-            </div>
-        
-            <div class= "topnav">
-                <a href = "index.html">Home</a>
-                <a href = "parishcouncil.html">Parish Council</a>
-                <a href = "villagehall.html">Village Hall</a>
-                <a href = "churches.html">Churches</a>
-                <a href = "news.html">Village News</a>
-                <a href = "whatson.html">What's On</a>
-                <a href = "services.html">Services</a>
-                <a href = "organisations.html">Clubs and Organisations</a>
-            </div>   
-             
-        
-            <div class = "breakingnewsmarquee">
-                <a href = "news.html"><marquee scrollamount = "5"><b><b></marquee></a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ben Mitchell">
+    <meta name="keywords" content="wroxton, village, oxfordshire">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wroxton is a small village and civil parish about 3 miles from the market town of Banbury">
+    <link rel="icon" href="IMG_Web_Icon.png">
+    <link rel="stylesheet" href="CSS_News.css">
+    <link rel="stylesheet" href="CSS_Top_Navigation.css">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <title>Wroxton Village | News</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Wroxton News</h1>
+            <p>Your local source for news and information</p>
         </div>
-        
-        <br>
-        
+        <a class="weatherwidget-io" href="https://forecast7.com/en/52d07n1d40/wroxton/" data-label_1="WROXTON" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="rgba(26, 26, 26, 0.28)" data-textcolor="#fff">WROXTON WEATHER</a>
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </div>
 
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="parishcouncil.html">Parish Council</a>
+        <a href="villagehall.html">Village Hall</a>
+        <a href="churches.html">Churches</a>
+        <a href="news.html">Village News</a>
+        <a href="whatson.html">What's On</a>
+        <a href="services.html">Services</a>
+        <a href="organisations.html">Clubs and Organisations</a>
+    </div>
 
-           
+    <div class="breakingnewsmarquee">
+        <marquee scrollamount="5"><b></b></marquee>
+    </div>
 
-        <div class="container">
-            <h1 class="title">Latest News</h1>
-            <div class="news-container">
-                        <div class="news-item">
-                            <h2>Changes to Waste Collection over Christmas</h2>
-                            <p>See the changes to Wroxton's waste collection over the Christmas Period.</p>
-                            <img src = "IMG_ChristmasWasteCollection.png">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="news-ticker">
+        <div class="ticker-content" id="ticker"></div>
+    </div>
+    <div class="other-news">
+        <h2>Other News</h2>
+        <ul id="news-list"></ul>
+    </div>
 
-                
+    <div class="footer">
+        <p>EDITOR: Ben Mitchell (EST 2024)</p>
+        <p><a style="text-decoration: none; font-family: 'News Cycle'; color: white; text-align: center;" href="mailto:editorwroxton@gmail.com">editorwroxton@gmail.com</a></p>
+    </div>
 
-            </div>
-        <div class = "footer">
-            <p>EDITOR: Ben Mitchell (EST 2024)</p>
-            <p><a style = "text-decoration: none; font-family: 'News Cycle'; color: white; text-align: center;" href="mailto:editorwroxton@gmail.com">editorwroxton@gmail.com</a></p>
-        </div>
-
-
-
-        <script src="JS_News.js"></script>
-
-
-    
-        <script src="https://ddosnotification.github.io/snow-theme/snow.js"></script>
-    </body>
+    <script src="JS_News.js"></script>
+    <script src="https://ddosnotification.github.io/snow-theme/snow.js"></script>
+</body>
 </html>
