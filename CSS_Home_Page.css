@@ -120,6 +120,12 @@ body, html {
 
 
 
+
+
+
+
+
+
 .quick-news {
   max-width: 95%;
   margin: 0 auto;
@@ -202,6 +208,24 @@ h2 {
   background-color: #323232; /* Change background on hover */
 }
 
+/* Button Styles */
+.container-link button {
+  display: block; /* Make the button a block element */
+  width: 100%; /* Full width of the parent */
+  padding: 10px; /* Padding for the button */
+  margin-top: 10px; /* Space between content and button */
+  background-color: #323232; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.container-link button:hover {
+  background-color: #383838; /* Darker blue on hover */
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .quick-news {
@@ -242,7 +266,7 @@ h2 {
     font-size: 1em; /* Even smaller heading size for news and events */
   }
 
-  .news-item p, .event .date, .event .time, .event .location, .event .welcome {
+  .news-item p, .event .date, .event .time, .location, .event .welcome {
     font-size: 0.8em; /* Even smaller text size */
   }
 
@@ -255,28 +279,16 @@ h2 {
   }
 }
 
-
-
-
 .quick-view {
   border: 1px solid #ccc;
   padding: 15px;
   margin-bottom: 20px;
-  background-color: #262726
+  background-color: #262726;
 }
 
 .next-service {
   margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
 
 
 .suggestions {
@@ -344,6 +356,11 @@ h2 {
   text-decoration: none;
   margin: auto;
 }
+
+
+
+
+
 
 
 

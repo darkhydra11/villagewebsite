@@ -33,7 +33,7 @@ function updateCollectionInfo() {
     // Set the inner HTML for binText with improved layout
     binText.innerHTML = `
         <h3>Next Collection</h3>
-        <br>
+        <br> 
         <p>${formattedDate}</p>
         <p>${binType}</p>
     `;
