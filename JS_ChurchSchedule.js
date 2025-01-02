@@ -1,35 +1,41 @@
 const scheduleData = [
     {
-        date: "2024-12-22",
-        services: [
-            { location: "Shenington", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
-            { location: "Horley", time: "5pm", typeofservice: "Nativity and Carols", contact: "Guy" },
-            { location: "Hornton Methodist", time: "6pm", typeofservice: "Carol Service", contact: "" },
-            { location: "Wroxton", time: "6:30pm", typeofservice: "Carol Service", contact: "Alicia" },
-        ]
-    },
-    {
-        date: "2024-12-24",
-        services: [
-            { location: "Shenington", time: "4pm", typeofservice: "Crib Service", contact: "Alicia" },
-            { location: "Hornton", time: "5:30pm", typeofservice: "Crib Service", contact: "Cate Fokes" },
-            { location: "Hanwell", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
-            { location: "Wroxton", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
-        ]
-    },
-    {
-        date: "2024-12-25",
+        date: "2025-1-5",
         services: [
             { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
-            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Horley", time: "10:30am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
+            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Jonathon Perry" },
+            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
         ]
     },
     {
-        date: "2024-12-29",
+        date: "2025-1-12",
         services: [
-            { location: "Hornton Methodist Church, Honrton", time: "10am", typeofservice: "Breakfast Church", contact: "Alicia" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Shenington", time: "9:45am", typeofservice: "Village Service", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
+            { location: "Glebefields Nursing Home, Drayton", time: "11:50am", typeofservice: "", contact: "Guy" },
+        ]
+    },
+    {
+        date: "2025-1-19",
+        services: [
+            { location: "Hanwell", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
+            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
+        ]
+    },
+    {
+        date: "2025-1-22",
+        services: [
+            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
+        ]
+    },
+    {
+        date: "2025-1-26",
+        services: [
+            { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Alicia" },
+            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Guy" },
         ]
     }
 ];
@@ -47,6 +53,15 @@ function displaySchedule() {
 
     const scheduleContainer = document.getElementById('schedule-container');
     scheduleContainer.innerHTML = ''; // Clear previous schedule
+
+    // Add line break before the title
+    const lineBreak = document.createElement('br');
+    scheduleContainer.appendChild(lineBreak);
+
+    // Add title
+    const title = document.createElement('h2');
+    title.innerText = "This Week's Services";
+    scheduleContainer.appendChild(title);
 
     scheduleData.forEach(day => {
         const eventDate = new Date(day.date);
@@ -71,8 +86,7 @@ function displaySchedule() {
     });
 }
 
-// Call the function to display the schedule initially
+// Call the function ```javascript
 displaySchedule();
 
-// Set an interval to refresh the schedule every hour (3600000 milliseconds)
 setInterval(displaySchedule, 3600000);
