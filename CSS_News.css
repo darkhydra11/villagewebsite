@@ -127,6 +127,14 @@ body, html {
   color: white; /* Set text color to white */
 }
 
+.quick-news h2 {
+  color: white; /* Set text color to white */
+  text-align: center;
+  text-decoration: underline;
+  font-size: 48px;
+}
+
+
 @media (max-width: 768px) {
   .news-item {
       width: calc(50% - 20px); /* 2 items in a row */
@@ -136,6 +144,18 @@ body, html {
 @media (max-width: 480px) {
   .news-item {
       width: 100%; /* Stacked on top of one another */
+  }
+}
+
+@media (max-width: 768px) {
+  .quick-news h2 {
+    font-size: 36px; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-news h2 {
+    font-size: 24px; /* Adjust font size for small screens */
   }
 }
 
