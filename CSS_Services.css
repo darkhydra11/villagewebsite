@@ -158,6 +158,7 @@ body, html {
   background: #262726; /* Dark background for the container */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   width: 100%;
+  max-width: 100%; /* Set a max width for better centering */
   margin: auto;
   padding: 20px; /* Add padding for better spacing */
 }
@@ -173,7 +174,7 @@ h1 {
 
 .collection-info {
   font-size: 1.5em;
-  margin: 20px 0;
+  margin: 20px auto;
   position: relative;
   text-align: center;
   padding: 20px;
@@ -231,6 +232,11 @@ h1 {
 
   #bin-text {
     font-size: 1em; /* Adjust bin text size for smaller screens */
+  }
+
+  /* Ensure the container is centered on mobile */
+  .container {
+    padding: 10px; /* Reduce padding for smaller screens */
   }
 }
 
