@@ -26,30 +26,29 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error fetching news:', error);
         });
 
-    // Fetch events from whatson.html
-    fetch('whatson.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
+// Fetch events from whatson.html
+fetch('whatson.html')
+    .then(response => response.text())
+    .then(data => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
 
-            // Fetch events
-            const events = doc.querySelectorAll('.event'); // Select all event elements
-            const eventsContainer = document.getElementById('events-container'); // Ensure this ID matches your HTML
+        // Fetch events
+        const events = doc.querySelectorAll('.event'); // Select all event elements
+        const eventsContainer = document.getElementById('events-container'); // Ensure this ID matches your HTML
 
-            events.forEach(event => {
-                const clonedEvent = event.cloneNode(true);
-                eventsContainer.appendChild(clonedEvent);
-
-                // Create and append the button
-                const button = document.createElement('button');
-                button.textContent = 'View Events'; // Set button text
-                button.type = 'button'; // Set button type
-                button.classList.add('event-button'); // Optional: add a class for styling
-                eventsContainer.appendChild(button);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching events:', error);
+        events.forEach(event => {
+            const clonedEvent = event.cloneNode(true);
+            eventsContainer.appendChild(clonedEvent);
         });
-});
+
+        // Create and append the button after all events have been added
+        const button = document.createElement('button');
+        button.textContent = 'View Events'; // Set button text
+        button.type = 'button'; // Set button type
+        button.classList.add('event-button'); // Optional: add a class for styling
+        eventsContainer.appendChild(button); // Append the button to the container
+    })
+    .catch(error => {
+        console.error('Error fetching events:', error);
+    })});
