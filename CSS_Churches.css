@@ -91,7 +91,6 @@ h2 {
   height: auto;
   padding: 10px;
   max-width: 100%; /* Set a max width for better centering */
-  border-radius: 5px;
   color: white;
   background-color: #262726; /* Background color for the schedule */
 }
@@ -138,7 +137,6 @@ h2 {
 @media (max-width: 600px) {
   #schedule-container {
       margin: 10px 0; /* Reduce margin for smaller screens */
-      padding: 10px; /* Reduce padding for smaller screens */
       width: 100%; /* Full width on smaller screens */
       border-radius: 0; /* Remove border radius for smaller screens */
   }
