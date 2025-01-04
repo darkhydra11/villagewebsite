@@ -89,7 +89,7 @@ h2 {
 #schedule-container {
   margin: 40px auto; /* Center the container */
   height: auto;
-  padding: 10px;
+  padding: 5px;
   max-width: 100%; /* Set a max width for better centering */
   color: white;
   background-color: #262726; /* Background color for the schedule */
