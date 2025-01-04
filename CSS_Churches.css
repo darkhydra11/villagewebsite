@@ -141,7 +141,7 @@ h2 {
       margin: 10px 0; /* Reduce margin for smaller screens */
       width: 100%; /* Full width on smaller screens */
       border-radius: 0; /* Remove border radius for smaller screens */
-      padding: 0; /* Remove padding for smaller screens */
+      padding: 10px 0px; /* Remove padding for smaller screens */
   }
 
   h2 {
