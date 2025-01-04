@@ -89,6 +89,7 @@ h2 {
   font-family: Arial, sans-serif;
   margin: 20px auto; /* Center the container */
   width: 95%;
+  max-width: 600px; /* Set a max width for better centering */
   border-radius: 5px;
   background-color: #262726;
 }
@@ -106,7 +107,6 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 28px; /* Smaller font size for medium screens */
-    color: white;
     margin: 15px 0; /* Adjust margin for medium screens */
   }
 }
@@ -114,7 +114,6 @@ h2 {
 @media (max-width: 480px) {
   h2 {
     font-size: 24px; /* Smaller font size for small screens */
-    color: white; /* Change color for small screens */
     margin: 10px 0; /* Adjust margin for small screens */
   }
 }
@@ -186,7 +185,6 @@ h2 {
       padding: 5px;
   }
 }
-
 
 
 
