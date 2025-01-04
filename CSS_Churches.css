@@ -87,13 +87,13 @@ h2 {
 
 /* Schedule Container */
 #schedule-container {
-  margin: 20px auto; /* Center the container */
+  margin: 40px auto; /* Center the container */
   width: 90%; /* Use a percentage for responsiveness */
   max-width: 600px; /* Set a max width for better centering */
   border-radius: 5px;
   color: white;
   background-color: #262726; /* Background color for the schedule */
-  padding: 20px; /* Add padding for better spacing */
+ 
 }
 
 /* Title Styles */
@@ -118,10 +118,11 @@ h2 {
 
 /* Service Entry Styles */
 .service {
-  margin: 10px 0; /* Margin between service entries */
+  margin: 10px auto; /* Margin between service entries */
   padding: 10px; /* Padding inside service entries */
   background-color: #3a3a3a; /* Slightly lighter background for services */
   border-radius: 5px; /* Rounded corners */
+  width: 70%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for depth */
 }
 
@@ -140,6 +141,7 @@ h2 {
       padding: 10px; /* Reduce padding for smaller screens */
       width: 100%; /* Full width on smaller screens */
       border-radius: 0; /* Remove border radius for smaller screens */
+      margin-bottom: 20px; /* Maintain bottom margin for smaller screens */
   }
 
   h2 {
