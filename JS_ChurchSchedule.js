@@ -1,3 +1,4 @@
+// Schedule data containing service information
 const scheduleData = [
     {
         date: "2025-1-5",
@@ -46,6 +47,7 @@ function formatDate(date) {
     return date.toLocaleDateString('en-US', options);
 }
 
+// Function to display the schedule
 function displaySchedule() {
     const currentDate = new Date();
     const currentWeekEnd = new Date(currentDate);
@@ -54,30 +56,29 @@ function displaySchedule() {
     const scheduleContainer = document.getElementById('schedule-container');
     scheduleContainer.innerHTML = ''; // Clear previous schedule
 
-    // Add line break before the title
-    const lineBreak = document.createElement('br');
-    scheduleContainer.appendChild(lineBreak);
-
-    // Add title
+    // Create and append the title
     const title = document.createElement('h2');
     title.innerText = "This Week's Services";
     scheduleContainer.appendChild(title);
 
+    // Iterate through the schedule data
     scheduleData.forEach(day => {
         const eventDate = new Date(day.date);
         if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
+            // Create a div for the date
             const dateDiv = document.createElement('div');
             dateDiv.className = 'date';
-            dateDiv.innerHTML = `<strong>${formatDate(eventDate)}</strong>`; // Use the formatDate function
+            dateDiv.innerHTML = `<strong>${formatDate(eventDate)}</strong>`;
             scheduleContainer.appendChild(dateDiv);
 
+            // Iterate through the services for the day
             day.services.forEach(service => {
                 const serviceDiv = document.createElement('div');
                 serviceDiv.className = 'service';
                 serviceDiv.innerHTML = `
                     <div class="location">Location: ${service.location}</div>
                     <div class="time">Time: ${service.time}</div>
-                    <div class="typeofservice">Type of Service: ${service.typeofservice}</div>
+                    <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
                     <div class="contact">Contact: ${service.contact}</div>
                 `;
                 dateDiv.appendChild(serviceDiv);
@@ -86,7 +87,11 @@ function displaySchedule() {
     });
 }
 
-// Call the function ```javascript
-displaySchedule();
+// Wait for the DOM to fully load before executing the script
+document.addEventListener('DOMContentLoaded', () => {
+    // Initial call to display the schedule
+    displaySchedule();
 
-setInterval(displaySchedule, 3600000);
+    // Refresh the schedule every hour (3600000 milliseconds)
+    setInterval(displaySchedule, 3600000);
+});
