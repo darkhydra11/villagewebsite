@@ -47,6 +47,28 @@ function formatDate(date) {
     return date.toLocaleDateString('en-US', options);
 }
 
+// Function to create the title HTML
+function createTitle() {
+    return "<h2>This Week's Services</h2>";
+}
+
+// Function to create the date HTML
+function createDateHTML(eventDate) {
+    return `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
+}
+
+// Function to create the service HTML
+function createServiceHTML(service) {
+    return `
+        <div class="service">
+            <div class="location">Location: ${service.location}</div>
+            <div class="time">Time: ${service.time}</div>
+            <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
+            <div class="contact">Contact: ${service.contact}</div>
+        </div>
+    `;
+}
+
 // Function to display the schedule
 function displaySchedule() {
     const currentDate = new Date();
@@ -55,25 +77,18 @@ function displaySchedule() {
 
     // Build the HTML string
     let scheduleHTML = '<br>'; // Add a line break before the title
-    scheduleHTML += "<h2>This Week's Services</h2>"; // Title
+    scheduleHTML += createTitle(); // Add the title
 
     // Iterate through the schedule data
     scheduleData.forEach(day => {
         const eventDate = new Date(day.date);
         if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
             // Add a div for the date
-            scheduleHTML += `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
+            scheduleHTML += createDateHTML(eventDate);
 
             // Iterate through the services for the day
             day.services.forEach(service => {
-                scheduleHTML += `
-                    <div class="service">
-                        <div class="location">Location: ${service.location}</div>
-                        <div class="time">Time: ${service.time}</div>
-                        <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
-                        <div class="contact">Contact: ${service.contact}</div>
-                    </div>
-                `;
+                scheduleHTML += createServiceHTML(service);
             });
         }
     });
