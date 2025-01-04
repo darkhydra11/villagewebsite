@@ -123,6 +123,7 @@ h2 {
   border-radius: 5px; /* Rounded corners */
   max-width: 90%; /* Use a percentage for responsiveness */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+  overflow: hidden; /* Prevent overflow */
 }
 
 /* Service Details Styles */
@@ -140,10 +141,15 @@ h2 {
       margin: 10px 0; /* Reduce margin for smaller screens */
       width: 100%; /* Full width on smaller screens */
       border-radius: 0; /* Remove border radius for smaller screens */
+      padding: 0; /* Remove padding for smaller screens */
   }
 
   h2 {
       font-size: 24px; /* Adjust title size for smaller screens */
+  }
+
+  .date {
+      padding: 5px; /* Adjust date padding for smaller screens */
   }
 
   .date strong {
@@ -152,6 +158,7 @@ h2 {
 
   .service {
       padding: 5px; /* Adjust service padding for smaller screens */
+      width: 95%; /* Ensure service entries fit within the container */
   }
 }
 
