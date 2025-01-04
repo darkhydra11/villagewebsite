@@ -1,7 +1,7 @@
 // Schedule data containing service information
 const scheduleData = [
     {
-        date: "2025-1-5",
+        date: "2025-01-05", // Use leading zeros for month and day
         services: [
             { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
             { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Jonathon Perry" },
@@ -9,7 +9,7 @@ const scheduleData = [
         ]
     },
     {
-        date: "2025-1-12",
+        date: "2025-01-12",
         services: [
             { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
             { location: "Shenington", time: "9:45am", typeofservice: "Village Service", contact: "Guy" },
@@ -19,20 +19,20 @@ const scheduleData = [
         ]
     },
     {
-        date: "2025-1-19",
+        date: "2025-01-19",
         services: [
             { location: "Hanwell", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
             { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
         ]
     },
     {
-        date: "2025-1-22",
+        date: "2025-01-22",
         services: [
             { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
     {
-        date: "2025-1-26",
+        date: "2025-01-26",
         services: [
             { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Alicia" },
             { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Alicia" },
@@ -64,7 +64,7 @@ function createServiceHTML(service) {
             <div class="location">Location: ${service.location}</div>
             <div class="time">Time: ${service.time}</div>
             <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
-            <div class="contact">Contact: ${service.contact}</div>
+            <div class="contact">Contact: ${service.contact }</div>
         </div>
     `;
 }
@@ -81,7 +81,9 @@ function displaySchedule() {
 
     // Iterate through the schedule data
     scheduleData.forEach(day => {
-        const eventDate = new Date(day.date);
+        const [year, month, dayOfMonth] = day.date.split('-').map(Number);
+        const eventDate = new Date(year, month - 1, dayOfMonth); // Create a new date object
+
         if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
             // Add a div for the date
             scheduleHTML += createDateHTML(eventDate);
