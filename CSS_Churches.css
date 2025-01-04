@@ -88,12 +88,12 @@ h2 {
 /* Schedule Container */
 #schedule-container {
   margin: 20px auto; /* Center the container */
-  width: 90%;
+  width: 90%; /* Use a percentage for responsiveness */
   max-width: 600px; /* Set a max width for better centering */
   border-radius: 5px;
-  background-color: #262726;
+  color: white;
+  background-color: #262726; /* Background color for the schedule */
   padding: 20px; /* Add padding for better spacing */
-  color: white; /* Default text color */
 }
 
 /* Title Styles */
@@ -108,21 +108,21 @@ h2 {
 .date {
   margin-bottom: 20px;
   padding: 10px;
-  text-align: center;
+  text-align: center; /* Center the date text */
 }
 
 /* Date Text Styles */
 .date strong {
-  font-size: 1.5em;
+  font-size: 1.5em; /* Larger font size for the date */
 }
 
 /* Service Entry Styles */
 .service {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 10px 0; /* Margin between service entries */
+  padding: 10px; /* Padding inside service entries */
   background-color: #3a3a3a; /* Slightly lighter background for services */
   border-radius: 5px; /* Rounded corners */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for depth */
 }
 
 /* Service Details Styles */
@@ -130,16 +130,16 @@ h2 {
 .service .time,
 .service .typeofservice,
 .service .contact {
-  margin: 5px 0;
+  margin: 5px 0; /* Margin between service details */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
   #schedule-container {
-      margin: 10px 0;
-      padding: 10px;
-      width: 100%;
-      border-radius: 0;
+      margin: 10px 0; /* Reduce margin for smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
+      width: 100%; /* Full width on smaller screens */
+      border-radius: 0; /* Remove border radius for smaller screens */
   }
 
   h2 {
