@@ -86,7 +86,6 @@ h2 {
 
 
 #schedule-container {
-  font-family: Arial, sans-serif;
   margin: 20px auto; /* Center the container */
   width: 95%;
   max-width: 600px; /* Set a max width for better centering */
@@ -96,7 +95,7 @@ h2 {
   color: white; /* Default text color */
 }
 
-/* Styles for the title */
+/* Title Styles */
 h2 {
   text-align: center; /* Center the title */
   text-decoration: underline; /* Underline the title */
@@ -104,7 +103,7 @@ h2 {
   font-size: 36px; /* Default font size */
 }
 
-/* Media queries for the title */
+/* Media Queries for Title */
 @media (max-width: 768px) {
   h2 {
       font-size: 28px; /* Smaller font size for medium screens */
@@ -119,19 +118,19 @@ h2 {
   }
 }
 
-/* Styles for each date section */
+/* Date Section Styles */
 .date {
   margin-bottom: 20px;
   padding: 10px;
   text-align: center;
 }
 
-/* Styles for the date text */
+/* Date Text Styles */
 .date strong {
   font-size: 1.5em;
 }
 
-/* Styles for each service entry */
+/* Service Entry Styles */
 .service {
   margin: 10px 0;
   padding: 10px;
@@ -140,7 +139,7 @@ h2 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* Styles for service details */
+/* Service Details Styles */
 .service .location,
 .service .time,
 .service .typeofservice,
@@ -148,7 +147,7 @@ h2 {
   margin: 5px 0;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 600px) {
   #schedule-container {
       margin: 10px 0;
@@ -165,7 +164,6 @@ h2 {
       padding: 5px;
   }
 }
-
 
 
 
@@ -197,16 +195,6 @@ h2 {
   }
   .title {
       font-size: 24px; /* Slightly smaller title on smaller screens */
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .schedule {
-      width: 100%;
-      padding: 15px; /* Reduce padding for very small screens */
-  }
-  .title {
-      font-size: 20px; /* Further reduce title size */
   }
 }
 
