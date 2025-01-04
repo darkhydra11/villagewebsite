@@ -100,25 +100,9 @@ h2 {
   text-align: center; /* Center the title */
   text-decoration: underline; /* Underline the title */
   margin: 20px 0; /* Add top and bottom margin */
-  font-size: 36px; /* Default font size */
+  font-size: 28px; /* Default font size */
 }
 
-/* Media Queries for Title */
-@media (max-width: 768px) {
-  h2 {
-      font-size: 28px; /* Smaller font size for medium screens */
-      margin: 15px 0; /* Adjust margin for medium screens */
-  }
-}
-
-@media (max-width: 480px) {
-  h2 {
-      font-size: 24px; /* Smaller font size for small screens */
-      margin: 10px 0; /* Adjust margin for small screens */
-  }
-}
-
-/* Date Section Styles */
 .date {
   margin-bottom: 20px;
   padding: 10px;
@@ -147,23 +131,11 @@ h2 {
   margin: 5px 0;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  #schedule-container {
-      margin: 10px 0;
-      padding: 10px;
-      width: 100%;
-      border-radius: 0;
-  }
 
-  .date strong {
-      font-size: 1.2em;
-  }
 
-  .service {
-      padding: 5px;
-  }
-}
+
+
+
 
 
 
