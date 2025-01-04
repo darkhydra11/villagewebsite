@@ -117,8 +117,8 @@ h2 {
 
 /* Service Entry Styles */
 .service {
-  margin: 10px auto; /* Margin between service entries */
-  padding: 20px; /* Padding inside service entries */
+  margin: 30px auto; /* Margin between service entries */
+  padding: 10px; /* Padding inside service entries */
   background-color: #3a3a3a; /* Slightly lighter background for services */
   border-radius: 5px; /* Rounded corners */
   width: 90%; /* Use a percentage for responsiveness */
@@ -131,6 +131,7 @@ h2 {
 .service .typeofservice,
 .service .contact {
   margin: 5px 0; /* Margin between service details */
+  padding: 3px;
 }
 
 /* Responsive Design */
