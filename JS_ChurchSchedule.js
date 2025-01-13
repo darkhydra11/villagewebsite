@@ -1,7 +1,6 @@
-// Schedule data containing service information
 const scheduleData = [
     {
-        date: "2025-01-05", // Use leading zeros for month and day
+        date: "2025-01-05",
         services: [
             { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
             { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Jonathon Perry" },
@@ -11,7 +10,7 @@ const scheduleData = [
     {
         date: "2025-01-12",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "A licia" },
             { location: "Shenington", time: "9:45am", typeofservice: "Village Service", contact: "Guy" },
             { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
             { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
@@ -64,7 +63,7 @@ function createServiceHTML(service) {
             <div class="location">Location: ${service.location}</div>
             <div class="time">Time: ${service.time}</div>
             <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
-            <div class="contact">Contact: ${service.contact }</div>
+            <div class="contact">Contact: ${service.contact}</div>
         </div>
     `;
 }
@@ -100,8 +99,9 @@ function displaySchedule() {
     scheduleContainer.innerHTML = scheduleHTML; // Set the built HTML
 }
 
-// Call the displaySchedule function immediately
-displaySchedule();
-
-// Refresh the schedule every hour (3600000 milliseconds)
-setInterval(displaySchedule, 3600000);
+// Call the displaySchedule function after the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    displaySchedule();
+    // Refresh the schedule every second (1000 milliseconds)
+    setInterval(displaySchedule, 1000);
+});

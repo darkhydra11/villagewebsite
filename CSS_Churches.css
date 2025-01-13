@@ -1,5 +1,5 @@
 body, html {
-  height: auto;
+  height: 100%;
   margin: 0;
   font-family: 'Arial';
   background-color: #323232;
@@ -85,82 +85,6 @@ h2 {
 
 
 
-/* Schedule Container */
-#schedule-container {
-  margin: 40px auto; /* Center the container */
-  height: auto;
-  padding: 20px 0px;
-  max-width: 100%; /* Set a max width for better centering */
-  color: white;
-  background-color: #262726; /* Background color for the schedule */
-}
-
-/* Title Styles */
-h2 {
-  text-align: center; /* Center the title */
-  text-decoration: underline; /* Underline the title */
-  margin: 20px 0; /* Add top and bottom margin */
-  font-size: 28px; /* Default font size */
-}
-
-/* Date Section Styles */
-.date {
-  margin-bottom: 20px;
-  padding: 10px;
-  text-align: center; /* Center the date text */
-}
-
-/* Date Text Styles */
-.date strong {
-  font-size: 1.5em; /* Larger font size for the date */
-}
-
-/* Service Entry Styles */
-.service {
-  margin: 10px auto; /* Margin between service entries */
-  padding: 10px; /* Padding inside service entries */
-  background-color: #3a3a3a; /* Slightly lighter background for services */
-  border-radius: 5px; /* Rounded corners */
-  max-width: 90%; /* Use a percentage for responsiveness */
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4); /* Shadow for depth */
-  overflow: hidden; /* Prevent overflow */
-}
-
-/* Service Details Styles */
-.service .location,
-.service .time,
-.service .typeofservice,
-.service .contact {
-  margin: 5px 0; /* Margin between service details */
-  padding: 3px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  #schedule-container {
-      margin: 10px 0; /* Reduce margin for smaller screens */
-      width: 100%; /* Full width on smaller screens */
-      border-radius: 0; /* Remove border radius for smaller screens */
-      padding: 10px 0px; /* Remove padding for smaller screens */
-  }
-
-  h2 {
-      font-size: 24px; /* Adjust title size for smaller screens */
-  }
-
-  .date {
-      padding: 5px; /* Adjust date padding for smaller screens */
-  }
-
-  .date strong {
-      font-size: 1.2em; /* Adjust date size for smaller screens */
-  }
-
-  .service {
-      padding: 5px; /* Adjust service padding for smaller screens */
-      width: 95%; /* Ensure service entries fit within the container */
-  }
-}
 
 
 
