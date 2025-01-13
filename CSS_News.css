@@ -116,9 +116,6 @@ body, html {
   background-color: #262726; /* Optional: background color for better contrast */
 }
 
-.emailbutton {
- color: black;
-}
 .news-item img {
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
@@ -128,6 +125,16 @@ body, html {
 .news-item h3,
 .news-item p {
   color: white; /* Set text color to white */
+}
+
+.emailbutton {
+color: white;
+background-color: #262726;
+width: 80%;
+border: 2px solid white;
+padding: 10px 10px;
+border-radius: 25px;
+margin-top: 30px;
 }
 
 .quick-news h2 {
