@@ -135,7 +135,7 @@ h1 {
 
 .club-img {
     width: 100%;
-    height: 300px; /* Adjust height for better aspect ratio */
+    height: auto; /* Adjust height for better aspect ratio */
     object-fit: cover; /* Ensure image covers the area */
 }
 
