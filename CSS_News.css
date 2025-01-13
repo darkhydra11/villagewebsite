@@ -116,6 +116,10 @@ body, html {
   background-color: #262726; /* Optional: background color for better contrast */
 }
 
+.news-item a {
+  background-color: black;
+}
+
 .news-item img {
   max-width: 100%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
