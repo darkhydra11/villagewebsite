@@ -136,7 +136,7 @@ p {
 
 .event img {
   width: 100%;
-  height: auto;
+  height: 700px;
 }
 
 .event-info {
@@ -162,6 +162,11 @@ p {
 @media (max-width: 768px) {
   h1 {
       font-size: 2em;
+  }
+
+  .event img {
+    width: 100%;
+    height: 700px;
   }
 
   p {

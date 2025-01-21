@@ -244,7 +244,12 @@ h1 {
 
 
 
-
+.mpsurgery img {
+  margin-bottom: 30px;
+  background-color: #262726;
+  padding: 20px 0px;
+  max-width: 100%;
+}
 
 
 .footer {
