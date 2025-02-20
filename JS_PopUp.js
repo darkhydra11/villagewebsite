@@ -1,10 +1,20 @@
 window.onload = function() {
-    const notification = document.getElementById('notification');
-    notification.style.display = 'block'; // Show the notification
-    notification.classList.add('flashing'); // Add flashing effect
+    // Show the popup when the window loads
+    document.getElementById('news-popup').style.display = 'block';
+    
+    // Get the <span> element that closes the popup
+    var closeBtn = document.getElementById('close-btn');
 
-    const closeButton = document.getElementById('close-btn');
-    closeButton.onclick = function() {
-        notification.style.display = 'none'; // Hide the notification when close button is clicked
-    };
-};
+    // When the user clicks on <span> (x), close the popup
+    closeBtn.onclick = function() {
+        document.getElementById('news-popup').style.display = 'none';
+    }
+
+    // When the user clicks anywhere outside of the popup, close it
+    window.onclick = function(event) {
+        var popup = document.getElementById('news-popup');
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    }
+}
