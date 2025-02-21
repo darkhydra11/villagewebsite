@@ -1,5 +1,5 @@
 function updateCollectionInfo() {
-    const startDate = new Date('2025-01-03'); // Starting from January 3, 2025
+    const startDate = new Date('2025-02-21'); // Starting from February 21, 2025
     const today = new Date();
     
     // Calculate the number of weeks since the start date
@@ -13,12 +13,8 @@ function updateCollectionInfo() {
     // Determine which bin will be collected
     let binType;
     
-    // Check if the next collection date is February 21, 2025
-    if (nextCollectionDate.toDateString() === new Date('2025-02-21').toDateString()) {
-        binType = "Recycling/Garden Waste"; // Set to Recycling/Garden Waste for this specific date
-    } else {
-        binType = (weeksDiff % 2 === 0) ? "Recycling/Garden Waste" : "Rubbish";
-    }
+    // Alternate bin type based on weeksDiff
+    binType = (weeksDiff % 2 === 0) ? "Recycling/Garden Waste" : "Rubbish";
     
     // Set the icon based on the bin type
     const recyclingIcons = document.getElementById('recycling-icons');
