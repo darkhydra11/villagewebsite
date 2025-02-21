@@ -11,7 +11,14 @@ function updateCollectionInfo() {
     nextCollectionDate.setDate(today.getDate() + (5 - today.getDay() + 7) % 7); // Next Friday
 
     // Determine which bin will be collected
-    const binType = (weeksDiff % 2 === 0) ? "Recycling/Garden Waste" : "Rubbish";
+    let binType;
+    
+    // Check if the next collection date is February 21, 2025
+    if (nextCollectionDate.toDateString() === new Date('2025-02-21').toDateString()) {
+        binType = "Recycling/Garden Waste"; // Set to Recycling/Garden Waste for this specific date
+    } else {
+        binType = (weeksDiff % 2 === 0) ? "Recycling/Garden Waste" : "Rubbish";
+    }
     
     // Set the icon based on the bin type
     const recyclingIcons = document.getElementById('recycling-icons');
