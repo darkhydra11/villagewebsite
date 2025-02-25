@@ -13,8 +13,12 @@ function updateCollectionInfo() {
     // Determine which bin will be collected
     let binType;
     
-    // Alternate bin type based on weeksDiff
-    binType = (weeksDiff % 2 === 0) ? "Recycling/Garden Waste" : "Rubbish";
+    // Set the bin type based on the current week
+    if (weeksDiff % 2 === 0) {
+        binType = "Rubbish"; // This week is rubbish
+    } else {
+        binType = "Recycling/Garden Waste"; // Next week is recycling
+    }
     
     // Set the icon based on the bin type
     const recyclingIcons = document.getElementById('recycling-icons');
