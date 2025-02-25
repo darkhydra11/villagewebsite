@@ -82,42 +82,46 @@ body, html {
 
 
 
-  .minutes-container {
+  .history-container {
     text-align: center;
     width: 100%;
     margin: 30px auto;
     background-color: #262726;
     padding: 20px;
-    box-sizing: border-box; /* add this to include padding in width calculation */
+    box-sizing: border-box; /* include padding in width calculation */
 }
 
-.minutes-container h1 {
+.history-container h1 {
     font-size: 36px;
     color: white;
     margin: 20px auto;
 }
 
-.minutes-container i {
+.history-container i {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-.minutes-list {
+.history-container img {
+    margin-top: 20px;
+}
+
+.history-container {
     list-style: none;
     padding: 0;
     margin: 0; /* reset margin */
     text-align: center; /* center the list */
 }
 
-.minutes-list li {
-  margin: 10px auto;
-  width: 70%;
-  list-style: none;
+.history-container li {
+    margin: 20px auto; /* increased margin for more spacing */
+    width: 70%;
+    list-style: none;
 }
 
-.minutes-list a {
+.history-container a {
     display: block;
-    padding: 10px 20px;
+    padding: 15px 30px; /* increased padding for larger clickable area */
     border: 0.5px solid grey;
     border-radius: 25px;
     text-decoration: none;
@@ -125,7 +129,7 @@ body, html {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.minutes-list a:hover {
+.history-container a:hover {
     background-color: #ffffff;
     color: #1c1c1c;
 }
@@ -134,38 +138,39 @@ body, html {
 
 /* For screens with a maximum width of 768px (e.g., iPads) */
 @media only screen and (max-width: 768px) {
-  .minutes-container {
-    margin: 20px auto;
-    padding: 15px;
-  }
-  .minutes-container h1 {
-    font-size: 28px;
-  }
-  .minutes-list li {
-    margin: 5px auto;
-    width: 80%; /* adjust width to reduce offset */
-  }
-  .minutes-list a {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
+    .history-container {
+        margin: 20px 0;
+    }
+    .history-container h1 {
+        font-size: 28px;
+        color: white;
+        text-align: center;
+    }
+    .history-container li {
+        margin: 15px auto; /* increased margin for more spacing */
+        width: 80%; /* adjust width to reduce offset */
+    }
+    .history-container a {
+        padding: 10px 20px; /* adjusted padding */
+        font-size: 14px;
+    }
 }
 
 /* For screens with a maximum width of 480px (e.g., smartphones) */
 @media only screen and (max-width: 480px) {
-  .history-container {
-    margin: 15px auto;
-    padding: 10px;
-  }
-  .history-container h1 {
-    font-size: 22px;
-  }
-  .history-list li {
-    margin: 3px auto;
-    width: 90%; /* adjust width to reduce offset */
-  }
-  .history-list a {
-    padding: 6px 10px;
-    font-size: 12px;
-  }
+    .history-container {
+        margin: 15px 0;
+        padding: 10px;
+    }
+    .history-container h1 {
+        font-size: 22px;
+    }
+    .history-container li {
+        margin: 10px auto; /* increased margin for more spacing */
+        width: 90%; /* adjust width to reduce offset */
+    }
+    .history-container a {
+        padding: 8px 15px; /* adjusted padding */
+        font-size: 12px;
+    }
 }
