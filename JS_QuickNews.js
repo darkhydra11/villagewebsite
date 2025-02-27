@@ -1,30 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch news items
     fetch('news.html')
-        .then(response => response.text())
-        .then(data => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(data, 'text/html');
+    .then(response => response.text())
+    .then(data => {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(data, 'text/html');
 
-            // Fetch news items
-            const newsItems = doc.querySelectorAll('.news-item');
-            const newsContainer = document.getElementById('news-container');
+        // Fetch news items
+        const newsItems = doc.querySelectorAll('.news-item');
+        const newsContainer = document.getElementById('news-container');
 
-            newsItems.forEach(item => {
-                const clonedItem = item.cloneNode(true);
-                newsContainer.appendChild(clonedItem);
-
-                // Create and append the button
-                const button = document.createElement('button');
-                button.textContent = 'Read More'; // Set button text
-                button.type = 'button'; // Set button type
-                button.classList.add('news-button'); // Optional: add a class for styling
-                newsContainer.appendChild(button);
-            });
-        })
-        .catch(error => {
-            console.error('Error fetching news:', error);
+        // Append each news item to the container
+        newsItems.forEach(item => {
+            const clonedItem = item.cloneNode(true);
+            newsContainer.appendChild(clonedItem);
         });
+
+        // Create and append the button after all news items
+        const button = document.createElement('button');
+        button.textContent = 'Read More'; // Set button text
+        button.type = 'button'; // Set button type
+        button.classList.add('news-button'); // Optional: add a class for styling
+        newsContainer.appendChild(button);
+    })
+    .catch(error => {
+        console.error('Error fetching news:', error);
+    });
 
 // Fetch events from whatson.html
 fetch('whatson.html')
