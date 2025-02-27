@@ -1,46 +1,60 @@
 const scheduleData = [
     {
-        date: "2025-02-02",
+        date: "2025-03-02",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
-            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
+            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
         ]
     },
     {
-        date: "2025-02-09",
+        date: "2025-03-05",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Alicia" },
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia" },
-            { location: "Glebefields Nursing Home, Drayton", time: "11:50am", typeofservice: "", contact: "Alicia" },
+            { location: "Drayton", time: "2pm", typeofservice: "Service of Ashing", contact: "Guy" },
         ]
     },
     {
-        date: "2025-02-16",
+        date: "2025-03-09",
         services: [
-            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
+            { location: "Glebefields Nursing Home, Drayton", time: "11:50am", typeofservice: "", contact: "Guy" },
+        ]
+    },
+    {
+        date: "2025-03-16",
+        services: [
+            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia" },
             { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
     
         
     {
-        date: "2025-02-23",
+        date: "2025-03-23",
         services: [
             { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Alicia" },
             { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Alicia" },
-            { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Guy" },
         ]
     },
 
     {
-        date: "2025-02-26",
+        date: "2025-03-26",
         services: [
             { location: "Shenington", time: "10am", typeofservice: "Holy Communion" },
         ]
-    }
+    },
+
+    {
+        date: "2025-03-30",
+        services: [
+            { location: "Horley", time: "10am", typeofservice: "Craft for Children", contact: "Alicia" },
+            { location: "Horley", time: "11am", typeofservice: "Family Service", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "CW Holy Communion", contact: "Rev. Olwen Smith" },
+        ]
+    },
 ];
 
 // Function to format the date as (day date month, year)
