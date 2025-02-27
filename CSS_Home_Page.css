@@ -441,10 +441,12 @@ h3 {
   background-color: #262726;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
-  border: 1px solid #888;
+  border: 10px solid;
+  border-image: url(IMG_FuneralBorder.png) ;
+  border-image-width: 20px;
+  border-image-repeat: repeat;
   width: 80%; /* Could be more or less, depending on screen size */
   max-width: 600px; /* Max width */
-  border-radius: 5px; /* Rounded corners */
   color: white;
 }
 
