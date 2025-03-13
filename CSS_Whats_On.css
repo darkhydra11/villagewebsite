@@ -152,6 +152,14 @@ p {
   color: white;
 }
 
+.event-info a {
+  color: white;
+  text-decoration: none;
+  background-color: #262726;
+  border-radius: 25px;
+  padding: 20px 20px;
+}
+
 .date, .time, .location, .welcome {
   margin: 5px 0;
   font-size: 1.2em;
