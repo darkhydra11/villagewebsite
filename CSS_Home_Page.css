@@ -162,9 +162,7 @@ body, html {
   margin-right: 0; /* Remove right margin from the last section */
 }
 
-.quick-news > div:hover {
-  transform: scale(1.02); /* Slightly scale up on hover */
-}
+
 
 h2 {
   color: #fff;
