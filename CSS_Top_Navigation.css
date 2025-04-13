@@ -53,7 +53,7 @@
 }
 
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
     .topnav {
         flex-direction: column;
         background: #262726;
