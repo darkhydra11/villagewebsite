@@ -198,7 +198,7 @@ h3 {
 
 .news-item img, .event img {
   width: 100%; /* Full width for images */
-  max-width: 150px; /* Limit max width for images */
+  max-width: 400px; /* Limit max width for images */
   height: auto; /* Maintain aspect ratio */
   border-radius: 5px;
   display: block;
