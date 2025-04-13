@@ -23,13 +23,13 @@ h2 {
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(255, 255, 255, 0), #262726), url("IMG_VillageHall.jpeg");
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+    background-image: linear-gradient(rgba(255, 255, 255, 0), #262726), url("IMG_Hero_Image.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
 .hero-text {
   text-align: center;
