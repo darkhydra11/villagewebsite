@@ -100,115 +100,106 @@ body, html {
 
 
 
+/* Container for news items */
 .news-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+/* Individual news item styling */
 .news-item {
   box-sizing: border-box;
   padding: 10px;
   margin: 10px;
   border-radius: 3px;
-  width: calc(33.33% - 20px); /* 3 items in a row */
+  width: 100%; /* Stacks items on top of one another */
   text-align: center; /* Center text */
-  background-color: #262726; /* Optional: background color for better contrast */
+  background-color: #262726; /* Background color for contrast */
 }
 
+/* Responsive image within news items */
 .news-item img {
-  max-width: 100%; /* Responsive image */
+  max-width: 45%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
 }
 
-/* Text color styling */
+/* Text color styling for news items */
 .news-item h3,
 .news-item p {
-  color: white; /* Set text color to white */
+  color: white; /* White text color */
 }
 
+/* Button styling */
 .emailbutton {
-color: white;
-background-color: #262726;
-width: 80%;
-border: 2px solid white;
-padding: 10px 10px;
-border-radius: 25px;
-margin-top: 30px;
+  color: #ffffff; /* White text color */
+  background-color: #323232; /* Button background color */
+  width: 80%; /* Button width */
+  max-width: 300px; /* Optional: set a max width */
+  border: none; /* Remove border */
+  padding: 12px 20px; /* Padding for larger button */
+  border-radius: 30px; /* Rounded corners */
+  margin-bottom: 20px;
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  display: inline-block; /* Ensure it behaves like a block element */
+  text-align: center; /* Center text */
 }
 
+/* Hover effect for buttons */
+.emailbutton:hover {
+  background-color: #262726; /* Darker background on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Active effect for buttons */
+.emailbutton:active {
+  transform: scale(0.95); /* Slightly shrink when clicked */
+}
+
+/* Quick news heading styling */
 .quick-news h2 {
-  color: white; /* Set text color to white */
-  text-align: center;
-  text-decoration: underline;
-  font-size: 48px;
+  color: white; /* White text color */
+  text-align: center; /* Center text */
+  text-decoration: underline; /* Underline text */
+  font-size: 48px; /* Font size */
 }
 
-
-@media (max-width: 768px) {
-  .news-item {
-      width: calc(50% - 20px); /* 2 items in a row */
-  }
-}
-
-@media (max-width: 480px) {
-  .news-item {
-      width: 100%; /* Stacked on top of one another */
-  }
-}
-
-@media (max-width: 768px) {
-  .quick-news h2 {
-    font-size: 36px; /* Adjust font size for medium screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .quick-news h2 {
-    font-size: 24px; /* Adjust font size for small screens */
-  }
-}
-
-
-
-
-
-
-
-
-
+/* Footer styling */
 .footer {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 100px;
-    height: auto;
-    color: white;
+  text-align: center; /* Center text */
+  font-size: 20px; /* Default font size */
+  margin-top: 100px; /* Space above footer */
+  color: white; /* White text color */
 }
 
+/* Footer paragraph styling */
 .footer p {
-    color: white;
+  color: white; /* White text color */
 }
 
+/* Responsive font sizes for footer */
 @media only screen and (max-width: 1700px) {
   .footer {
-    font-size: 18px;
+    font-size: 18px; /* Smaller font size */
   }
 }
 
 @media only screen and (max-width: 768px) {
   .footer {
-    font-size: 16px;
+    font-size: 16px; /* Smaller font size */
   }
 }
 
 @media only screen and (max-width: 480px) {
   .footer {
-    font-size: 14px;
+    font-size: 14px; /* Smaller font size */
   }
 }
 
 @media only screen and (max-width: 320px) {
   .footer {
-    font-size: 12px;
+    font-size: 12px; /* Smaller font size */
   }
 }
