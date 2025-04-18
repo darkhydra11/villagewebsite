@@ -162,8 +162,6 @@ body, html {
   margin-right: 0; /* Remove right margin from the last section */
 }
 
-
-
 h2 {
   color: #fff;
   border-bottom: 2px solid white;
@@ -171,8 +169,18 @@ h2 {
 }
 
 h3 {
-  color: #fff;
-  border-bottom: 2px solid white;
+  color: #fff; /* White color for h3 headings */
+  font-size: 1.5em; /* Font size for h3 */
+  margin: 10px 0; /* Margin for spacing */
+  text-align: left; /* Align text to the left */
+}
+
+p {
+  color: white;
+}
+
+strong {
+  color: white;
 }
 
 .news-item, .event {
@@ -257,11 +265,11 @@ h3 {
   color: white; /* Button text color */
   border: none; /* Remove border */
   border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
+  cursor : pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s; /* Transition for hover effect */
 }
 
-.container-link button :hover {
+.container-link button:hover {
   background-color: #383838; /* Darker background on hover */
 }
 
@@ -274,6 +282,10 @@ h3 {
 
   h2 {
     font-size: 1.5em; /* Smaller heading size */
+  }
+
+  h3 {
+    font-size: 1.2em; /* Smaller heading size for h3 */
   }
 
   .news-item h2, .event-info h2 {
@@ -300,6 +312,10 @@ h3 {
 
   h2 {
     font-size: 1.2em; /* Even smaller heading size */
+  }
+
+  h3 {
+    font-size: 1em; /* Even smaller heading size for h3 */
   }
 
   .news-item h2, .event-info h2 {

@@ -152,6 +152,11 @@ p {
   color: white;
 }
 
+.event-info h3 {
+  margin: 0;
+  color: white;
+}
+
 .event-info a {
   color: white;
   text-decoration: none;
