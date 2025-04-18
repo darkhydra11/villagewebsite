@@ -111,10 +111,18 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.2em; /* Font size for h3 */
+  color: white; /* White color for h3 */
+  margin: 10px 0; /* Margin for spacing */
+  text-align: center; /* Center text */
+}
+
 p {
-  font-size: 1.2em;
-  color: #fff;
-  text-align: center;
+  font-size: 1.2em; /* Font size for paragraphs */
+  color: #fff; /* White color for paragraphs */
+  text-align: center; /* Center text */
+  margin: 5px 0; /* Margin for spacing */
 }
 
 .events {
@@ -136,7 +144,7 @@ p {
 
 .event img {
   width: 100%;
-  height: 750px;
+  height: 750px; /* Consider using auto for responsive images */
 }
 
 .event-info {
@@ -154,7 +162,7 @@ p {
 
 .event-info h3 {
   margin: 0;
-  color: white;
+  color: white; /* Ensure h3 is white */
 }
 
 .event-info a {
@@ -177,13 +185,17 @@ p {
       font-size: 2em;
   }
 
+  h3 {
+      font-size: 1.1em; /* Smaller h3 size for medium screens */
+  }
+
   .event img {
     width: 100%;
-    height: auto;
+    height: auto; /* Make images responsive */
   }
 
   p {
-      font-size: 1em;
+      font-size: 1em; /* Smaller paragraph size */
   }
 
   .event-info h2 {
@@ -204,8 +216,12 @@ p {
       font-size: 1.8em;
   }
 
+  h3 {
+      font-size: 1em; /* Even smaller h3 size for small screens */
+  }
+
   p {
-      font-size: 0.9em;
+      font-size: 0.9em; /* Smaller paragraph size */
   }
 
   .events {
@@ -220,10 +236,6 @@ p {
       font-size: 0.8em;
   }
 }
-
-
-
-
 
 
 
