@@ -1,48 +1,45 @@
 const scheduleData = [
     {
-        date: "2025-04-06",
+        date: "2025-05-04",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
-            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Songs of Praise to commemorate 80th Anniversary of VE Day", contact: "Revd. Jane Haslam" },
+            { location: "Horley", time: "11am", typeofservice: "Communion", contact: "Guy" },
         ]
     },
  
     {
-        date: "2025-04-13",
+        date: "2025-05-11",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia" },
-            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Communion", contact: "Alicia" },
+            { location: "Hornton", time: "11am", typeofservice: "Communion", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
+            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "Worship Time", contact: "Guy"},
+            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Guy" },
         ]
     },
     {
-        date: "2025-04-19",
+        date: "2025-05-18",
         services: [
-            { location: "Balscote", time: "8pm", typeofservice: "Blessing of the Easter Candle", contact: "Guy" },
+            { location: "Hanwell", time: "9am", typeofservice: "Communion", contact: "Alicia" },
+            { location: "Balscote", time: "10am", typeofservice: "Communion", contact: "Guy" },
         ]
     },
     
     {
-        date: "2025-04-20",
+        date: "2025-05-25",
         services: [
-            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion (Common Worship)", contact: "Guy" },
-            { location: "Shenington", time: "9:45am", typeofservice: "Holy Communion (Common Worship)", contact: "Alicia" },
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion (Common Worship)", contact: "Graeme Arthur"},
-            { location: "Balscote", time: "10am", typeofservice: "Holy Communion (Common Worship)", contact: "Brian Fairbank"},
-            { location: "Horley", time: "10am", typeofservice: "Easter Service followed by 11am HC Service", contact: "Guy"},
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion (Common Worship)", contact: "Alicia"},
-            { location: "Drayton", time: "11am", typeofservice: "Holy Communion (Common Worship)", contact: "Graeme Arthur"},
-            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "Easter Worship", contact: "Alicia"},
+            { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Guy"},
+            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy"},
+            { location: "Drayton", time: "11am", typeofservice: "BCP Communion", contact: "Alicia"},
         ]
 
     },
         
     {
-        date: "2025-04-27",
+        date: "2025-05-28",
         services: [
-            { location: "Hornton", time: "11am", typeofservice: "Village Service (with contemporary music)", contact: "Guy" },
+            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },    
 ];
