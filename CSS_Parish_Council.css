@@ -157,7 +157,7 @@ h2 {
 
 
 
-.councillors {
+#councillors {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -227,7 +227,7 @@ h2 {
 
 /* For screens with a maximum width of 768px (tablets and smaller) */
 @media only screen and (max-width: 1200px) {
-  .councillors {
+  #councillors {
       padding: 15px; /* reduce padding for smaller screens */
   }
   .header i {
@@ -257,7 +257,7 @@ h2 {
 
 /* For screens with a maximum width of 480px (mobile phones) */
 @media only screen and (max-width: 480px) {
-  .councillors {
+  #councillors {
       padding: 10px; /* reduce padding for mobile phones */
   }
   .header i {
@@ -301,7 +301,7 @@ h2 {
 
 
 
-  .minutes-container {
+  #minutes-container {
     text-align: center;
     width: 100%;
     margin: 30px auto;
@@ -310,31 +310,31 @@ h2 {
     box-sizing: border-box; /* add this to include padding in width calculation */
 }
 
-.minutes-container h1 {
+#minutes-container h1 {
     font-size: 36px;
     color: white;
     margin: 20px auto;
 }
 
-.minutes-container i {
+#minutes-container i {
     font-size: 3em;
     margin-bottom: 10px;
 }
 
-.minutes-list {
+#minutes-list {
     list-style: none;
     padding: 0;
     margin: 0; /* reset margin */
     text-align: center; /* center the list */
 }
 
-.minutes-list li {
+#minutes-list li {
   margin: 10px auto;
   width: 70%;
   list-style: none;
 }
 
-.minutes-list a {
+#minutes-list a {
     display: block;
     padding: 10px 20px;
     border: 0.5px solid grey;
@@ -344,7 +344,7 @@ h2 {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.minutes-list a:hover {
+#minutes-list a:hover {
     background-color: #ffffff;
     color: #1c1c1c;
 }
@@ -353,18 +353,18 @@ h2 {
 
 /* For screens with a maximum width of 768px (e.g., iPads) */
 @media only screen and (max-width: 768px) {
-  .minutes-container {
+  #minutes-container {
     margin: 20px auto;
     padding: 15px;
   }
-  .minutes-container h1 {
+  #minutes-container h1 {
     font-size: 28px;
   }
-  .minutes-list li {
+  #minutes-list li {
     margin: 5px auto;
     width: 80%; /* adjust width to reduce offset */
   }
-  .minutes-list a {
+  #minutes-list a {
     padding: 8px 15px;
     font-size: 14px;
   }
@@ -372,18 +372,18 @@ h2 {
 
 /* For screens with a maximum width of 480px (e.g., smartphones) */
 @media only screen and (max-width: 480px) {
-  .minutes-container {
+  #minutes-container {
     margin: 15px auto;
     padding: 10px;
   }
-  .minutes-container h1 {
+  #minutes-container h1 {
     font-size: 22px;
   }
-  .minutes-list li {
+  #minutes-list li {
     margin: 3px auto;
     width: 90%; /* adjust width to reduce offset */
   }
-  .minutes-list a {
+  #minutes-list a {
     padding: 6px 10px;
     font-size: 12px;
   }
@@ -397,7 +397,7 @@ h2 {
 
 
 
-.agenda-container {
+#agenda-container {
   text-align: center;
   width: 100%;
   margin: 30px auto;
@@ -406,31 +406,31 @@ h2 {
   box-sizing: border-box; /* add this to include padding in width calculation */
 }
 
-.agenda-container h1 {
+#agenda-container h1 {
   font-size: 36px;
   color: white;
   margin: 20px auto;
 }
 
-.agenda-container i {
+#agenda-container i {
   font-size: 3em;
   margin-bottom: 10px;
 }
 
-.agenda-list {
+#agenda-list {
   list-style: none;
   padding: 0;
   margin: 0; /* reset margin */
   text-align: center; /* center the list */
 }
 
-.agenda-list li {
+#agenda-list li {
 margin: 10px auto;
 width: 70%;
 list-style: none;
 }
 
-.agenda-list a {
+#agenda-list a {
   display: block;
   padding: 10px 20px;
   border: 0.5px solid grey;
@@ -440,7 +440,7 @@ list-style: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.agenda-list a:hover {
+#agenda-list a:hover {
   background-color: #ffffff;
   color: #1c1c1c;
 }
@@ -449,18 +449,18 @@ list-style: none;
 
 /* For screens with a maximum width of 768px (e.g., iPads) */
 @media only screen and (max-width: 768px) {
-.agenda-container {
+#agenda-container {
   margin: 20px auto;
   padding: 15px;
 }
-.agenda-container h1 {
+#agenda-container h1 {
   font-size: 28px;
 }
-.agenda-list li {
+#agenda-list li {
   margin: 5px auto;
   width: 80%; /* adjust width to reduce offset */
 }
-.agenda-list a {
+#agenda-list a {
   padding: 8px 15px;
   font-size: 14px;
 }
@@ -468,18 +468,18 @@ list-style: none;
 
 /* For screens with a maximum width of 480px (e.g., smartphones) */
 @media only screen and (max-width: 480px) {
-.agenda-container {
+#agenda-container {
   margin: 15px auto;
   padding: 10px;
 }
-.agenda-container h1 {
+#agenda-container h1 {
   font-size: 22px;
 }
-.agenda-list li {
+#agenda-list li {
   margin: 3px auto;
   width: 90%; /* adjust width to reduce offset */
 }
-.agenda-list a {
+#agenda-list a {
   padding: 6px 10px;
   font-size: 12px;
 }
@@ -495,7 +495,7 @@ list-style: none;
 
 
 
-.documents-container {
+#documents-container {
   text-align: center;
   width: 100%;
   margin: 30px auto;
@@ -505,32 +505,32 @@ list-style: none;
   box-sizing: border-box; /* add this to include padding in width calculation */
 }
 
-.documents-container h1 {
+#documents-container h1 {
   font-size: 36px;
   color: white;
   margin: 20px auto;
 }
 
-.documents-container i {
+#documents-container i {
   font-size: 3em;
   margin-bottom: 10px;
   margin: 0 auto; /* add this to center the icon */
 }
 
-.documents-list {
+#documents-list {
   list-style: none;
   padding: 0;
   margin: 0; /* reset margin */
   text-align: center; /* center the list */
 }
 
-.documents-list li {
+#documents-list li {
   margin: 10px auto;
   width: 70%; /* adjust width to reduce offset */
   list-style: none;
 }
 
-.documents-list a {
+#documents-list a {
   display: block;
   padding: 10px 20px;
   border: 0.5px solid grey;
@@ -540,7 +540,7 @@ list-style: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.documents-list a:hover {
+#documents-list a:hover {
   background-color: #ffffff;
   color: #1c1c1c;
 }
@@ -549,18 +549,18 @@ list-style: none;
 
 /* For screens with a maximum width of 768px (tablets and smaller) */
 @media only screen and (max-width: 768px) {
-  .documents-container {
+  #documents-container {
       margin: 20px auto;
       padding: 15px;
   }
-  .documents-container h1 {
+  #documents-container h1 {
       font-size: 28px;
   }
-  .documents-list li {
+  #documents-list li {
       margin: 5px auto;
       width: 80%; /* adjust width to reduce offset */
   }
-  .documents-list a {
+  #documents-list a {
       padding: 8px 15px;
       font-size: 14px;
   }
@@ -568,18 +568,18 @@ list-style: none;
 
 /* For screens with a maximum width of 480px (mobile phones) */
 @media only screen and (max-width: 480px) {
-  .documents-container {
+  #documents-container {
       margin: 15px auto;
       padding: 10px;
   }
-  .documents-container h1 {
+  #documents-container h1 {
       font-size: 22px;
   }
-  .documents-list li {
+  #documents-list li {
       margin: 3px auto;
       width: 90%; /* adjust width to reduce offset */
   }
-  .documents-list a {
+  #documents-list a {
       padding: 6px 10px;
       font-size: 12px;
   }
