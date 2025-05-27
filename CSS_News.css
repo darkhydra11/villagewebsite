@@ -107,27 +107,53 @@ body, html {
   justify-content: space-between;
 }
 
+
 /* Individual news item styling */
 .news-item {
   box-sizing: border-box;
   padding: 10px;
   margin: 10px;
   border-radius: 3px;
-  width: 100%; /* Stacks items on top of one another */
+  width: 100%; /* Full width on small screens */
   text-align: center; /* Center text */
   background-color: #262726; /* Background color for contrast */
 }
+
+/* Flexbox for images within news items */
+.news-item .image-container {
+  display: flex; /* Use flexbox for images */
+  justify-content: center; /* Center images */
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
 
 /* Responsive image within news items */
 .news-item img {
   max-width: 45%; /* Responsive image */
   height: auto; /* Maintain aspect ratio */
+  margin: 5px; /* Space between images */
 }
+
 
 /* Text color styling for news items */
 .news-item h3,
 .news-item p {
   color: white; /* White text color */
+}
+
+
+/* Media query: stack images vertically on small screens */
+@media (max-width: 600px) {
+  .news-item {
+    width: 100%; /* Full width on small screens */
+  }
+  .news-item .image-container {
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
+  }
+  .news-item img {
+    max-width: 100%; /* Full width for images on small screens */
+  }
 }
 
 /* Button styling */

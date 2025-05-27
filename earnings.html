@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <title>Wroxton Village | Fete Earnings</title>
+        <meta name = "author" content = "Ben Mitchell">
+        <meta name = "keywords" content =  "wroxton, village, oxfordshire">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta name = "description" content = "Wroxton is a small village and civil parish about 3 miles from the market town of Banbury. Situated just off the A422, the village is very easy to access. ">
+        <link rel = "icon" href="IMG_Web_Icon.png">
+        <meta name="HandheldFriendly" content="true"/> 
+        <link rel = "stylesheet" href = "CSS_Earnings.css">
+        <link rel = "stylesheet" href = "CSS_Pop_Up.css">
+        <link rel = "stylesheet" href = "CSS_Top_Navigation.css">
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display" rel="stylesheet">
+        <script src="JS_PopUp.js"></script>    
+    </head>
+    
+    <body>
+        
+        
+
+            <div class="hero-image">
+              <div class="hero-text">
+                <h1 style="font-size:50px">2025 Fete Earnings</h1>
+              </div>
+                <a class="weatherwidget-io" href="https://forecast7.com/en/52d07n1d40/wroxton/" data-label_1="WROXTON" data-label_2="WEATHER" data-icons="Climacons Animated" data-mode="Current" data-theme="pure" data-basecolor="rgba(26, 26, 26, 0.28)" data-textcolor="#fff" >WROXTON WEATHER</a>
+                <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
+        
+
+            <div class= "topnav">
+                <a href = "index.html">Back to Home</a>
+            </div> 
+
+
+        <div class="container">
+    <h1>Wroxton Fete 2025</h1>
+    
+    <table class="fade-in-table">
+      <thead>
+        <tr>
+          <th>Activity</th>
+          <th>Earnings</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Made in Wroxton</td><td>£642.60</td></tr>
+        <tr><td>Bric-A-Brac</td><td>£358.30</td></tr>
+        <tr><td>Nearly New Clothes</td><td>£326.30</td></tr>
+        <tr><td>Bottle Stall</td><td>£296.70</td></tr>
+        <tr><td>Books & Games</td><td>£108.93</td></tr>
+        <tr><td>Fun Dog Show</td><td>£135.90</td></tr>
+        <tr><td>Raffle</td><td>£1,283.00</td></tr>
+        <tr><td>Grown in Wroxton</td><td>£401.80</td></tr>
+        <tr><td>Wine or Water</td><td>£105.00</td></tr>
+        <tr><td>Wroxton Watering Hole</td><td>£296.30</td></tr>
+        <tr><td>BBQ</td><td>£768.90</td></tr>
+        <tr><td>Coconut Shy</td><td>£71.00</td></tr>
+        <tr><td>Hook a Duck & Splat the ????</td><td>£76.00</td></tr>
+        <tr><td>Lucky Squares</td><td>£113.00</td></tr>
+        <tr><td>Treasure Island</td><td>£48.10</td></tr>
+        <tr><td>Tea & Cake</td><td>£858.12</td></tr>
+        <tr><td>Bouncy Castle</td><td>£63.00</td></tr>
+        <tr><td>Donations</td><td>£250.00</td></tr>
+        <tr><td>Tin Can Alley</td><td>£75.50</td></tr>
+        <tr class="total"><td>OVERALL PROFIT</td><td>£6,278.45</td></tr>
+      </tbody>
+    </table>
+
+    <div class="message fade-in-message">
+      <p>This year the Fete Profit is being split 3 ways:</p>
+      <ul>
+        <li>£2,093 to be donated to <strong>All Saints Church, Wroxton</strong></li>
+        <li>£2,093 to be donated to <strong>Wroxton Village Community Fund</strong></li>
+        <li>£2,093 to be donated to <strong>Churchill Hospital Cancer Support Unit</strong> (In memory of Fiona Flint)</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const table = document.querySelector('.fade-in-table');
+    const message = document.querySelector('.fade-in-message');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Optional: only animate once
+        }
+      });
+    });
+
+    if (table) observer.observe(table);
+    if (message) observer.observe(message);
+  });
+</script>
