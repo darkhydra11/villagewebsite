@@ -130,7 +130,7 @@ body, html {
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 40px;
   background-color: #262726;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.6);
