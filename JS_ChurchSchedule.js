@@ -1,55 +1,52 @@
 const scheduleData = [
     {
-        date: "2025-06-01",
+        date: "2025-07-06",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
-            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Hanwell", time: "5pm", typeofservice: "Evening Worship", contact: "Guy + Alicia" },
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
+            { location: "Horley", time: "11am", typeofservice: "All-age service + Holy Communion", contact: "Guy" },
         ]
     },
  
     {
-        date: "2025-06-08",
+        date: "2025-07-13",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Communion", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Communion", contact: "Graeme Arthur" },
-            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
-            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "Worship Time", contact: "Guy"},
-            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Hornton", time: "11am", typeofservice: "School Service", contact: "Guy" },
+            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia" },
+            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "Morning Worship", contact: "Alicia"},
+            { location: "Shenington", time: "6pm", typeofservice: "Taize Worship", contact: "Guy + Alicia" },
         ]
     },
     {
-        date: "2025-06-15",
+        date: "2025-07-20",
         services: [
-            { location: "Hanwell", time: "9am", typeofservice: "Communion", contact: "Guy" },
-            { location: "Balscote", time: "10am", typeofservice: "Communion", contact: "Alicia" },
+            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
     
+
     {
-        date: "2025-06-22",
+        date: "2025-07-23",
+        services: [
+            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia"},
+        ]
+    },
+
+
+    {
+        date: "2025-07-27",
         services: [
             { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Guy"},
-            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Richard Teare"},
-            { location: "Drayton", time: "11am", typeofservice: "BCP Communion", contact: "Alicia"},
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia"},
+            { location: "Drayton", time: "11am", typeofservice: "BCP Communion", contact: "Guy"},
         ]
 
     },
         
-    {
-        date: "2025-06-25",
-        services: [
-            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Graeme Arthur" },
-        ]
-    },
+ 
     
-    {
-        date: "2025-06-29",
-        services: [
-            { location: "Hanwell", time: "5pm", typeofservice: "St. Peter's Day Benefice Service", contact: "Guy" },
-        ]
-    },
 ];
 
 // Function to format the date as (day date month, year)
