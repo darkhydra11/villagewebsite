@@ -74,6 +74,54 @@ h2 {
 
 
 
+
+
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 60vh;  /* fixed height for all images */
+  overflow: hidden;
+  background: #111;
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+  animation: scroll 40s linear infinite; /* adjust speed as needed */
+}
+
+.carousel-track img {
+  height: 100%;       /* all images same height */
+  width: auto;        /* width adjusts automatically */
+  object-fit: contain;
+  object-position: center;
+  flex-shrink: 0;
+  background: #111;   /* fills space if image doesn't fully cover */
+}
+
+/* Keyframes for continuous scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%); /* half, since we duplicated images */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #overview {
     width: 80%;
     font-size: 20px;
