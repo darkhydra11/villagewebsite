@@ -1,57 +1,50 @@
 const scheduleData = [
     {
-        date: "2025-08-03",
+        date: "2025-09-07",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
-            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
+            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
         ]
     },
  
     {
-        date: "2025-08-10",
+        date: "2025-09-14",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Hornton", time: "11am", typeofservice: "School Service", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "BCP Mattins", contact: "Alicia" },
-            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "Morning Service", contact: "Alicia"},
-            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Guy + Alicia" },
+            { location: "Wroxton (Village Hall)", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "BCP Mattins", contact: "Guy" },
+            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "", contact: "Guy"},
+            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia" },
         ]
     },
     {
-        date: "2025-08-17",
+        date: "2025-09-21",
         services: [
-            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia" },
             { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Drayton Village Hall", time: "6pm", typeofservice: "Taize Worship", contact: "Guy + Alicia" },
+            { location: "Hanwell", time: "3pm", typeofservice: "Pet Service + Harvest", contact: "Alicia/Guy" },
         ]
     },
 
     {
-        date: "2025-08-24",
+        date: "2025-09-24",
         services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "BCP Communion", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Rev. Jane Haslam" },
+            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
         ]
     },
     
 
     {
-        date: "2025-08-27",
+        date: "2025-09-28",
         services: [
-            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia"},
+            { location: "Wroxton (Village Hall)", time: "9:45am", typeofservice: "Harvest Service", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "?" },
+            { location: "Drayton", time: "11am", typeofservice: "Harvest BCP Communion", contact: "Guy" },
         ]
     },
 
 
-    {
-        date: "2025-08-31",
-        services: [
-            { location: "TBC", time: "TBC", typeofservice: "Breakfast Church", contact: "TBC"},
-        ]
-
-    },
+   
         
  
     
