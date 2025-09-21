@@ -115,3 +115,38 @@ document.addEventListener("DOMContentLoaded", function() {
     // Refresh the schedule every second (1000 milliseconds)
     setInterval(displaySchedule, 1000);
 });
+
+
+function displayHomeSchedule() {
+        const currentDate = new Date();
+        const currentWeekEnd = new Date(currentDate);
+        currentWeekEnd.setDate(currentDate.getDate() + 6);
+
+        let scheduleHTML = '<br><h2>This Week\'s Church Services</h2>';
+
+        scheduleData.forEach(day => {
+            const [year, month, dayOfMonth] = day.date.split('-').map(Number);
+            const eventDate = new Date(year, month - 1, dayOfMonth);
+
+            if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
+                scheduleHTML += `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
+                day.services.forEach(service => {
+                    scheduleHTML += `
+                        <div class="service">
+                            <div class="location">Location: ${service.location}</div>
+                            <div class="time">Time: ${service.time}</div>
+                            <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
+                            <div class="contact">Contact: ${service.contact}</div>
+                        </div>
+                    `;
+                });
+            }
+        });
+
+        document.getElementById('home-schedule-container').innerHTML = scheduleHTML;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        displayHomeSchedule();
+        setInterval(displayHomeSchedule, 1000);
+    });

@@ -544,3 +544,57 @@ strong {
 
 
 
+#home-schedule-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    color: white;
+    background-color: #262726;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styles */
+#home-schedule-container h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+/* Date Section Styles */
+#home-schedule-container .date {
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+}
+
+/* Date Text Styles */
+#home-schedule-container .date strong {
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+/* Service Entry Styles */
+#home-schedule-container .service {
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    max-width: 90%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+/* Service Details Styles */
+#home-schedule-container .location,
+#home-schedule-container .time,
+#home-schedule-container .typeofservice,
+#home-schedule-container .contact {
+    margin: 5px 0;
+    padding: 3px;
+    color: #ffffff;
+}
