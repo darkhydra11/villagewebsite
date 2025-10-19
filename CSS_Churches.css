@@ -129,46 +129,19 @@ h2 {
   }
 
 
-.video-container {
-            width: 100%;
-            max-width: 1200px; /* Slightly smaller on large screens (adjust as needed) */
-            margin: 0 auto; /* Centers the container */
-            background-color: black;
-            max-height: 0; /* Initially collapsed */
-            overflow: hidden;
-            transition: max-height 0.5s ease; /* Smooth expansion using max-height for better browser support */
-        }
-        .video-container.expanded {
-            max-height: 1000px; /* Large value to allow full expansion; adjust if video is taller */
-        }
-        video {
-            width: 100%; /* Full width of container */
-            height: auto; /* Maintains aspect ratio for responsiveness */
+.video-link {
             display: block;
+            text-align: center;
+            padding: 15px 30px;
+            background-color: #262726;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+            margin: 20px auto; /* Adds vertical and horizontal margins, centers it */
         }
-        .button {
-            display: block;
-            margin: 20px auto;
-            padding: 15px 30px; /* Increased padding for a more substantial look */
-            background-color: #262726; /* Custom color as requested */
-            color: #ffffff; /* White text for contrast on dark background */
-            border: 2px solid #262726; /* Subtle border matching background */
-            border-radius: 8px; /* Slightly more rounded for a modern look */
-            cursor: pointer;
-            font-size: 18px; /* Slightly larger font */
-            font-weight: bold; /* Bold text for emphasis */
-            text-transform: uppercase; /* Uppercase for a sleek appearance */
-            letter-spacing: 1px; /* Slight letter spacing */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
-            transition: all 0.3s ease; /* Smooth transitions for all properties */
-        }
-        .button:hover {
-            background-color: #3a3a3a; /* Lighter shade on hover for feedback */
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-            transform: translateY(-2px); /* Slight lift effect */
-        }
-        .button:active {
-transform: translateY(0); /* Reset lift on click */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduced shadow on active */
+        .video-link:hover {
+            background-color: #3a3a3a; /* Slightly lighter on hover */
         }
       }
