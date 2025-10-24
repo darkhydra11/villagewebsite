@@ -127,12 +127,14 @@ h2 {
   .footer {
       font-size: 16px; /* Adjust footer font size */
   }
-
+}
 
 .video-link {
-  display: inline-block;
+  display: block;
+  margin: 20px auto;
   padding: 12px 20px;
-  background-color: #ff0000; /* YouTube red */
+  background-color: #262726; /* YouTube red */
+  text-align: center;
   color: white;
   text-decoration: none;
   font-family: Arial, sans-serif;
@@ -149,5 +151,4 @@ h2 {
 .video-link:before {
   content: "▶ "; /* Play icon */
   font-size: 18px;
-}
 }
