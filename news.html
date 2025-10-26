@@ -86,5 +86,26 @@
     </div>
 
     <script src="JS_News.js"></script>
+
+    <script>
+document.querySelectorAll('.news-images img').forEach(img => {
+  img.addEventListener('click', () => {
+    // If image already expanded, shrink it
+    if (img.classList.contains('expanded')) {
+      img.classList.remove('expanded');
+      document.body.style.overflow = 'auto'; // restore scroll
+    } else {
+      // Close any other expanded images
+      document.querySelectorAll('.news-images img.expanded')
+        .forEach(openImg => openImg.classList.remove('expanded'));
+      // Expand this one
+      img.classList.add('expanded');
+      document.body.style.overflow = 'hidden'; // prevent page scrolling
+    }
+  });
+});
+</script>
+
+
 </body>
 </html>

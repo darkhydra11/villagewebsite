@@ -246,7 +246,6 @@ body, html {
   opacity: 0.9;
 }
 
-/* Layout for images */
 .news-images {
   display: flex;
   gap: 12px;
@@ -255,31 +254,49 @@ body, html {
   flex-wrap: wrap;
 }
 
-/* Base image styles */
 .news-images img {
   width: 48%;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.6s ease-in-out;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
   cursor: pointer;
+  z-index: 1;
 }
 
-/* Hover or click = expand to full height */
-.news-images img:hover,
-.news-images img:active {
-  width: 100%;
-  height: 100%;
-  max-height: 85vh; /* keeps it within the screen height */
+/* Hover (desktop) */
+.news-images img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Expanded state (for click/tap) */
+.news-images img.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: auto;
+  height: 90vh;
+  max-width: 95vw;
   object-fit: contain;
-  transform: scale(1.02);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-  z-index: 10;
-
+  border-radius: 12px;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+  z-index: 9999;
+  transition: all 0.6s ease-in-out;
 }
 
-/* Responsive adjustments */
+/* Dim background when image expanded */
+.news-images img.expanded::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
 @media (max-width: 700px) {
   .news-images img {
     width: 100%;
