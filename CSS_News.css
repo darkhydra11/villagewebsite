@@ -254,8 +254,13 @@ body, html {
   flex-wrap: wrap;
 }
 
-.news-images img {
+.image-wrapper {
+  position: relative;
   width: 48%;
+}
+
+.image-wrapper img {
+  width: 100%;
   height: 200px;
   border-radius: 10px;
   object-fit: cover;
@@ -266,13 +271,13 @@ body, html {
 }
 
 /* Hover (desktop) */
-.news-images img:hover {
+.image-wrapper img:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-/* Expanded state (for click/tap) */
-.news-images img.expanded {
+/* Expanded image */
+.image-wrapper img.expanded {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -288,8 +293,8 @@ body, html {
   transition: all 0.6s ease-in-out;
 }
 
-/* Dim background when image expanded */
-.news-images img.expanded::after {
+/* Dim background */
+.image-wrapper img.expanded::after {
   content: "";
   position: fixed;
   inset: 0;
@@ -297,9 +302,35 @@ body, html {
   z-index: -1;
 }
 
+/* Back button styling */
+.back-btn {
+  display: none;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.back-btn.show {
+  display: block;
+  opacity: 1;
+}
+
 @media (max-width: 700px) {
-  .news-images img {
+  .image-wrapper {
     width: 100%;
+  }
+
+  .image-wrapper img {
     height: 180px;
   }
 }

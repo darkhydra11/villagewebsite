@@ -92,21 +92,28 @@
 
     <script src="JS_News.js"></script>
 
-    <script>
-document.querySelectorAll('.news-images img').forEach(img => {
+<script>
+document.querySelectorAll('.image-wrapper img').forEach((img) => {
+  const backBtn = img.parentElement.querySelector('.back-btn');
+
   img.addEventListener('click', () => {
-    // If image already expanded, shrink it
-    if (img.classList.contains('expanded')) {
-      img.classList.remove('expanded');
-      document.body.style.overflow = 'auto'; // restore scroll
-    } else {
-      // Close any other expanded images
-      document.querySelectorAll('.news-images img.expanded')
-        .forEach(openImg => openImg.classList.remove('expanded'));
-      // Expand this one
+    // Expand the image
+    if (!img.classList.contains('expanded')) {
+      document.querySelectorAll('.image-wrapper img.expanded').forEach(openImg => {
+        openImg.classList.remove('expanded');
+        openImg.parentElement.querySelector('.back-btn').classList.remove('show');
+      });
       img.classList.add('expanded');
-      document.body.style.overflow = 'hidden'; // prevent page scrolling
+      backBtn.classList.add('show');
+      document.body.style.overflow = 'hidden';
     }
+  });
+
+  backBtn.addEventListener('click', () => {
+    // Collapse the image
+    img.classList.remove('expanded');
+    backBtn.classList.remove('show');
+    document.body.style.overflow = 'auto';
   });
 });
 </script>
