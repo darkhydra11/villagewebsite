@@ -229,3 +229,60 @@ body, html {
     font-size: 12px; /* Smaller font size */
   }
 }
+
+
+
+
+
+
+
+
+.image-instructions {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+/* Layout for images */
+.news-images {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+/* Base image styles */
+.news-images img {
+  width: 48%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* Hover or click = expand to full height */
+.news-images img:hover,
+.news-images img:active {
+  width: 100%;
+  height: 100%;
+  max-height: 85vh; /* keeps it within the screen height */
+  object-fit: contain;
+  transform: scale(1.02);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  z-index: 10;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .news-images img {
+    width: 100%;
+    height: 180px;
+  }
+}
