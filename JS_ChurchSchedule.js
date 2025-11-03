@@ -1,21 +1,19 @@
 const scheduleData = [
     {
-        date: "2025-09-07",
+        date: "2025-11-09",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Communion", contact: "Guy" },
-            { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
-            { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Alkerton", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Drayton", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Horley", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Balscote", time: "3pm", typeofservice: "Remembrance Service", contact: "" },
         ]
     },
  
     {
-        date: "2025-09-14",
+        date: "2025-11-11",
         services: [
-            { location: "Wroxton (Village Hall)", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Drayton", time: "11am", typeofservice: "BCP Mattins", contact: "Guy" },
-            { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "", contact: "Guy"},
-            { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia" },
+            { location: "Alkerton Cenotaph", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+           
         ]
     },
     {
@@ -82,7 +80,7 @@ function createServiceHTML(service) {
 function displaySchedule() {
     const currentDate = new Date();
     const currentWeekEnd = new Date(currentDate);
-    currentWeekEnd.setDate(currentDate.getDate() + 6); // Set to the end of the next 7 days
+    currentWeekEnd.setDate(currentDate.getDate() + 13); // Set to the end of the next 7 days
 
     // Build the HTML string
     let scheduleHTML = '<br>'; // Add a line break before the title
