@@ -2,8 +2,8 @@ const scheduleData = [
     {
         date: "2025-11-09",
         services: [
-            { location: "Alkerton", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
-            { location: "Drayton", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Drayton", time: "09:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Hanwell", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
             { location: "Horley", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
             { location: "Balscote", time: "3pm", typeofservice: "Remembrance Service", contact: "" },
         ]
@@ -12,7 +12,7 @@ const scheduleData = [
     {
         date: "2025-11-11",
         services: [
-            { location: "Alkerton Cenotaph", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Alkerton Cenotaph", time: "11:00am", typeofservice: "Remembrance Service", contact: "" },
            
         ]
     },
