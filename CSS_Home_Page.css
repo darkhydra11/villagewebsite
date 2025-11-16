@@ -598,3 +598,44 @@ strong {
     padding: 3px;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+/* Overlay for the popup */
+        .popup-overlay {
+            display: none; /* Hidden by default, shown by JS */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(38, 39, 38, 0.8); /* Semi-transparent version of #262726 for overlay */
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Popup content with modern dark theme and continuous flashing red animation */
+        .popup-content {
+            background-color: #262726; /* Primary dark color */
+            color: #ffffff; /* White text for contrast */
+            padding: 20px; /* Reduced padding for smaller size */
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Deeper shadow for modern look */
+            max-width: 300px; /* Smaller max-width */
+            width: 90%;
+            text-align: center;
+            position: relative;
+            border: 1px solid #404040; /* Subtle border for definition */
+            animation: flashRed 1s ease-in-out infinite; /* Continuous flashing */
+        }
+        /* Keyframe animation for continuous flashing red */
+        @keyframes flashRed {
+            0% { background-color: #262726; } /* Start with original color */
+            50% { background-color: #ff0000; } /* Flash to red */
+            100% { background-color: #262726; } /* Back to original */
+        }
