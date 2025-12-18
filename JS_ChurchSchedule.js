@@ -1,43 +1,43 @@
 const scheduleData = [
     {
-        date: "2025-11-09",
+        date: "2025-12-18",
         services: [
-            { location: "Drayton", time: "09:50am", typeofservice: "Remembrance Service", contact: "" },
-            { location: "Hanwell", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
-            { location: "Horley", time: "10:50am", typeofservice: "Remembrance Service", contact: "" },
-            { location: "Balscote", time: "3pm", typeofservice: "Remembrance Service", contact: "" },
+            { location: "Alkerton", time: "7pm", typeofservice: "Carols and Readings", contact: "Guy" },
         ]
     },
  
     {
-        date: "2025-11-11",
+        date: "2025-12-21",
         services: [
-            { location: "Alkerton Cenotaph", time: "11:00am", typeofservice: "Remembrance Service", contact: "" },
-           
+            { location: "Hanwell", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
+           { location: "Horley", time: "5pm", typeofservice: "Nativity and Carol", contact: "Guy" },
         ]
     },
     {
-        date: "2025-09-21",
+        date: "2025-12-24",
         services: [
-            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Hanwell", time: "3pm", typeofservice: "Pet Service + Harvest", contact: "Alicia/Guy" },
+            { location: "Shenington", time: "4pm", typeofservice: "Crib Service", contact: "Alicia" },
+            { location: "Hornton", time: "5pm", typeofservice: "Crib Service", contact: "Guy" },
+            { location: "Horley", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
+             { location: "Wroxton", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Alicia" },
         ]
     },
 
     {
-        date: "2025-09-24",
+        date: "2025-12-25",
         services: [
-            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Hanwell", time: "10:30am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Drayton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
     
 
     {
-        date: "2025-09-28",
+        date: "2025-12-28",
         services: [
-            { location: "Wroxton (Village Hall)", time: "9:45am", typeofservice: "Harvest Service", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "?" },
-            { location: "Drayton", time: "11am", typeofservice: "Harvest BCP Communion", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
 
