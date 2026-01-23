@@ -89,21 +89,22 @@ h2 {
     color: white;
 }
 
+/* Base styles for #election */
 #election {
-    width: 100%;
-    padding: 20px 20px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: #262726;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 5%;
-    color: white;
+  width: 100%;
+  max-width: 600px; /* Optional: Prevents it from being too wide on desktops */
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #262726;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  margin-top: 5%;
+  color: white;
 }
 
+/* Base styles for #electionbutton */
 #electionbutton {
   display: block;
   padding: 10px 20px;
@@ -119,6 +120,38 @@ h2 {
 #electionbutton:hover {
   background-color: #ffffff;
   color: #1c1c1c;
+}
+
+/* Mobile-specific adjustments (screens smaller than 768px) */
+@media (max-width: 768px) {
+  #election {
+    padding: 15px; /* Reduce padding to fit smaller screens */
+    font-size: 18px; /* Slightly smaller font for readability */
+    margin: 20px auto; /* Reduce margins */
+    margin-top: 3%; /* Less top margin on mobile */
+  }
+  
+  #electionbutton {
+    padding: 8px 15px; /* Smaller padding */
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
+
+/* Extra small mobile (e.g., phones under 480px) */
+@media (max-width: 480px) {
+  #election {
+    padding: 10px;
+    font-size: 16px;
+    margin: 15px auto;
+    margin-top: 2%;
+  }
+  
+  #electionbutton {
+    padding: 6px 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
 }
   
 
