@@ -91,8 +91,7 @@ h2 {
 
 /* Base styles for #election */
 #election {
-  width: 100%;
-  max-width: 600px; /* Optional: Prevents it from being too wide on desktops */
+  max-width: 100%; /* Optional: Prevents it from being too wide on desktops */
   padding: 20px;
   font-size: 20px;
   text-decoration: none;
