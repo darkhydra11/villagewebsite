@@ -1,43 +1,45 @@
 const scheduleData = [
     {
-        date: "2025-12-18",
+        date: "2026-02-01" ,
         services: [
-            { location: "Alkerton", time: "7pm", typeofservice: "Carols and Readings", contact: "Guy" },
-        ]
+            { location: "Alkerton", time: "9am", typeofservice: "Holy Communion - Book of Common Prayer", contact: "Alicia and David Turner" },
+             { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
+         { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia and David Turner" },
+            ]
     },
  
     {
-        date: "2025-12-21",
+        date: "2026-02-08",
         services: [
-            { location: "Hanwell", time: "4:30pm", typeofservice: "Carol Service", contact: "Alicia" },
-           { location: "Horley", time: "5pm", typeofservice: "Nativity and Carol", contact: "Guy" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
+           { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "", contact: "Guy" },
         ]
     },
     {
-        date: "2025-12-24",
+        date: "2026-02-15",
         services: [
-            { location: "Shenington", time: "4pm", typeofservice: "Crib Service", contact: "Alicia" },
-            { location: "Hornton", time: "5pm", typeofservice: "Crib Service", contact: "Guy" },
-            { location: "Horley", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Guy" },
-             { location: "Wroxton", time: "11:30pm", typeofservice: "Midnight Mass", contact: "Alicia" },
+            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
 
     {
-        date: "2025-12-25",
+        date: "2026-02-22",
         services: [
-            { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy" },
-            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Hanwell", time: "10:30am", typeofservice: "Holy Communion", contact: "Guy" },
+            { location: "Wroxton", time: "9:45am", typeofservice: "Vilage Service", contact: "Guy" },
+            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy" },
             { location: "Drayton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
     
 
     {
-        date: "2025-12-28",
+        date: "2026-02-25",
         services: [
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
+            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
         ]
     },
 
