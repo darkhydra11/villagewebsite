@@ -285,7 +285,9 @@ h1 {
     text-decoration: none;
 }
 
-
+.newspaper a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
 
 .newspaper a:hover {
     animation: newspaperhover;
