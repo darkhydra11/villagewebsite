@@ -244,12 +244,66 @@ h1 {
 
 
 
-.mpsurgery img {
-  margin-bottom: 30px;
-  background-color: #262726;
-  padding: 20px 0px;
-  max-width: 100%;
+.newspaper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #262726; /* Light gray background to mimic paper */
+   
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
+
+.newspaper img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Slight rounding for modern touch */
+}
+
+.newspaper a {
+    color: black; /* Blue link color */
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth hover effect */
+    padding: 5px 20px;
+    border-radius: 25px;
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.newspaper a:hover {
+    animation: newspaperhover;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes newspaperhover {
+    0% {
+        background-color: white;
+    }
+    
+    100% {
+        background-color: lightgray;
+        transform: translateY(-10px);
+    }
+}
+
 
 
 .footer {
