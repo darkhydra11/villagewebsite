@@ -180,7 +180,7 @@ p {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   h1 {
       font-size: 2em;
   }
