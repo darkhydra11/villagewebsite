@@ -1,50 +1,56 @@
 const scheduleData = [
-    {
-        date: "2026-02-01" ,
-        services: [
-            { location: "Alkerton", time: "9am", typeofservice: "Holy Communion - Book of Common Prayer", contact: "Alicia and David Turner" },
-             { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy" },
-         { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia and David Turner" },
-            ]
-    },
- 
-    {
-        date: "2026-02-08",
-        services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
-            { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy" },
-           { location: "Glebefields Nursing Home", time: "11:50am", typeofservice: "", contact: "Guy" },
-        ]
-    },
-    {
-        date: "2026-02-15",
-        services: [
-            { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy" },
-            { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
-        ]
-    },
+{
+    date: "2026-03-01",
+    services: [
+        { location: "Alkerton", time: "9am", typeofservice: "Holy Communion - Book of Common Prayer", contact: "Guy" },
+        { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
+        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
+    ]
+},
 
-    {
-        date: "2026-02-22",
-        services: [
-            { location: "Wroxton", time: "9:45am", typeofservice: "Vilage Service", contact: "Guy" },
-            { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy" },
-            { location: "Drayton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia" },
-        ]
-    },
-    
+{
+    date: "2026-03-08",
+    services: [
+        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
+        { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Alicia" },
+        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
+        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia" },
+        { location: "Glebefields", time: "11:50am", typeofservice: "", contact: "Alicia" },
+    ]
+},
 
-    {
-        date: "2026-02-25",
-        services: [
-            { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia" },
-        ]
-    },
+{
+    date: "2026-03-15",
+    services: [
+        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia" },
+        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Revd Alice Jolly (Chaplain in Katharine House)" },
+        { location: "Horley", time: "10:30am", typeofservice: "Posy-making followed by short service", contact: "Alicia" },
+        { location: "Drayton", time: "11am", typeofservice: "Special service for Mothering Sunday", contact: "Colin and Dorothy" },
+    ]
+},
 
+{
+    date: "2026-03-22",
+    services: [
+        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Alicia" },
+        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy" },
+        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
+    ]
+},
 
-   
+{
+    date: "2026-03-25",
+    services: [
+        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
+    ]
+},
+
+{
+    date: "2026-03-29",
+    services: [
+        { location: "Hornton", time: "11am", typeofservice: "Benefice Village Service", contact: "Hornton School" },
+    ]
+}
         
  
     
