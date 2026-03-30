@@ -234,7 +234,7 @@ p {
       font-size: 1.2em;
   }
 
-  .date, .time, .location, .welcome {
+  .date, .time, .location, .contact, .details, .welcome {
       font-size: 0.8em;
   }
 }
