@@ -173,7 +173,7 @@ p {
   padding: 20px 20px;
 }
 
-.date, .time, .location, .welcome {
+.date, .time, .location, .details, .welcome, .contact {
   margin: 5px 0;
   font-size: 1.2em;
   color: #fff;
@@ -202,8 +202,9 @@ p {
       font-size: 1.3em;
   }
 
-  .date, .time, .location, .welcome {
+  .date, .time, .location, .details, .contact, .welcome {
       font-size: 0.9em;
+      color: white;
   }
 
   .events {

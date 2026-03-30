@@ -1,158 +1,179 @@
 const scheduleData = [
+
 {
-    date: "2026-03-01",
+    date: "2026-04-03",
     services: [
-        { location: "Alkerton", time: "9am", typeofservice: "Holy Communion - Book of Common Prayer", contact: "Guy" },
-        { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Alicia" },
-        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
+        { location: "Horley", time: "12 noon", typeofservice: "Stations of the Cross", contact: "Guy Edwards", organist: "Charles" },
     ]
 },
 
 {
-    date: "2026-03-08",
+    date: "2026-04-04",
     services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy" },
-        { location: "Shenington", time: "9:45am", typeofservice: "Morning Worship", contact: "Alicia" },
-        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy" },
-        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia" },
-        { location: "Glebefields", time: "11:50am", typeofservice: "", contact: "Alicia" },
+        { location: "Balscote", time: "8pm", typeofservice: "Easter Fire and Blessing of the New Easter Candles", contact: "Guy Edwards", organist: "TBC" },
     ]
 },
 
 {
-    date: "2026-03-15",
+    date: "2026-04-05",
     services: [
-        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia" },
-        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Revd Alice Jolly (Chaplain in Katharine House)" },
-        { location: "Horley", time: "10:30am", typeofservice: "Posy-making followed by short service", contact: "Alicia" },
-        { location: "Drayton", time: "11am", typeofservice: "Special service for Mothering Sunday", contact: "Colin and Dorothy" },
+        { location: "Hanwell", time: "9am", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Horley", time: "11am", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "Charles" },
+        { location: "Hornton", time: "11am", typeofservice: "Easter Communion", contact: "TBC", organist: "Keith" },
+        { location: "Wroxton", time: "9:45am", typeofservice: "Easter Communion", contact: "Graeme Arthur", organist: "Keith" },
+        { location: "Balscote", time: "10am", typeofservice: "Easter Service with Communion by Extension", contact: "Jonathan Perry", organist: "Pat / Katharine" },
+        { location: "Drayton", time: "11am", typeofservice: "Easter Communion", contact: "Graeme Arthur", organist: "Marlene" },
+        { location: "Shenington", time: "6pm", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "" },
     ]
 },
 
 {
-    date: "2026-03-22",
+    date: "2026-04-12",
     services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Alicia" },
-        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy" },
-        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alicia" },
+        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Revd Jane Haslam", organist: "Keith" },
     ]
 },
 
 {
-    date: "2026-03-25",
+    date: "2026-04-19",
     services: [
-        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Guy" },
+        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Revd Olwen Smith", organist: "Pat / Katharine" },
     ]
 },
 
 {
-    date: "2026-03-29",
+    date: "2026-04-22",
     services: [
-        { location: "Hornton", time: "11am", typeofservice: "Benefice Village Service", contact: "Hornton School" },
+        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Revd Glyn Evans", organist: "Pat" },
+    ]
+},
+
+{
+    date: "2026-04-26",
+    services: [
+        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Revd Alice Jolley", organist: "Keith" },
+        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Guy Edwards", organist: "Marlene" },
+        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Revd Alice Jolley", organist: "Keith" },
     ]
 }
-        
- 
-    
+
 ];
 
-// Function to format the date as (day date month, year)
+// Function to format the date
 function formatDate(date) {
     const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    return date.toLocaleDateString('en-US', options);
+    return date.toLocaleDateString('en-GB', options);
 }
 
-// Function to create the title HTML
+// Title
 function createTitle() {
     return "<h2>This Week's Services</h2>";
 }
 
-// Function to create the date HTML
+// Date section
 function createDateHTML(eventDate) {
     return `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
 }
 
-// Function to create the service HTML
+// Service block
 function createServiceHTML(service) {
     return `
         <div class="service">
-            <div class="location">Location: ${service.location}</div>
-            <div class="time">Time: ${service.time}</div>
-            <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
-            <div class="contact">Contact: ${service.contact}</div>
+            <div class="location"><strong>Location:</strong> ${service.location}</div>
+            <div class="time"><strong>Time:</strong> ${service.time}</div>
+            <div class="typeofservice"><strong>Service:</strong> ${service.typeofservice || 'N/A'}</div>
+            <div class="contact"><strong>Minister:</strong> ${service.contact}</div>
+            <div class="organist"><strong>Organist:</strong> ${service.organist || 'N/A'}</div>
         </div>
     `;
 }
 
-// Function to display the schedule
+// Main schedule page
 function displaySchedule() {
+
     const currentDate = new Date();
     const currentWeekEnd = new Date(currentDate);
-    currentWeekEnd.setDate(currentDate.getDate() + 13); // Set to the end of the next 7 days
+    currentWeekEnd.setDate(currentDate.getDate() + 13);
 
-    // Build the HTML string
-    let scheduleHTML = '<br>'; // Add a line break before the title
-    scheduleHTML += createTitle(); // Add the title
+    let scheduleHTML = '<br>';
+    scheduleHTML += createTitle();
 
-    // Iterate through the schedule data
     scheduleData.forEach(day => {
+
         const [year, month, dayOfMonth] = day.date.split('-').map(Number);
-        const eventDate = new Date(year, month - 1, dayOfMonth); // Create a new date object
+        const eventDate = new Date(year, month - 1, dayOfMonth);
 
         if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
-            // Add a div for the date
+
             scheduleHTML += createDateHTML(eventDate);
 
-            // Iterate through the services for the day
             day.services.forEach(service => {
                 scheduleHTML += createServiceHTML(service);
             });
         }
+
     });
 
-    // Set the innerHTML of the schedule container
     const scheduleContainer = document.getElementById('schedule-container');
-    scheduleContainer.innerHTML = scheduleHTML; // Set the built HTML
+    if (scheduleContainer) {
+        scheduleContainer.innerHTML = scheduleHTML;
+    }
 }
 
-// Call the displaySchedule function after the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function() {
-    displaySchedule();
-    // Refresh the schedule every second (1000 milliseconds)
-    setInterval(displaySchedule, 1000);
-});
 
-
+// Home page version
 function displayHomeSchedule() {
-        const currentDate = new Date();
-        const currentWeekEnd = new Date(currentDate);
-        currentWeekEnd.setDate(currentDate.getDate() + 6);
 
-        let scheduleHTML = '<br><h2>This Week\'s Church Services</h2>';
+    const currentDate = new Date();
+    const currentWeekEnd = new Date(currentDate);
+    currentWeekEnd.setDate(currentDate.getDate() + 6);
 
-        scheduleData.forEach(day => {
-            const [year, month, dayOfMonth] = day.date.split('-').map(Number);
-            const eventDate = new Date(year, month - 1, dayOfMonth);
+    let scheduleHTML = "<br><h2>This Week's Church Services</h2>";
 
-            if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
-                scheduleHTML += `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
-                day.services.forEach(service => {
-                    scheduleHTML += `
-                        <div class="service">
-                            <div class="location">Location: ${service.location}</div>
-                            <div class="time">Time: ${service.time}</div>
-                            <div class="typeofservice">Type of Service: ${service.typeofservice || 'N/A'}</div>
-                            <div class="contact">Contact: ${service.contact}</div>
-                        </div>
-                    `;
-                });
-            }
-        });
+    scheduleData.forEach(day => {
 
-        document.getElementById('home-schedule-container').innerHTML = scheduleHTML;
+        const [year, month, dayOfMonth] = day.date.split('-').map(Number);
+        const eventDate = new Date(year, month - 1, dayOfMonth);
+
+        if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
+
+            scheduleHTML += `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
+
+            day.services.forEach(service => {
+
+                scheduleHTML += `
+                    <div class="service">
+                        <div class="location"><strong>Location:</strong> ${service.location}</div>
+                        <div class="time"><strong>Time:</strong> ${service.time}</div>
+                        <div class="typeofservice"><strong>Service:</strong> ${service.typeofservice || 'N/A'}</div>
+                        <div class="contact"><strong>Minister:</strong> ${service.contact}</div>
+                        <div class="organist"><strong>Organist:</strong> ${service.organist || 'N/A'}</div>
+                    </div>
+                `;
+
+            });
+
+        }
+
+    });
+
+    const homeContainer = document.getElementById('home-schedule-container');
+    if (homeContainer) {
+        homeContainer.innerHTML = scheduleHTML;
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        displayHomeSchedule();
-        setInterval(displayHomeSchedule, 1000);
-    });
+}
+
+
+// Run when page loads
+document.addEventListener("DOMContentLoaded", function() {
+
+    displaySchedule();
+    displayHomeSchedule();
+
+    // Refresh every 10 minutes instead of every second
+    setInterval(displaySchedule, 600000);
+    setInterval(displayHomeSchedule, 600000);
+
+});
