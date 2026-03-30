@@ -10,6 +10,7 @@ body, html {
     -o-transition: opacity 2s ease-in;
     -ms-transition: opacity 2s ease-in;
     transition: opacity 2s ease-in;
+    color: white;
 }
 
 .hero-image {
@@ -273,13 +274,7 @@ p {
   text-align: center;
 }
 
-/* Date and Time (Location) */
-.date, .time {
-  margin: 5px 0;
-  font-size: 1em;
-  color: #ccc;
-  text-align: center;
-}
+
 
 /* Book Button */
 .book a {
