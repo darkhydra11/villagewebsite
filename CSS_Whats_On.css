@@ -314,6 +314,67 @@ p {
 
 
 
+.organ-concert {
+  background: #323232;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+/* FIXED: Use padding-bottom trick for natural image proportions */
+@media (max-width: 1200px) {
+  .image-carousel {
+    height: auto !important; /* Force override */
+  }
+  
+  .carousel-image:first-child {
+    position: relative; /* FIXED: Provides natural height */
+    opacity: 1; /* Show first image by default */
+    height: auto; /* Natural image height */
+  }
+  
+  .carousel-image:not(:first-child) {
+    position: absolute;
+  }
+}
+
+
+
+
+
 .footer {
   text-align: center;
   font-size: 20px;
