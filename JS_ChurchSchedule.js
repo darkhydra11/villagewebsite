@@ -1,60 +1,52 @@
 const scheduleData = [
 
 {
-    date: "2026-04-03",
+    date: "2026-05-03",
     services: [
-        { location: "Horley", time: "12 noon", typeofservice: "Stations of the Cross", contact: "Guy Edwards", organist: "Charles" },
+        { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Pat / Katharine" },
+        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Graeme Arthur", organist: "Charles?" },
     ]
 },
 
 {
-    date: "2026-04-04",
+    date: "2026-05-10",
     services: [
-        { location: "Balscote", time: "8pm", typeofservice: "Easter Fire and Blessing of the New Easter Candles", contact: "Guy Edwards", organist: "TBC" },
+        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "" },
+        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy Edwards", organist: "Marlene" },
+        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Isabelle + Others", organist: "" },
+        { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Guy Edwards", organist: "" },
     ]
 },
 
 {
-    date: "2026-04-05",
-    services: [
-        { location: "Hanwell", time: "9am", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "" },
-        { location: "Horley", time: "11am", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "Charles" },
-        { location: "Hornton", time: "11am", typeofservice: "Easter Communion", contact: "TBC", organist: "Keith" },
-        { location: "Wroxton", time: "9:45am", typeofservice: "Easter Communion", contact: "Graeme Arthur", organist: "Keith" },
-        { location: "Balscote", time: "10am", typeofservice: "Easter Service with Communion by Extension", contact: "Jonathan Perry", organist: "Pat / Katharine" },
-        { location: "Drayton", time: "11am", typeofservice: "Easter Communion", contact: "Graeme Arthur", organist: "Marlene" },
-        { location: "Shenington", time: "6pm", typeofservice: "Easter Communion", contact: "Guy Edwards", organist: "" },
-    ]
-},
-
-{
-    date: "2026-04-12",
-    services: [
-        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Revd Jane Haslam", organist: "Keith" },
-    ]
-},
-
-{
-    date: "2026-04-19",
+    date: "2026-05-17",
     services: [
         { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
-        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Revd Olwen Smith", organist: "Pat / Katharine" },
+        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "Pat / Katharine" },
     ]
 },
 
 {
-    date: "2026-04-22",
+    date: "2026-05-24",
     services: [
-        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Revd Glyn Evans", organist: "Pat" },
+        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service (Pentecost)", contact: "Guy Edwards", organist: "Keith" },
+        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alice Jolley", organist: "Marlene" },
+        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Keith" },
     ]
 },
 
 {
-    date: "2026-04-26",
+    date: "2026-05-27",
     services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Revd Alice Jolley", organist: "Keith" },
-        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Guy Edwards", organist: "Marlene" },
-        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Revd Alice Jolley", organist: "Keith" },
+        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Glyn Evans", organist: "Pat" },
+    ]
+},
+
+{
+    date: "2026-05-31",
+    services: [
+        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion (Trinity Sunday Benefice Service)", contact: "Guy Edwards", organist: "Marlene" },
     ]
 }
 
