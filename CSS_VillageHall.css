@@ -133,6 +133,74 @@ h2 {
     color: white;
 }
 
+
+
+
+
+.booking-banner {
+    width: 100%;
+    background: linear-gradient(90deg, #262726, #2f3130);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 30px;
+    font-family: 'News Cycle', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.booking-banner p {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.booking-banner .icon {
+    margin: 0 6px;
+}
+
+/* Button styling */
+.booking-button {
+    display: inline-block;
+    background-color: white;
+    color: #262726;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    transition: all 0.25s ease;
+    animation: pulse 2.5s infinite;
+}
+
+/* Hover effect */
+.booking-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transform: scale(1.05);
+    animation: none;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+    50% {
+        transform: scale(1.01);
+        box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+
+
+
+
 #committee-about {
     background-color: #262726;
     display: flex;
