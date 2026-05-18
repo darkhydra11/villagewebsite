@@ -27,6 +27,15 @@ const scheduleData = [
     ]
 },
 
+
+{
+    date: "2026-05-18",
+    services: [
+        { location: "St. Thomas of Canterbury, Wroxton", time: "7:30pm", typeofservice: "Celebratory Mass"},
+    
+    ]
+},
+
 {
     date: "2026-05-24",
     services: [
