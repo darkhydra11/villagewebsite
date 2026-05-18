@@ -31,7 +31,7 @@ const scheduleData = [
 {
     date: "2026-05-18",
     services: [
-        { location: "St. Thomas of Canterbury, Wroxton", time: "7:30pm", typeofservice: "Celebratory Mass"},
+        { location: "St. Thomas of Canterbury, Wroxton", time: "7:30pm", typeofservice: "Celebratory Mass" },
     
     ]
 },
@@ -61,119 +61,156 @@ const scheduleData = [
 
 ];
 
-// Function to format the date
 function formatDate(date) {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
     return date.toLocaleDateString('en-GB', options);
+
 }
 
-// Title
-function createTitle() {
-    return "<h2>This Week's Services</h2>";
+
+// Page title
+function createTitle(titleText) {
+
+    return `<h2>${titleText}</h2>`;
+
 }
 
-// Date section
+
+// Date heading
 function createDateHTML(eventDate) {
-    return `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
-}
 
-// Service block
-function createServiceHTML(service) {
     return `
-        <div class="service">
-            <div class="location"><strong>Location:</strong> ${service.location}</div>
-            <div class="time"><strong>Time:</strong> ${service.time}</div>
-            <div class="typeofservice"><strong>Service:</strong> ${service.typeofservice || 'N/A'}</div>
-            <div class="contact"><strong>Minister:</strong> ${service.contact}</div>
-            <div class="organist"><strong>Organist:</strong> ${service.organist || 'N/A'}</div>
+        <div class="date">
+            <strong>${formatDate(eventDate)}</strong>
         </div>
     `;
+
 }
 
-// Main schedule page
-function displaySchedule() {
 
+// Individual service block
+function createServiceHTML(service) {
+
+    return `
+        <div class="service">
+
+            <div class="location">
+                <strong>Location:</strong> ${service.location || 'N/A'}
+            </div>
+
+            <div class="time">
+                <strong>Time:</strong> ${service.time || 'N/A'}
+            </div>
+
+            <div class="typeofservice">
+                <strong>Service:</strong> ${service.typeofservice || 'N/A'}
+            </div>
+
+            <div class="contact">
+                <strong>Minister:</strong> ${service.contact || 'N/A'}
+            </div>
+
+            <div class="organist">
+                <strong>Organist:</strong> ${service.organist || 'N/A'}
+            </div>
+
+        </div>
+    `;
+
+}
+
+
+// Generic schedule renderer
+function renderSchedule(containerId, title, daysAhead) {
+
+    // Today's date
     const currentDate = new Date();
-    const currentWeekEnd = new Date(currentDate);
-    currentWeekEnd.setDate(currentDate.getDate() + 13);
+
+    // Reset time to midnight
+    currentDate.setHours(0, 0, 0, 0);
+
+    // End date
+    const endDate = new Date(currentDate);
+    endDate.setDate(currentDate.getDate() + daysAhead);
 
     let scheduleHTML = '<br>';
-    scheduleHTML += createTitle();
+    scheduleHTML += createTitle(title);
 
     scheduleData.forEach(day => {
 
+        // Convert YYYY-MM-DD into Date object
         const [year, month, dayOfMonth] = day.date.split('-').map(Number);
+
         const eventDate = new Date(year, month - 1, dayOfMonth);
 
-        if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
+        // Reset event time too
+        eventDate.setHours(0, 0, 0, 0);
+
+        // Check if event is within range
+        if (eventDate >= currentDate && eventDate <= endDate) {
 
             scheduleHTML += createDateHTML(eventDate);
 
             day.services.forEach(service => {
+
                 scheduleHTML += createServiceHTML(service);
+
             });
+
         }
 
     });
 
-    const scheduleContainer = document.getElementById('schedule-container');
-    if (scheduleContainer) {
-        scheduleContainer.innerHTML = scheduleHTML;
+    // Display in page container
+    const container = document.getElementById(containerId);
+
+    if (container) {
+
+        container.innerHTML = scheduleHTML;
+
     }
+
 }
 
 
-// Home page version
+// Full schedule page
+function displaySchedule() {
+
+    renderSchedule(
+        'schedule-container',
+        "This Week's Services",
+        13
+    );
+
+}
+
+
+// Homepage schedule
 function displayHomeSchedule() {
 
-    const currentDate = new Date();
-    const currentWeekEnd = new Date(currentDate);
-    currentWeekEnd.setDate(currentDate.getDate() + 6);
-
-    let scheduleHTML = "<br><h2>This Week's Church Services</h2>";
-
-    scheduleData.forEach(day => {
-
-        const [year, month, dayOfMonth] = day.date.split('-').map(Number);
-        const eventDate = new Date(year, month - 1, dayOfMonth);
-
-        if (eventDate >= currentDate && eventDate <= currentWeekEnd) {
-
-            scheduleHTML += `<div class="date"><strong>${formatDate(eventDate)}</strong></div>`;
-
-            day.services.forEach(service => {
-
-                scheduleHTML += `
-                    <div class="service">
-                        <div class="location"><strong>Location:</strong> ${service.location}</div>
-                        <div class="time"><strong>Time:</strong> ${service.time}</div>
-                        <div class="typeofservice"><strong>Service:</strong> ${service.typeofservice || 'N/A'}</div>
-                        <div class="contact"><strong>Minister:</strong> ${service.contact}</div>
-                        <div class="organist"><strong>Organist:</strong> ${service.organist || 'N/A'}</div>
-                    </div>
-                `;
-
-            });
-
-        }
-
-    });
-
-    const homeContainer = document.getElementById('home-schedule-container');
-    if (homeContainer) {
-        homeContainer.innerHTML = scheduleHTML;
-    }
+    renderSchedule(
+        'home-schedule-container',
+        "This Week's Church Services",
+        6
+    );
 
 }
 
 
 // Run when page loads
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     displaySchedule();
     displayHomeSchedule();
 
-    // Refresh every 10 minutes instead of every second
+    // Refresh every 10 minutes
     setInterval(displaySchedule, 600000);
     setInterval(displayHomeSchedule, 600000);
 
