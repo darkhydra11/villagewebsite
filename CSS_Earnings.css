@@ -127,21 +127,31 @@ body, html {
 
 
 
+/* =========================
+   LAYOUT CONTAINER
+========================= */
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px 40px;
   background-color: #262726;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
+/* =========================
+   TYPOGRAPHY
+========================= */
 h1 {
   text-align: center;
   color: #fff;
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
+/* =========================
+   TABLE STYLES
+========================= */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -155,31 +165,34 @@ table.visible {
   transform: translateY(0);
 }
 
-th, td {
+th,
+td {
   padding: 12px 15px;
   border-bottom: 1px solid #444;
-  color: white;
+  color: #fff;
   text-align: left;
 }
 
 th {
   background-color: #333;
-  color: #fff;
   font-weight: bold;
 }
 
 .total td {
   font-weight: bold;
   background-color: #333;
-  color: #fff;
 }
 
+/* =========================
+   MESSAGE PANEL
+========================= */
 .message {
   margin-top: 30px;
   padding: 20px;
   background-color: #1e1e1e;
   border-left: 4px solid #fff;
   color: #ccc;
+
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1s ease 0.3s, transform 1s ease 0.3s;
@@ -204,15 +217,86 @@ th {
   margin-bottom: 8px;
 }
 
+/* =========================
+   BUTTON
+========================= */
 .show-earnings-btn {
-  display: block;
+  display: inline-block;
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #242524;
+  border: solid 1px #fff;
   color: white;
   text-align: center;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
+.show-earnings-btn:hover {
+  background-color: #262726;
+}
+
+.show-earnings-btn:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  th,
+  td {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+
+  .message {
+    padding: 16px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 8px 10px;
+  }
+
+  .message {
+    padding: 14px;
+    font-size: 0.9rem;
+  }
+
+  .show-earnings-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
