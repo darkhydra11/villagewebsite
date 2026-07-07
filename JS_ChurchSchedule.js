@@ -1,63 +1,49 @@
 const scheduleData = [
 
 {
-    date: "2026-05-03",
+    date: "2026-07-05",
     services: [
-        { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia Baker", organist: "" },
         { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Pat / Katharine" },
-        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Graeme Arthur", organist: "Charles?" },
+        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "Charles?" },
+        { location: "Hanwell", time: "3pm", typeofservice: "Welcome Service for Revd Isaac Alun-Jones", contact: "", organist: "" },
     ]
 },
 
 {
-    date: "2026-05-10",
+    date: "2026-07-12",
     services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "" },
-        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Guy Edwards", organist: "Marlene" },
-        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Isabelle + Others", organist: "" },
-        { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Guy Edwards", organist: "" },
+        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia Baker", organist: "Marlene" },
+        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
+        { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia Baker", organist: "" },
     ]
 },
 
 {
-    date: "2026-05-17",
+    date: "2026-07-19",
     services: [
-        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
-        { location: "Balscote", time: "10am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "Pat / Katharine" },
-    ]
-},
-
-
-{
-    date: "2026-05-18",
-    services: [
-        { location: "St. Thomas of Canterbury, Wroxton", time: "7:30pm", typeofservice: "Celebratory Mass" },
-    
+        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
+        { location: "Balscote", time: "10am", typeofservice: "", contact: "Guy Edwards", organist: "Pat / Katharine" },
+        { location: "Horley?", time: "11am", typeofservice: "Holy Communion", contact: "", organist: "" },
     ]
 },
 
 {
-    date: "2026-05-24",
+    date: "2026-07-22",
     services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Village Service (Pentecost)", contact: "Guy Edwards", organist: "Keith" },
-        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion", contact: "Alice Jolley", organist: "Marlene" },
-        { location: "Hornton", time: "11am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Keith" },
+        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "Pat?" },
     ]
 },
 
 {
-    date: "2026-05-27",
+    date: "2026-07-26",
     services: [
-        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Glyn Evans", organist: "Pat" },
+        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
+        { location: "Drayton", time: "11am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Marlene" },
+        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
     ]
 },
-
-{
-    date: "2026-05-31",
-    services: [
-        { location: "Drayton", time: "11am", typeofservice: "BCP Holy Communion (Trinity Sunday Benefice Service)", contact: "Guy Edwards", organist: "Marlene" },
-    ]
-}
 
 ];
 
