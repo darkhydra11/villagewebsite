@@ -1,50 +1,152 @@
 const scheduleData = [
+    {
+        date: "2026-09-06",
+        services: [
+            {
+                location: "Alkerton",
+                time: "9am",
+                typeofservice: "BCP Communion",
+                contact: "Alicia",
+                organist: ""
+            },
+            {
+                location: "Balscote",
+                time: "10am",
+                typeofservice: "Village Service",
+                contact: "Guy",
+                organist: "Pat / Katharine"
+            },
+            {
+                location: "Horley",
+                time: "11am",
+                typeofservice: "Holy Communion",
+                contact: "Alicia",
+                organist: "Charles"
+            }
+        ]
+    },
 
-{
-    date: "2026-07-05",
-    services: [
-        { location: "Alkerton", time: "9am", typeofservice: "BCP Holy Communion", contact: "Alicia Baker", organist: "" },
-        { location: "Balscote", time: "10am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Pat / Katharine" },
-        { location: "Horley", time: "11am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "Charles?" },
-        { location: "Hanwell", time: "3pm", typeofservice: "Welcome Service for Revd Isaac Alun-Jones", contact: "", organist: "" },
-    ]
-},
+    {
+        date: "2026-09-13",
+        services: [
+            {
+                location: "Wroxton",
+                time: "9:45am",
+                typeofservice: "Holy Communion",
+                contact: "Alicia",
+                organist: "Keith"
+            },
+            {
+                location: "Horley",
+                time: "11am",
+                typeofservice: "Sung Eucharist",
+                contact: "Guy",
+                organist: "?"
+            },
+            {
+                location: "Drayton",
+                time: "11am",
+                typeofservice: "BCP Mattins",
+                contact: "Colin and Isaac",
+                organist: "Marlene?"
+            },
+            {
+                location: "GlebeFields",
+                time: "11:50am",
+                typeofservice: "Morning service",
+                contact: "Isaac",
+                organist: ""
+            },
+            {
+                location: "Hornton",
+                time: "11am",
+                typeofservice: "Holy Communion",
+                contact: "Alicia",
+                organist: "Keith"
+            },
+            {
+                location: "Shenington",
+                time: "6pm",
+                typeofservice: "Evening Worship",
+                contact: "Guy",
+                organist: ""
+            }
+        ]
+    },
 
-{
-    date: "2026-07-12",
-    services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
-        { location: "Drayton", time: "11am", typeofservice: "Mattins", contact: "Alicia Baker", organist: "Marlene" },
-        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Guy Edwards", organist: "" },
-        { location: "Shenington", time: "6pm", typeofservice: "Evening Worship", contact: "Alicia Baker", organist: "" },
-    ]
-},
+    {
+        date: "2026-09-20",
+        services: [
+            {
+                location: "Balscote",
+                time: "10am",
+                typeofservice: "Holy Communion",
+                contact: "Alicia",
+                organist: "Pat / Katharine"
+            },
+            {
+                location: "Hanwell",
+                time: "3pm",
+                typeofservice: "Pet blessing service",
+                contact: "Alicia",
+                organist: ""
+            }
+        ]
+    },
 
-{
-    date: "2026-07-19",
-    services: [
-        { location: "Hanwell", time: "9am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
-        { location: "Balscote", time: "10am", typeofservice: "", contact: "Guy Edwards", organist: "Pat / Katharine" },
-        { location: "Horley?", time: "11am", typeofservice: "Holy Communion", contact: "", organist: "" },
-    ]
-},
+    {
+        date: "2026-09-24",
+        services: [
+            {
+                location: "Shenington",
+                time: "10am",
+                typeofservice: "Holy Communion",
+                contact: "Alicia",
+                organist: "Pat"
+            }
+        ]
+    },
 
-{
-    date: "2026-07-22",
-    services: [
-        { location: "Shenington", time: "10am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "Pat?" },
-    ]
-},
-
-{
-    date: "2026-07-26",
-    services: [
-        { location: "Wroxton", time: "9:45am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
-        { location: "Drayton", time: "11am", typeofservice: "Village Service", contact: "Guy Edwards", organist: "Marlene" },
-        { location: "Hornton", time: "11am", typeofservice: "Holy Communion", contact: "Alicia Baker", organist: "" },
-    ]
-},
-
+    {
+        date: "2026-09-27",
+        services: [
+            {
+                location: "Wroxton",
+                time: "9:45am",
+                typeofservice: "Village Service",
+                contact: "Guy",
+                organist: "Keith"
+            },
+            {
+                location: "Balscote",
+                time: "10am",
+                typeofservice: "Harvest HC",
+                contact: "Alicia",
+                organist: "Pat / Katharine"
+            },
+            {
+                location: "Drayton",
+                time: "11am",
+                typeofservice: "Harvest HC",
+                contact: "Alicia",
+                organist: "Marlene?"
+            },
+            {
+                location: "Hornton",
+                time: "11am",
+                typeofservice: "Village service",
+                contact: "Guy",
+                organist: "Keith"
+            },
+            {
+                location: "Alkerton",
+                time: "6pm",
+                typeofservice: "Taize",
+                contact: "Alicia",
+                organist: ""
+            }
+        ]
+    }
 ];
 
 function formatDate(date) {
