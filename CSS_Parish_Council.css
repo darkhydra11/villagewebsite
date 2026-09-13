@@ -166,13 +166,8 @@ h2 {
 
 
 
-/* =========================================
-   COUNCIL UPDATE
-   ========================================= */
-
 .council-update {
     --dark: #262726;
-    --dark-light: #323331;
     --white: #ffffff;
     --muted: rgba(255, 255, 255, 0.7);
     --border: rgba(255, 255, 255, 0.16);
@@ -183,29 +178,35 @@ h2 {
     color: var(--white);
     border-radius: 16px;
     overflow: hidden;
+
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     line-height: 1.75;
+
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
 }
 
 
-/* =========================================
-   HEADER
-   ========================================= */
+/* HEADER */
 
 .council-update__header {
     padding: 45px 50px 40px;
+
     background: linear-gradient(
         135deg,
         #262726 0%,
         #323331 100%
     );
+
     border-bottom: 3px solid #ffffff;
 }
 
 .council-update__label {
     display: inline-block;
+
     padding: 6px 14px;
+    margin-bottom: 16px;
+
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 50px;
 
@@ -213,12 +214,11 @@ h2 {
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-
-    margin-bottom: 16px;
 }
 
 .council-update__header h1 {
     margin: 0;
+
     font-size: 34px;
     line-height: 1.2;
     font-weight: 700;
@@ -226,14 +226,13 @@ h2 {
 
 .council-update__header p {
     margin: 12px 0 0;
+
     color: var(--muted);
     font-size: 16px;
 }
 
 
-/* =========================================
-   CONTENT
-   ========================================= */
+/* CONTENT */
 
 .council-update__content {
     padding: 40px 50px;
@@ -245,199 +244,39 @@ h2 {
 
 .council-update__intro {
     font-size: 19px;
+    font-weight: 600;
 }
 
 
-/* =========================================
-   CAROL SHENTON SIGNATURE
-   ========================================= */
-
-.council-update__signature {
-    margin: 28px 0 40px;
-    padding: 17px 22px;
-
-    border-left: 4px solid var(--white);
-    background: rgba(255, 255, 255, 0.06);
-
-    border-radius: 0 8px 8px 0;
-}
-
-
-/* =========================================
-   RESPONSE HEADING
-   ========================================= */
+/* RESPONSE HEADING */
 
 .council-update__response-heading {
-    margin: 10px 0 32px;
+    margin: 35px 0 32px;
     padding-top: 28px;
 
     border-top: 1px solid var(--border);
 }
 
-.council-update__response-heading > span {
+.council-update__response-heading span {
     display: block;
-
-    margin-bottom: 5px;
 
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 
-    opacity: 0.55;
-}
-
-.council-update__response-heading h2 {
-    margin: 0;
-
-    font-size: 27px;
-    line-height: 1.3;
-}
-
-
-/* =========================================
-   SECTION HEADINGS
-   ========================================= */
-
-.council-update__content h3 {
-    margin: 38px 0 15px;
-    padding-bottom: 9px;
-
-    font-size: 21px;
-    line-height: 1.3;
-
-    border-bottom: 1px solid var(--border);
-}
-
-
-/* =========================================
-   QUOTE
-   ========================================= */
-
-.council-update blockquote {
-    position: relative;
-
-    margin: 32px 0;
-    padding: 26px 30px;
-
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
-}
-
-.council-update blockquote .quote-mark {
-    display: block;
-
-    margin-bottom: 10px;
-
-    font-size: 42px;
-    line-height: 0.5;
-
-    opacity: 0.3;
-}
-
-.council-update blockquote p {
-    margin: 0;
-
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.6;
-}
-
-
-/* =========================================
-   PRIORITIES CARD
-   ========================================= */
-
-.council-update__priorities {
-    margin: 40px 0;
-    padding: 30px;
-
-    background: #ffffff;
-    color: #262726;
-
-    border-radius: 13px;
-}
-
-.council-update__priorities-label {
-    display: block;
-
-    margin-bottom: 6px;
-
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-
     opacity: 0.6;
 }
 
-.council-update__priorities h3 {
-    margin: 0 0 25px;
-    padding: 0;
 
-    font-size: 24px;
-    line-height: 1.3;
+/* EMPHASIS */
 
-    border: none;
-}
-
-
-/* =========================================
-   PRIORITY ITEMS
-   ========================================= */
-
-.priority {
-    display: flex;
-    gap: 18px;
-    align-items: flex-start;
-
-    padding: 18px 0;
-
-    border-top: 1px solid rgba(38, 39, 38, 0.12);
-}
-
-.priority:first-of-type {
-    border-top: none;
-}
-
-.priority__number {
-    flex-shrink: 0;
-
-    width: 36px;
-    height: 36px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #262726;
-    border-radius: 50%;
-
-    font-size: 12px;
+.council-update strong {
     font-weight: 700;
 }
 
-.priority strong {
-    display: block;
 
-    margin-bottom: 3px;
-
-    font-size: 16px;
-}
-
-.priority p {
-    margin: 0;
-
-    color: #555555;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-
-/* =========================================
-   FOOTER / SIGNATURE
-   ========================================= */
+/* FOOTER */
 
 .council-update__footer {
     margin-top: 40px;
@@ -463,15 +302,15 @@ h2 {
 }
 
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
+/* MOBILE */
 
 @media (max-width: 700px) {
 
     .council-update {
         margin: 20px 10px;
         border-radius: 12px;
+
+        font-size: 15px;
     }
 
     .council-update__header {
@@ -494,28 +333,8 @@ h2 {
         font-size: 17px;
     }
 
-    .council-update__content h3 {
-        font-size: 19px;
-    }
-
-    .council-update blockquote {
-        padding: 22px;
-    }
-
-    .council-update blockquote p {
-        font-size: 16px;
-    }
-
-    .council-update__priorities {
-        padding: 24px 20px;
-    }
-
-    .council-update__priorities h3 {
-        font-size: 21px;
-    }
-
-    .priority {
-        gap: 13px;
+    .council-update__response-heading {
+        margin-top: 30px;
     }
 
 }
