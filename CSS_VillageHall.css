@@ -401,3 +401,1144 @@ h3 {
       font-size: 12px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   WROXTON VILLAGE HALL — RACE NIGHT
+   GREEN + #262726 THEME
+========================================================= */
+
+.race-night {
+  --rn-dark: #262726;
+  --rn-dark-2: #1c1e1d;
+
+  --rn-green: #174d35;
+  --rn-green-light: #267a50;
+  --rn-green-bright: #39a86b;
+
+  --rn-white: #f4f5f3;
+  --rn-grey: #aeb4af;
+
+  position: relative;
+  overflow: hidden;
+
+  min-height: 900px;
+  padding: 90px 20px;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(57, 168, 107, 0.16),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #262726 0%,
+      #1d211f 55%,
+      #123b29 100%
+    );
+
+  color: var(--rn-white);
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND
+========================================================= */
+
+.race-night::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 49.5%,
+      rgba(57, 168, 107, 0.025) 50%,
+      transparent 50.5%
+    );
+
+  background-size: 80px 80px;
+
+  pointer-events: none;
+}
+
+
+.race-night::after {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(57, 168, 107, 0.12);
+
+  top: -300px;
+  right: -180px;
+
+  box-shadow:
+    0 0 0 60px rgba(57, 168, 107, 0.025),
+    0 0 0 120px rgba(57, 168, 107, 0.018),
+    0 0 0 180px rgba(57, 168, 107, 0.012);
+
+  animation:
+    rnRotate 30s linear infinite;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.race-night__container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.race-night__header {
+  text-align: center;
+
+  opacity: 0;
+
+  transform:
+    translateY(40px);
+
+  animation:
+    rnFadeUp 1s 0.15s forwards;
+}
+
+
+.race-night__eyebrow {
+  display: inline-block;
+
+  padding: 9px 18px;
+
+  border:
+    1px solid var(--rn-green-bright);
+
+  color:
+    var(--rn-green-bright);
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  background:
+    rgba(23, 77, 53, 0.15);
+
+  box-shadow:
+    0 0 25px rgba(57, 168, 107, 0.08);
+}
+
+
+.race-night__header h1 {
+  margin:
+    25px 0 5px;
+
+  font-size:
+    clamp(4rem, 11vw, 8rem);
+
+  line-height:
+    0.85;
+
+  font-weight:
+    900;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    -5px;
+
+  color:
+    var(--rn-white);
+
+  text-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.race-night__header h1 span {
+  color:
+    var(--rn-green-bright);
+}
+
+
+.race-night__subtitle {
+  margin:
+    25px 0;
+
+  font-size:
+    17px;
+
+  letter-spacing:
+    2px;
+
+  color:
+    var(--rn-grey);
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.race-night__date {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    15px;
+
+  margin-top:
+    10px;
+
+  padding:
+    12px 25px;
+
+  background:
+    var(--rn-green);
+
+  color:
+    var(--rn-white);
+
+  font-weight:
+    800;
+
+  border:
+    1px solid var(--rn-green-light);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.race-night__date strong {
+  font-size:
+    38px;
+
+  color:
+    var(--rn-green-bright);
+}
+
+
+.race-night__date span {
+  font-size:
+    13px;
+
+  letter-spacing:
+    2px;
+}
+
+
+/* =========================================================
+   RACE TRACK
+========================================================= */
+
+.race-night__track {
+  position:
+    relative;
+
+  height:
+    170px;
+
+  margin:
+    70px 0 50px;
+
+  border-top:
+    2px solid rgba(57, 168, 107, 0.35);
+
+  border-bottom:
+    2px solid rgba(57, 168, 107, 0.35);
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      rgba(57, 168, 107, 0.025) 0,
+      rgba(57, 168, 107, 0.025) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+
+  overflow:
+    hidden;
+}
+
+
+.race-night__track-line {
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  top:
+    50%;
+
+  border-top:
+    2px dashed rgba(255, 255, 255, 0.12);
+}
+
+
+/* =========================================================
+   FINISH LINE
+========================================================= */
+
+.race-night__finish {
+  position:
+    absolute;
+
+  right:
+    8%;
+
+  top:
+    0;
+
+  bottom:
+    0;
+
+  width:
+    70px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  writing-mode:
+    vertical-rl;
+
+  font-size:
+    12px;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    4px;
+
+  color:
+    var(--rn-white);
+
+  background:
+    repeating-conic-gradient(
+      #262726 0 25%,
+      #f4f5f3 0 50%
+    )
+    0 / 20px 20px;
+
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   LOOPING HORSES
+========================================================= */
+
+.race-night__racer {
+  position:
+    absolute;
+
+  left:
+    -100px;
+
+  font-size:
+    55px;
+
+  filter:
+    drop-shadow(
+      0 6px 5px rgba(0, 0, 0, 0.45)
+    );
+
+  white-space:
+    nowrap;
+
+  /*
+    Horses continuously race across
+    the track.
+  */
+
+  animation-name:
+    rnRace;
+
+  animation-timing-function:
+    linear;
+
+  animation-iteration-count:
+    infinite;
+}
+
+
+/* First horse */
+
+.race-night__racer--1 {
+  top:
+    5px;
+
+  animation-duration:
+    6s;
+
+  animation-delay:
+    0s;
+}
+
+
+/* Second horse */
+
+.race-night__racer--2 {
+  top:
+    57px;
+
+  font-size:
+    48px;
+
+  animation-duration:
+    7s;
+
+  animation-delay:
+    2s;
+}
+
+
+/* Third horse */
+
+.race-night__racer--3 {
+  top:
+    105px;
+
+  font-size:
+    43px;
+
+  animation-duration:
+    5.5s;
+
+  animation-delay:
+    4s;
+}
+
+
+/* =========================================================
+   HORSE RACE ANIMATION
+   Horses face RIGHT and travel LEFT → RIGHT
+========================================================= */
+
+@keyframes rnRace {
+
+  0% {
+    left:
+      -100px;
+
+    transform:
+      scaleX(-1)
+      translateY(0);
+  }
+
+  20% {
+    transform:
+      scaleX(-1)
+      translateY(-5px);
+  }
+
+  40% {
+    transform:
+      scaleX(-1)
+      translateY(3px);
+  }
+
+  60% {
+    transform:
+      scaleX(-1)
+      translateY(-4px);
+  }
+
+  80% {
+    transform:
+      scaleX(-1)
+      translateY(2px);
+  }
+
+  100% {
+    left:
+      110%;
+
+    transform:
+      scaleX(-1)
+      translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
+
+.race-night__card {
+  background:
+    var(--rn-dark);
+
+  color:
+    var(--rn-white);
+
+  border:
+    1px solid rgba(57, 168, 107, 0.3);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35);
+
+  transform:
+    translateY(30px);
+
+  opacity:
+    0;
+
+  animation:
+    rnFadeUp 1s 2.5s forwards;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.race-night__card-header {
+  padding:
+    15px 25px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--rn-green),
+      var(--rn-green-light)
+    );
+
+  color:
+    var(--rn-white);
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    3px;
+
+  text-align:
+    center;
+}
+
+
+.race-night__card-content {
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:
+    40px;
+
+  padding:
+    40px;
+}
+
+
+/* =========================================================
+   INFORMATION
+========================================================= */
+
+.race-night__info {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    25px;
+
+  justify-content:
+    center;
+}
+
+
+.race-night__info-item {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    18px;
+
+  padding-bottom:
+    20px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.race-night__icon {
+  font-size:
+    30px;
+}
+
+
+.race-night__info-item small {
+  display:
+    block;
+
+  margin-bottom:
+    4px;
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    2px;
+
+  color:
+    var(--rn-green-bright);
+}
+
+
+.race-night__info-item strong {
+  display:
+    block;
+
+  font-size:
+    17px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.race-night__message {
+  text-align:
+    center;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+}
+
+
+.race-night__rosette {
+  width:
+    70px;
+
+  height:
+    70px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--rn-green);
+
+  color:
+    var(--rn-green-bright);
+
+  font-size:
+    32px;
+
+  border:
+    2px solid var(--rn-green-bright);
+
+  box-shadow:
+    0 0 30px rgba(57, 168, 107, 0.15);
+
+  animation:
+    rnPulse 2s infinite;
+}
+
+
+.race-night__message h2 {
+  margin:
+    20px 0 10px;
+
+  font-size:
+    32px;
+
+  color:
+    var(--rn-white);
+}
+
+
+.race-night__message p {
+  max-width:
+    420px;
+
+  margin:
+    0 auto 20px;
+
+  line-height:
+    1.6;
+
+  color:
+    var(--rn-grey);
+}
+
+
+.race-night__coming {
+  padding:
+    10px 18px;
+
+  background:
+    var(--rn-green);
+
+  color:
+    var(--rn-white);
+
+  font-size:
+    11px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    2px;
+
+  border:
+    1px solid var(--rn-green-light);
+}
+
+
+/* =========================================================
+   BOTTOM RACING BOARD
+========================================================= */
+
+.race-night__board {
+  margin-top:
+    55px;
+
+  text-align:
+    center;
+}
+
+
+.race-night__board-title {
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    20px;
+
+  font-size:
+    20px;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    4px;
+
+  color:
+    var(--rn-green-bright);
+}
+
+
+.race-night__board-lights {
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+
+  margin-top:
+    20px;
+}
+
+
+.race-night__board-lights span {
+  width:
+    8px;
+
+  height:
+    8px;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--rn-green-bright);
+
+  box-shadow:
+    0 0 10px var(--rn-green-bright);
+
+  animation:
+    rnBlink 1.5s infinite;
+}
+
+
+/* =========================================================
+   ANIMATED LIGHT DELAYS
+========================================================= */
+
+.race-night__board-lights span:nth-child(2) {
+  animation-delay:
+    0.15s;
+}
+
+.race-night__board-lights span:nth-child(3) {
+  animation-delay:
+    0.30s;
+}
+
+.race-night__board-lights span:nth-child(4) {
+  animation-delay:
+    0.45s;
+}
+
+.race-night__board-lights span:nth-child(5) {
+  animation-delay:
+    0.60s;
+}
+
+.race-night__board-lights span:nth-child(6) {
+  animation-delay:
+    0.75s;
+}
+
+.race-night__board-lights span:nth-child(7) {
+  animation-delay:
+    0.90s;
+}
+
+.race-night__board-lights span:nth-child(8) {
+  animation-delay:
+    1.05s;
+}
+
+
+/* =========================================================
+   FLOATING BACKGROUND HORSES
+========================================================= */
+
+.race-night__horse {
+  position:
+    absolute;
+
+  z-index:
+    1;
+
+  font-size:
+    80px;
+
+  opacity:
+    0.04;
+
+  pointer-events:
+    none;
+
+  animation:
+    rnFloat 5s ease-in-out infinite;
+}
+
+
+.race-night__horse--one {
+  top:
+    15%;
+
+  left:
+    3%;
+}
+
+
+.race-night__horse--two {
+  bottom:
+    8%;
+
+  right:
+    4%;
+
+  animation-delay:
+    2s;
+}
+
+
+/* =========================================================
+   FADE / REVEAL
+========================================================= */
+
+@keyframes rnFadeUp {
+
+  from {
+    opacity:
+      0;
+
+    transform:
+      translateY(40px);
+  }
+
+  to {
+    opacity:
+      1;
+
+    transform:
+      translateY(0);
+  }
+
+}
+
+
+/* =========================================================
+   ROSETTE PULSE
+========================================================= */
+
+@keyframes rnPulse {
+
+  0%,
+  100% {
+    transform:
+      scale(1);
+  }
+
+  50% {
+    transform:
+      scale(1.08);
+  }
+
+}
+
+
+/* =========================================================
+   RACING BOARD LIGHTS
+========================================================= */
+
+@keyframes rnBlink {
+
+  0%,
+  100% {
+    opacity:
+      0.25;
+  }
+
+  50% {
+    opacity:
+      1;
+  }
+
+}
+
+
+/* =========================================================
+   BACKGROUND HORSE FLOAT
+========================================================= */
+
+@keyframes rnFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(-3deg);
+  }
+
+  50% {
+    transform:
+      translateY(-20px)
+      rotate(3deg);
+  }
+
+}
+
+
+/* =========================================================
+   BACKGROUND CIRCLE
+========================================================= */
+
+@keyframes rnRotate {
+
+  from {
+    transform:
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .race-night {
+    padding:
+      60px 15px;
+  }
+
+
+  .race-night__header h1 {
+    letter-spacing:
+      -2px;
+  }
+
+
+  .race-night__date {
+    gap:
+      8px;
+
+    padding:
+      10px 15px;
+  }
+
+
+  .race-night__date strong {
+    font-size:
+      30px;
+  }
+
+
+  .race-night__date span {
+    font-size:
+      10px;
+  }
+
+
+  .race-night__track {
+    height:
+      130px;
+
+    margin:
+      50px 0 40px;
+  }
+
+
+  .race-night__finish {
+    width:
+      45px;
+
+    right:
+      5%;
+  }
+
+
+  .race-night__racer {
+    font-size:
+      40px;
+  }
+
+
+  .race-night__racer--2 {
+    font-size:
+      35px;
+  }
+
+
+  .race-night__racer--3 {
+    font-size:
+      32px;
+  }
+
+
+  .race-night__card-content {
+    grid-template-columns:
+      1fr;
+
+    padding:
+      25px;
+
+    gap:
+      30px;
+  }
+
+
+  .race-night__board-title {
+    font-size:
+      14px;
+
+    letter-spacing:
+      2px;
+  }
+
+}
